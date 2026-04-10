@@ -1,0 +1,6 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+# 启动时先写入数据库再开服务，避免构建阶段生成的 DB 在运行时不可用
+startCommand = "npm run seed && npm start"

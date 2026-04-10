@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>财务自由签到系统</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #eee;
+      padding: 24px;
+      position: relative;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 48px;
+      letter-spacing: 0.05em;
+    }
+    .days-display {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .days-display .number {
+      color: #e94560;
+      font-size: 3rem;
+    }
+    .btn {
+      padding: 16px 48px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #e94560, #c73e54);
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(233, 69, 96, 0.5);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+    .toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      padding: 12px 24px;
+      background: rgba(233, 69, 96, 0.95);
+      color: #fff;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      opacity: 0;
+      transition: transform 0.3s, opacity 0.3s;
+      pointer-events: none;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    .footer-cta-wrap {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .footer-cta {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.12);
+      color: #ccc;
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .footer-cta:hover {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+    }
+    .signature {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s;
+    }
+    .modal-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal {
+      background: #1a1a2e;
+      border-radius: 16px;
+      padding: 28px;
+      max-width: 420px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .modal h2 {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .modal-section {
+      margin-bottom: 20px;
+    }
+    .modal-section h3 {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .modal-section label {
+      display: block;
+      font-size: 0.85rem;
+      color: #ccc;
+      margin-bottom: 4px;
+    }
+    .modal-section input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .modal-section input::placeholder {
+      color: #666;
+    }
+    .modal-hint {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 4px;
+    }
+    .modal-submit {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #e94560, #c73e54);
+      color: #fff;
+      cursor: pointer;
+    }
+    .modal-submit:hover {
+      opacity: 0.95;
+    }
+    .formula-modal .modal {
+      max-width: 480px;
+    }
+    .formula-block {
+      margin-bottom: 20px;
+    }
+    .formula-block h3 {
+      font-size: 0.95rem;
+      color: #e94560;
+      margin-bottom: 8px;
+    }
+    .formula-line {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 4px;
+      padding-left: 8px;
+    }
+    .formula-expr {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin: 8px 0 4px 8px;
+      font-family: ui-monospace, monospace;
+    }
+    .formula-factors {
+      font-size: 0.8rem;
+      color: #888;
+      padding-left: 12px;
+      margin-top: 4px;
+    }
+    .formula-empty {
+      color: #666;
+      text-align: center;
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>财务自由签到系统</h1>
+  <p class="days-display">距离财务自由 <span class="number" id="days">934</span> 天</p>
+  <button class="btn" id="checkin">今日签到</button>
+  <div class="toast" id="toast"></div>
+
+  <div class="footer-cta-wrap">
+    <button type="button" class="footer-cta" id="openCalc">计算我的财务自由日期</button>
+    <button type="button" class="footer-cta" id="openFormula">查看我的财务自由小公式</button>
+  </div>
+  <div class="signature">by超大杯.于 🐶</div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <h2>计算我的财务自由日期</h2>
+      <form id="calcForm">
+        <div class="modal-section">
+          <h3>（1）年平均收入（税前）</h3>
+          <label>工资（元/月）</label>
+          <input type="number" id="salary" placeholder="0" min="0" step="1" value="0" required>
+          <label>年终奖（元/年）</label>
+          <input type="number" id="bonus" placeholder="0" min="0" step="1" value="0" required>
+          <label>股票（元/年）</label>
+          <input type="number" id="stock" placeholder="0" min="0" step="1" value="0" required>
+        </div>
+        <div class="modal-section">
+          <h3>（2）月平均支出</h3>
+          <label>房贷+房租（元/月）</label>
+          <input type="number" id="housing" placeholder="0" min="0" step="1" value="0" required>
+          <label>花呗（元/月）</label>
+          <input type="number" id="huabei" placeholder="0" min="0" step="1" value="0" required>
+          <label>旅游（元/月）</label>
+          <input type="number" id="travel" placeholder="0" min="0" step="1" value="0" required>
+        </div>
+        <div class="modal-section">
+          <h3>（3）净资产（存款，可填负数）</h3>
+          <input type="number" id="netAsset" placeholder="0" step="1" value="0" required>
+        </div>
+        <div class="modal-section">
+          <h3>（4）理财收益率</h3>
+          <input type="number" id="yield" placeholder="1.1" step="0.1" min="0" value="1.1" required>
+          <p class="modal-hint">默认参考余额宝收益（%）</p>
+        </div>
+        <button type="submit" class="modal-submit">提交</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay formula-modal" id="formulaOverlay">
+    <div class="modal">
+      <h2>我的财务自由小公式</h2>
+      <div id="formulaContent"></div>
+    </div>
+  </div>
+
+  <script>
+    // 默认基准：2026年2月3日 = 934 天；用户可通过“计算”覆盖
+    const DEFAULT_ANCHOR_DATE = new Date(2026, 1, 3);
+    const DEFAULT_ANCHOR_DAYS = 934;
+    const STORAGE_CHECKIN_DATES = 'financial_freedom_checkin_dates';
+    const STORAGE_BASE_DATE = 'financial_freedom_base_date';
+    const STORAGE_BASE_DAYS = 'financial_freedom_base_days';
+    const STORAGE_LAST_CONFIG = 'financial_freedom_last_config';
+    const WORK_DAYS_PER_YEAR = 248;
+
+    const daysEl = document.getElementById('days');
+    const checkinBtn = document.getElementById('checkin');
+    const toastEl = document.getElementById('toast');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const formulaOverlay = document.getElementById('formulaOverlay');
+    const formulaContent = document.getElementById('formulaContent');
+    const calcForm = document.getElementById('calcForm');
+    const openCalcBtn = document.getElementById('openCalc');
+    const openFormulaBtn = document.getElementById('openFormula');
+
+    /** 将 YYYY-MM-DD 解析为本地 0 点 */
+    function parseLocalDate(str) {
+      const [y, m, d] = str.split('-').map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    /** 当前目标日：从存储的基准日+基准天数得到，若无则用默认 */
+    function getTargetDate() {
+      const baseDateRaw = localStorage.getItem(STORAGE_BASE_DATE);
+      const baseDaysRaw = localStorage.getItem(STORAGE_BASE_DAYS);
+      if (baseDateRaw && baseDaysRaw) {
+        const days = parseInt(baseDaysRaw, 10);
+        if (!isNaN(days)) {
+          const base = parseLocalDate(baseDateRaw);
+          if (!isNaN(base.getTime())) {
+            const t = new Date(base);
+            t.setDate(t.getDate() + days);
+            return t;
+          }
+        }
+      }
+      const t = new Date(DEFAULT_ANCHOR_DATE);
+      t.setDate(t.getDate() + DEFAULT_ANCHOR_DAYS);
+      return t;
+    }
+
+    function dateStr(d) {
+      return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    }
+
+    function todayStr() {
+      return dateStr(new Date());
+    }
+
+    /** 从今天到目标日的日历剩余天数 */
+    function getCalendarRemainingDays() {
+      const now = new Date();
+      const target = getTargetDate();
+      const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const targetStart = new Date(target.getFullYear(), target.getMonth(), target.getDate());
+      const diffMs = targetStart - todayStart;
+      const days = Math.floor(diffMs / (24 * 60 * 60 * 1000));
+      return Math.max(0, days);
+    }
+
+    function loadCheckinDates() {
+      try {
+        const raw = localStorage.getItem(STORAGE_CHECKIN_DATES);
+        if (!raw) return [];
+        const arr = JSON.parse(raw);
+        return Array.isArray(arr) ? arr : [];
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function saveCheckinDates(dates) {
+      localStorage.setItem(STORAGE_CHECKIN_DATES, JSON.stringify(dates));
+    }
+
+    function getDisplayedDays() {
+      const calendarRemaining = getCalendarRemainingDays();
+      const checkinDates = loadCheckinDates();
+      return Math.max(0, calendarRemaining - checkinDates.length);
+    }
+
+    function showToast(msg) {
+      toastEl.textContent = msg;
+      toastEl.classList.add('show');
+      setTimeout(() => toastEl.classList.remove('show'), 2500);
+    }
+
+    function render() {
+      daysEl.textContent = getDisplayedDays();
+    }
+
+    // 个税累进税率表（年度应纳税所得额）
+    function calcIIT(taxableAnnual) {
+      if (taxableAnnual <= 0) return 0;
+      const brackets = [
+        [36000, 0.03, 0],
+        [144000, 0.10, 2520],
+        [300000, 0.20, 16920],
+        [420000, 0.25, 31920],
+        [660000, 0.30, 52920],
+        [960000, 0.35, 85920],
+        [Infinity, 0.45, 181920]
+      ];
+      for (let i = 0; i < brackets.length; i++) {
+        if (taxableAnnual <= brackets[i][0]) {
+          return taxableAnnual * brackets[i][1] - brackets[i][2];
+        }
+      }
+      return 0;
+    }
+
+    /** 收入明细：年平均收入(税前)、三险一金、个税、年平均到手收入、税率(个税/税前) */
+    function calcIncomeDetail(salaryMonth, bonusYear, stockYear) {
+      const salaryYear = salaryMonth * 12;
+      const gross = salaryYear + bonusYear + stockYear;
+      const socialFund = Math.min(salaryYear * 0.22, 31200 * 12 * 0.22);
+      const taxable = gross - 60000 - socialFund;
+      const iit = calcIIT(taxable);
+      const afterTax = Math.max(0, gross - socialFund - iit);
+      const taxRatePct = gross > 0 ? (iit / gross * 100) : 0;
+      return { gross, socialFund, iit, afterTax, taxRatePct };
+    }
+
+    /** 计算年平均到手收入 */
+    function calcAnnualAfterTax(salaryMonth, bonusYear, stockYear) {
+      return calcIncomeDetail(salaryMonth, bonusYear, stockYear).afterTax;
+    }
+
+    /** 需财务自由资产 = 月支出*12 / 年化收益率（收益率以 % 传入，如 1.1） */
+    function calcTargetAsset(monthlyExpense, yieldPct) {
+      if (yieldPct <= 0) return Infinity;
+      const annualExpense = monthlyExpense * 12;
+      return annualExpense / (yieldPct / 100);
+    }
+
+    /** 待上班财务自由天数 = (需财务自由资产 - 净资产) / (年平均到手收入 / 248) */
+    function calcWorkDaysToFreedom(targetAsset, netAsset, annualAfterTax) {
+      if (annualAfterTax <= 0) return 0;
+      const gap = Math.max(0, targetAsset - netAsset);
+      const dailyIncome = annualAfterTax / WORK_DAYS_PER_YEAR;
+      return Math.ceil(gap / dailyIncome);
+    }
+
+    function fillCalcFormFromLastConfig() {
+      const raw = localStorage.getItem(STORAGE_LAST_CONFIG);
+      if (!raw) return;
+      try {
+        const cfg = JSON.parse(raw);
+        document.getElementById('salary').value = cfg.salary != null ? cfg.salary : 0;
+        document.getElementById('bonus').value = cfg.bonus != null ? cfg.bonus : 0;
+        document.getElementById('stock').value = cfg.stock != null ? cfg.stock : 0;
+        document.getElementById('housing').value = cfg.housing != null ? cfg.housing : 0;
+        document.getElementById('huabei').value = cfg.huabei != null ? cfg.huabei : 0;
+        document.getElementById('travel').value = cfg.travel != null ? cfg.travel : 0;
+        document.getElementById('netAsset').value = cfg.netAsset != null ? cfg.netAsset : 0;
+        document.getElementById('yield').value = cfg.yieldPct != null ? cfg.yieldPct : 1.1;
+      } catch (_) {}
+    }
+
+    openCalcBtn.addEventListener('click', function () {
+      fillCalcFormFromLastConfig();
+      modalOverlay.classList.add('show');
+    });
+    modalOverlay.addEventListener('click', function (e) {
+      if (e.target === modalOverlay) modalOverlay.classList.remove('show');
+    });
+    formulaOverlay.addEventListener('click', function (e) {
+      if (e.target === formulaOverlay) formulaOverlay.classList.remove('show');
+    });
+
+    function formatNum(n) {
+      if (typeof n !== 'number' || isNaN(n)) return '0';
+      return n.toLocaleString('zh-CN', { maximumFractionDigits: 2, minimumFractionDigits: 0 });
+    }
+
+    function renderFormulaModal() {
+      let raw = localStorage.getItem(STORAGE_LAST_CONFIG);
+      if (!raw) {
+        formulaContent.innerHTML = '<p class="formula-empty">请先使用「计算我的财务自由日期」填写并提交后，再查看小公式。</p>';
+        return;
+      }
+      let cfg;
+      try {
+        cfg = JSON.parse(raw);
+      } catch (_) {
+        formulaContent.innerHTML = '<p class="formula-empty">请先使用「计算我的财务自由日期」填写并提交后，再查看小公式。</p>';
+        return;
+      }
+      const salary = Number(cfg.salary) || 0;
+      const bonus = Number(cfg.bonus) || 0;
+      const stock = Number(cfg.stock) || 0;
+      const housing = Number(cfg.housing) || 0;
+      const huabei = Number(cfg.huabei) || 0;
+      const travel = Number(cfg.travel) || 0;
+      const netAsset = Number(cfg.netAsset) || 0;
+      const yieldPct = Number(cfg.yieldPct) || 1.1;
+
+      const income = calcIncomeDetail(salary, bonus, stock);
+      const monthlyExpense = housing + huabei + travel;
+      const targetAsset = calcTargetAsset(monthlyExpense, yieldPct);
+      const dailyIncome = income.afterTax / WORK_DAYS_PER_YEAR;
+      const daysToFreedom = calcWorkDaysToFreedom(targetAsset, netAsset, income.afterTax);
+
+      const gap = Math.max(0, targetAsset - netAsset);
+
+      let html = '';
+      html += '<div class="formula-block"><h3>1. 收入部分</h3>';
+      html += '<div class="formula-line">年平均收入（税前）：' + formatNum(income.gross) + ' 元/年</div>';
+      html += '<div class="formula-line">年平均到手收入：' + formatNum(income.afterTax) + ' 元/年</div>';
+      html += '<div class="formula-line">三险一金：' + formatNum(income.socialFund) + ' 元/年</div>';
+      html += '<div class="formula-line">个税金额：' + formatNum(income.iit) + ' 元/年</div>';
+      html += '<div class="formula-line">税率：' + (income.taxRatePct.toFixed(2)) + '%</div></div>';
+
+      html += '<div class="formula-block"><h3>2. 支出部分</h3>';
+      html += '<div class="formula-line">月平均支出总额：' + formatNum(monthlyExpense) + ' 元/月</div></div>';
+
+      html += '<div class="formula-block"><h3>3. 需财务自由资产总额</h3>';
+      html += '<div class="formula-line">' + formatNum(targetAsset) + ' 元</div>';
+      html += '<div class="formula-expr">公式：月支出合计 × 12 ÷ 理财收益率%</div>';
+      html += '<div class="formula-factors">月支出合计 = ' + formatNum(monthlyExpense) + ' 元/月 · 12 = ' + formatNum(monthlyExpense * 12) + ' 元/年；理财收益率% = ' + yieldPct + '%</div></div>';
+
+      html += '<div class="formula-block"><h3>4. 待上班财务自由天数</h3>';
+      html += '<div class="formula-line">' + formatNum(daysToFreedom) + ' 天</div>';
+      html += '<div class="formula-expr">公式：（需财务自由资产 − 净资产）÷（年平均到手收入 ÷ 248）</div>';
+      html += '<div class="formula-factors">需财务自由资产 = ' + formatNum(targetAsset) + ' 元；净资产 = ' + formatNum(netAsset) + ' 元；（需财务自由资产 − 净资产）= ' + formatNum(gap) + ' 元；年平均到手收入 ÷ 248 = ' + formatNum(dailyIncome) + ' 元/天</div></div>';
+
+      formulaContent.innerHTML = html;
+    }
+
+    openFormulaBtn.addEventListener('click', function () {
+      renderFormulaModal();
+      formulaOverlay.classList.add('show');
+    });
+
+    calcForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const salary = parseFloat(document.getElementById('salary').value);
+      const bonus = parseFloat(document.getElementById('bonus').value);
+      const stock = parseFloat(document.getElementById('stock').value);
+      const housing = parseFloat(document.getElementById('housing').value);
+      const huabei = parseFloat(document.getElementById('huabei').value);
+      const travel = parseFloat(document.getElementById('travel').value);
+      const netAsset = parseFloat(document.getElementById('netAsset').value);
+      const yieldPct = parseFloat(document.getElementById('yield').value);
+
+      if ([salary, bonus, stock, housing, huabei, travel].some(v => isNaN(v))) {
+        showToast('请填写所有必填项');
+        return;
+      }
+      if (isNaN(yieldPct) || yieldPct < 0) {
+        showToast('请填写有效的理财收益率');
+        return;
+      }
+
+      const annualAfterTax = calcAnnualAfterTax(salary, bonus, stock);
+      const monthlyExpense = housing + huabei + travel;
+      const targetAsset = calcTargetAsset(monthlyExpense, yieldPct);
+      const netAssetVal = isNaN(netAsset) ? 0 : netAsset;
+      const daysToFreedom = calcWorkDaysToFreedom(targetAsset, netAssetVal, annualAfterTax);
+
+      saveCheckinDates([]);
+      localStorage.setItem(STORAGE_BASE_DATE, todayStr());
+      localStorage.setItem(STORAGE_BASE_DAYS, String(daysToFreedom));
+      localStorage.setItem(STORAGE_LAST_CONFIG, JSON.stringify({
+        salary, bonus, stock, housing, huabei, travel,
+        netAsset: netAssetVal, yieldPct
+      }));
+
+      modalOverlay.classList.remove('show');
+      render();
+      showToast('已更新：距离财务自由 ' + daysToFreedom + ' 天');
+    });
+
+    render();
+
+    checkinBtn.addEventListener('click', function () {
+      const today = todayStr();
+      const checkinDates = loadCheckinDates();
+      if (checkinDates.indexOf(today) !== -1) {
+        showToast('加油干吧！你已经很棒了');
+        return;
+      }
+      checkinDates.push(today);
+      checkinDates.sort();
+      saveCheckinDates(checkinDates);
+      render();
+      showToast('签到成功！又近了一天～');
+    });
+  </script>
+</body>
+</html>

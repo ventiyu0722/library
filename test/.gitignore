@@ -1,0 +1,4 @@
+node_modules/
+data/counties.db
+data/counties.db-wal
+data/counties.db-shm

@@ -1,0 +1,17 @@
+{
+  "name": "county-random",
+  "version": "1.0.0",
+  "description": "中国 GDP Top 200 县级市随机抽取",
+  "type": "module",
+  "scripts": {
+    "seed": "node server/seed.js",
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "crawl-images": "node scripts/crawl-images.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.6.0",
+    "express": "^4.21.0",
+    "puppeteer": "^23.11.1"
+  }
+}

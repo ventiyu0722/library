@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中国城市探索者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-start: #e0f7fa;
+      --bg-end: #b2ebf2;
+      --card-bg: #ffffff;
+      --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      --accent: #0097a7;
+      --accent-light: #4dd0e1;
+      --text: #1a1a1a;
+      --text-muted: #5c5c5c;
+      --radius: 16px;
+      --radius-sm: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+      color: var(--text);
+      padding: 2rem 1rem 3rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+    }
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .header-title .icon {
+      width: 28px;
+      height: 28px;
+      opacity: 0.9;
+    }
+    .btn {
+      border: none;
+      border-radius: 999px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.12s, box-shadow 0.2s;
+    }
+    .btn:hover { transform: scale(1.02); }
+    .btn:active { transform: scale(0.98); }
+    .btn-cta {
+      padding: 1rem 2.25rem;
+      font-size: 1.25rem;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(0, 151, 167, 0.35);
+    }
+    .btn-cta:hover { box-shadow: 0 6px 24px rgba(0, 151, 167, 0.4); }
+    .btn-header {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      background: var(--accent-light);
+      color: #1a1a1a;
+    }
+
+    .screen {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .screen-result { display: none; }
+    .screen-result.visible { display: block; animation: fadeIn 0.35s ease; }
+    .screen-initial.hidden { display: none; }
+
+    .initial-cta {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .initial-cta .btn-cta { margin-bottom: 0.75rem; }
+    .initial-cta .hint { font-size: 0.95rem; color: var(--text-muted); }
+
+    .category-icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .category-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--card-shadow);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      padding: 1.25rem;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .category-card .icon-wrap {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 0.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+    }
+
+    .result-title {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+    .result-title span { color: var(--accent); }
+
+    .cards-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 800px) {
+      .cards-row { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .cards-row { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--card-shadow);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+    }
+    .card-head {
+      padding: 0.65rem 0.9rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: rgba(0, 151, 167, 0.06);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+    .card-body { padding: 0.9rem; }
+    .card-img-wrap {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.6rem;
+      border-radius: 8px;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .card-name-en { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+    .card-price { font-size: 0.95rem; font-weight: 600; color: var(--accent); }
+
+    .map-card .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 140px;
+    }
+    .map-wrap {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      position: relative;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    }
+    .map-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+    .map-pin {
+      position: absolute;
+      color: #d32f2f;
+      font-size: 1.25rem;
+      transform: translate(-50%, -100%);
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.3));
+      pointer-events: none;
+    }
+    .map-label { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+    .map-fallback {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 8px;
+      font-size: 0.9rem; color: var(--text-muted);
+    }
+
+    .city-info-card .card-body { text-align: center; padding: 1.25rem; }
+    .city-info-card .gdp-badge {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+    .city-info-card .gdp-desc { font-size: 0.8rem; color: var(--text-muted); }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .loading .btn-cta { opacity: 0.8; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-title">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="M6.34 6.34l2.12 2.12M15.66 15.66l2.12 2.12M6.34 17.66l2.12-2.12M15.66 8.34l2.12-2.12"/><path d="M12 8l2 4-2 4-2-4 2-4z" fill="currentColor" stroke="none"/></svg>
+      中国城市探索者
+    </h1>
+    <button type="button" class="btn btn-header" id="btnHeader" style="display: none;">开始随机!</button>
+  </header>
+
+  <main class="screen screen-initial" id="screenInitial">
+    <div class="initial-cta">
+      <button type="button" class="btn btn-cta" id="btnDraw">开始随机!</button>
+      <p class="hint">探索一个新县级市</p>
+    </div>
+    <div class="category-icons">
+      <div class="category-card">
+        <div class="icon-wrap">🍜</div>
+        特色美食
+      </div>
+      <div class="category-card">
+        <div class="icon-wrap">🛏️</div>
+        酒店
+      </div>
+      <div class="category-card">
+        <div class="icon-wrap">📍</div>
+        地理位置
+      </div>
+    </div>
+  </main>
+
+  <main class="screen screen-result" id="screenResult">
+    <p class="result-title">随机结果: <span id="resultCityName"></span></p>
+    <div class="cards-row">
+      <div class="card">
+        <div class="card-head">特色美食</div>
+        <div class="card-body">
+          <div class="card-img-wrap" id="foodImgWrap">
+            <span id="foodIcon">🍜</span>
+            <img id="foodImg" alt="" style="display: none;" />
+          </div>
+          <div class="card-name" id="foodName"></div>
+          <div class="card-name-en" id="foodNameEn"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">最低四星级酒店</div>
+        <div class="card-body">
+          <div class="card-img-wrap" id="hotelImgWrap">
+            <span id="hotelIcon">🛏️</span>
+            <img id="hotelImg" alt="" style="display: none;" />
+          </div>
+          <div class="card-name" id="hotelName"></div>
+          <div class="card-name-en" id="hotelNameEn"></div>
+          <div class="card-price" id="hotelPrice"></div>
+        </div>
+      </div>
+      <div class="card map-card">
+        <div class="card-head">地理位置</div>
+        <div class="card-body">
+          <div class="map-wrap" id="mapWrap">
+            <img id="chinaMapImg" src="/assets/china-map.png" alt="中国地图"
+                 onerror="var i=this,n=i.dataset.try=(parseInt(i.dataset.try||0,10)+1);if(n>=3){i.style.display='none';var s=document.getElementById('chinaMapFallback');if(s)s.style.display='block';return;}i.onerror=null;i.src=n===1?'/assets/china-map.svg':'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/China_blank_map.svg/400px-China_blank_map.svg.png';" />
+            <div id="chinaMapFallback" class="map-fallback" style="display:none">中国地图</div>
+            <span class="map-pin" id="mapPin">📍</span>
+          </div>
+          <div class="map-label" id="mapLabel"></div>
+        </div>
+      </div>
+      <div class="card city-info-card">
+        <div class="card-head">城市信息</div>
+        <div class="card-body">
+          <div class="gdp-badge" id="gdpBadge"></div>
+          <div class="gdp-desc" id="gdpDesc">县级市</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const screenInitial = document.getElementById('screenInitial');
+    const screenResult = document.getElementById('screenResult');
+    const btnDraw = document.getElementById('btnDraw');
+    const btnHeader = document.getElementById('btnHeader');
+
+    function setResult(data) {
+      if (!data || (data && !data.name && !data.error)) {
+        showError('数据异常', '请刷新重试或确认后端已执行 npm run seed');
+        return;
+      }
+      var mapImg = document.getElementById('chinaMapImg');
+      var mapFallback = document.getElementById('chinaMapFallback');
+      if (mapImg) { mapImg.dataset.try = '0'; mapImg.src = '/assets/china-map.png'; mapImg.style.display = ''; }
+      if (mapFallback) mapFallback.style.display = 'none';
+      document.getElementById('resultCityName').textContent = data.name || '—';
+      document.getElementById('foodName').textContent = data.food || '—';
+      document.getElementById('foodNameEn').textContent = data.food_name_en ? `(${data.food_name_en})` : '';
+      const foodImg = document.getElementById('foodImg');
+      const foodIcon = document.getElementById('foodIcon');
+      if (data.food_image) {
+        foodImg.src = data.food_image;
+        foodImg.style.display = 'block';
+        foodIcon.style.display = 'none';
+      } else {
+        foodImg.style.display = 'none';
+        foodIcon.style.display = 'block';
+      }
+      document.getElementById('hotelName').textContent = data.hotel || '—';
+      document.getElementById('hotelNameEn').textContent = data.hotel_name_en ? `(${data.hotel_name_en})` : '';
+      document.getElementById('hotelPrice').textContent = '¥' + (data.price || 0) + '/晚';
+      const hotelImg = document.getElementById('hotelImg');
+      const hotelIcon = document.getElementById('hotelIcon');
+      if (data.hotel_image) {
+        hotelImg.src = data.hotel_image;
+        hotelImg.style.display = 'block';
+        hotelIcon.style.display = 'none';
+      } else {
+        hotelImg.style.display = 'none';
+        hotelIcon.style.display = 'block';
+      }
+      document.getElementById('mapLabel').textContent = data.province ? `${data.province} ${data.name}` : data.name;
+      document.getElementById('gdpBadge').textContent = data.gdp_rank ? `GDP TOP ${data.gdp_rank}` : 'GDP 百强';
+      document.getElementById('gdpDesc').textContent = '县级市';
+      var lat = data.lat != null ? Number(data.lat) : null;
+      var lng = data.lng != null ? Number(data.lng) : null;
+      var pin = document.getElementById('mapPin');
+      if (lat != null && lng != null) {
+        var mapX = ((lng - 73.5) / 61.5) * 100;
+        var mapY = ((53.5 - lat) / 35.5) * 100;
+        mapX = Math.max(5, Math.min(95, mapX));
+        mapY = Math.max(5, Math.min(95, mapY));
+        pin.dataset.mapX = mapX;
+        pin.dataset.mapY = mapY;
+        pin.style.display = 'block';
+        updateMapPinPosition();
+      } else {
+        pin.style.display = 'none';
+      }
+    }
+
+    function updateMapPinPosition() {
+      var wrap = document.getElementById('mapWrap');
+      var img = document.getElementById('chinaMapImg');
+      var pin = document.getElementById('mapPin');
+      if (!wrap || !img || !pin || !pin.dataset.mapX || pin.style.display === 'none') return;
+      var mapX = parseFloat(pin.dataset.mapX, 10);
+      var mapY = parseFloat(pin.dataset.mapY, 10);
+      var wr = wrap.getBoundingClientRect();
+      var nw = img.naturalWidth || 0;
+      var nh = img.naturalHeight || 0;
+      if (nw && nh) {
+        var scale = Math.min(wr.width / nw, wr.height / nh);
+        var cw = nw * scale;
+        var ch = nh * scale;
+        var ox = (wr.width - cw) / 2;
+        var oy = (wr.height - ch) / 2;
+        var px = ox + cw * mapX / 100;
+        var py = oy + ch * mapY / 100;
+        pin.style.left = px + 'px';
+        pin.style.top = py + 'px';
+        pin.style.right = 'auto';
+        pin.style.bottom = 'auto';
+      } else {
+        pin.style.left = mapX + '%';
+        pin.style.top = mapY + '%';
+        pin.style.right = 'auto';
+        pin.style.bottom = 'auto';
+      }
+    }
+
+    function showError(msg, detail) {
+      document.getElementById('resultCityName').textContent = msg;
+      document.getElementById('foodName').textContent = detail || '';
+      document.getElementById('foodNameEn').textContent = '';
+      document.getElementById('hotelName').textContent = '';
+      document.getElementById('hotelNameEn').textContent = '';
+      document.getElementById('hotelPrice').textContent = '';
+      document.getElementById('mapLabel').textContent = '';
+      document.getElementById('gdpBadge').textContent = '—';
+      document.getElementById('mapPin').style.display = 'none';
+      document.getElementById('foodIcon').style.display = 'block';
+      document.getElementById('foodImg').style.display = 'none';
+      document.getElementById('hotelIcon').style.display = 'block';
+      document.getElementById('hotelImg').style.display = 'none';
+    }
+
+    async function draw() {
+      const isReRandom = screenResult.classList.contains('visible');
+      btnDraw.disabled = true;
+      btnDraw.textContent = '抽取中…';
+      if (isReRandom) {
+        btnHeader.disabled = true;
+        btnHeader.textContent = '抽取中…';
+      }
+      document.body.classList.add('loading');
+      try {
+        const res = await fetch('/api/random');
+        const data = await res.json();
+        if (!res.ok) {
+          showError(data.error || '请求失败', '请先执行 npm run seed');
+        } else {
+          try {
+            setResult(data);
+          } catch (err) {
+            showError('展示失败', err && err.message ? err.message : '请刷新重试');
+          }
+        }
+        screenInitial.classList.add('hidden');
+        screenResult.classList.add('visible');
+        btnHeader.style.display = 'block';
+        screenResult.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (e) {
+        showError('无法连接后端', '请用浏览器打开 http://localhost:3000 并确保已执行 npm start');
+        screenInitial.classList.add('hidden');
+        screenResult.classList.add('visible');
+        btnHeader.style.display = 'block';
+        screenResult.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } finally {
+        btnDraw.disabled = false;
+        btnDraw.textContent = '开始随机!';
+        if (isReRandom) {
+          btnHeader.disabled = false;
+          btnHeader.textContent = '开始随机!';
+        }
+        document.body.classList.remove('loading');
+      }
+    }
+
+    btnDraw.addEventListener('click', draw);
+    btnHeader.addEventListener('click', draw);
+
+    var chinaMapImg = document.getElementById('chinaMapImg');
+    if (chinaMapImg) {
+      chinaMapImg.addEventListener('load', updateMapPinPosition);
+    }
+    window.addEventListener('resize', updateMapPinPosition);
+  </script>
+</body>
+</html>

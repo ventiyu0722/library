@@ -1,0 +1,802 @@
+{
+  "昆山市": {
+    "food_image": "/assets/food/昆山_0.jpg",
+    "hotel_image": "/assets/hotel/昆山_0.jpg"
+  },
+  "江阴市": {
+    "food_image": "/assets/food/江阴_1.jpg",
+    "hotel_image": "/assets/hotel/江阴_1.jpg"
+  },
+  "张家港市": {
+    "food_image": "/assets/food/张家港_2.jpg",
+    "hotel_image": "/assets/hotel/张家港_2.jpg"
+  },
+  "常熟市": {
+    "food_image": "/assets/food/常熟_3.jpg",
+    "hotel_image": "/assets/hotel/常熟_3.jpg"
+  },
+  "义乌市": {
+    "food_image": "/assets/food/义乌_4.jpeg",
+    "hotel_image": "/assets/hotel/义乌_4.jpg"
+  },
+  "晋江市": {
+    "food_image": "/assets/food/晋江_5.png",
+    "hotel_image": "/assets/hotel/晋江_5.jpg"
+  },
+  "慈溪市": {
+    "food_image": "/assets/food/慈溪_6.jpg",
+    "hotel_image": "/assets/hotel/慈溪_6.jpg"
+  },
+  "宜兴市": {
+    "food_image": "/assets/food/宜兴_7.jpg",
+    "hotel_image": "/assets/hotel/宜兴_7.jpg"
+  },
+  "神木市": {
+    "food_image": "/assets/food/神木_8.jpg",
+    "hotel_image": "/assets/hotel/神木_8.jpg"
+  },
+  "诸暨市": {
+    "food_image": "/assets/food/诸暨_9.jpg",
+    "hotel_image": "/assets/hotel/诸暨_9.jpg"
+  },
+  "长沙县": {
+    "food_image": "/assets/food/长沙_192.jpg",
+    "hotel_image": "/assets/hotel/长沙_192.jpg"
+  },
+  "龙口市": {
+    "food_image": "/assets/food/龙口_73.jpg",
+    "hotel_image": "/assets/hotel/龙口_11.jpg"
+  },
+  "太仓市": {
+    "food_image": "/assets/food/太仓_12.jpg",
+    "hotel_image": "/assets/hotel/太仓_12.jpg"
+  },
+  "乐清市": {
+    "food_image": "/assets/food/乐清_56.jpg",
+    "hotel_image": "/assets/hotel/乐清_56.jpg"
+  },
+  "温岭市": {
+    "food_image": "/assets/food/温岭_14.jpg",
+    "hotel_image": "/assets/hotel/温岭_14.jpg"
+  },
+  "瑞安市": {
+    "food_image": "/assets/food/瑞安_55.jpg",
+    "hotel_image": "/assets/hotel/瑞安_55.jpg"
+  },
+  "余姚市": {
+    "food_image": "/assets/food/余姚_16.jpg",
+    "hotel_image": "/assets/hotel/余姚_16.jpg"
+  },
+  "福清市": {
+    "food_image": "/assets/food/福清_17.jpg",
+    "hotel_image": "/assets/hotel/福清_17.jpg"
+  },
+  "丹阳市": {
+    "food_image": "/assets/food/丹阳_18.jpg",
+    "hotel_image": "/assets/hotel/丹阳_18.jpg"
+  },
+  "海宁市": {
+    "food_image": "/assets/food/海宁_19.jpg",
+    "hotel_image": "/assets/hotel/海宁_19.jpg"
+  },
+  "桐乡市": {
+    "food_image": "/assets/food/桐乡_20.jpg",
+    "hotel_image": "/assets/hotel/桐乡_20.jpg"
+  },
+  "海安市": {
+    "food_image": "/assets/food/海安_21.jpg",
+    "hotel_image": "/assets/hotel/海安_21.jpg"
+  },
+  "如皋市": {
+    "food_image": "/assets/food/如皋_22.jpeg",
+    "hotel_image": "/assets/hotel/如皋_22.jpg"
+  },
+  "启东市": {
+    "food_image": "/assets/food/启东_36.jpg",
+    "hotel_image": "/assets/hotel/启东_23.jpg"
+  },
+  "靖江市": {
+    "food_image": "/assets/food/靖江_24.jpg",
+    "hotel_image": "/assets/hotel/靖江_24.jpg"
+  },
+  "泰兴市": {
+    "food_image": "/assets/food/泰兴_25.png",
+    "hotel_image": "/assets/hotel/泰兴_25.jpg"
+  },
+  "兴化市": {
+    "food_image": "/assets/food/兴化_26.jpg",
+    "hotel_image": "/assets/hotel/兴化_26.jpg"
+  },
+  "溧阳市": {
+    "food_image": "/assets/food/溧阳_27.jpeg",
+    "hotel_image": "/assets/hotel/溧阳_27.jpg"
+  },
+  "扬中市": {
+    "food_image": "/assets/food/扬中_28.jpg",
+    "hotel_image": "/assets/hotel/扬中_28.jpg"
+  },
+  "东台市": {
+    "food_image": "",
+    "hotel_image": "/assets/hotel/东台_29.jpg"
+  },
+  "邳州市": {
+    "food_image": "/assets/food/邳州_30.jpg",
+    "hotel_image": "/assets/hotel/邳州_30.jpg"
+  },
+  "新沂市": {
+    "food_image": "/assets/food/新沂_31.jpg",
+    "hotel_image": "/assets/hotel/新沂_31.jpg"
+  },
+  "沛县": {
+    "food_image": "/assets/food/沛_32.jpg",
+    "hotel_image": "/assets/hotel/沛_32.jpg"
+  },
+  "沭阳县": {
+    "food_image": "/assets/food/沭阳_33.jpg",
+    "hotel_image": ""
+  },
+  "如东县": {
+    "food_image": "/assets/food/如东_34.jpg",
+    "hotel_image": "/assets/hotel/如东_34.jpg"
+  },
+  "海门区": {
+    "food_image": "/assets/food/海门_35.png",
+    "hotel_image": "/assets/hotel/海门_35.jpg"
+  },
+  "平湖市": {
+    "food_image": "/assets/food/平湖_37.jpg",
+    "hotel_image": "/assets/hotel/平湖_37.jpg"
+  },
+  "嘉善县": {
+    "food_image": "/assets/food/嘉善_38.jpg",
+    "hotel_image": "/assets/hotel/嘉善_38.jpg"
+  },
+  "海盐县": {
+    "food_image": "/assets/food/海盐_39.jpeg",
+    "hotel_image": "/assets/hotel/海盐_39.png"
+  },
+  "长兴县": {
+    "food_image": "/assets/food/长兴_40.jpg",
+    "hotel_image": ""
+  },
+  "德清县": {
+    "food_image": "/assets/food/德清_41.jpg",
+    "hotel_image": "/assets/hotel/德清_41.jpg"
+  },
+  "安吉县": {
+    "food_image": "/assets/food/安吉_42.jpg",
+    "hotel_image": "/assets/hotel/安吉_42.jpg"
+  },
+  "宁海县": {
+    "food_image": "/assets/food/宁海_43.jpg",
+    "hotel_image": "/assets/hotel/宁海_43.png"
+  },
+  "象山县": {
+    "food_image": "/assets/food/象山_44.jpeg",
+    "hotel_image": "/assets/hotel/象山_44.jpg"
+  },
+  "玉环市": {
+    "food_image": "/assets/food/玉环_45.jpg",
+    "hotel_image": "/assets/hotel/玉环_45.jpg"
+  },
+  "临海市": {
+    "food_image": "/assets/food/临海_46.jpg",
+    "hotel_image": "/assets/hotel/临海_46.jpg"
+  },
+  "永康市": {
+    "food_image": "/assets/food/永康_47.jpg",
+    "hotel_image": "/assets/hotel/永康_47.jpg"
+  },
+  "东阳市": {
+    "food_image": "/assets/food/东阳_48.jpeg",
+    "hotel_image": "/assets/hotel/东阳_48.jpg"
+  },
+  "兰溪市": {
+    "food_image": "/assets/food/兰溪_49.png",
+    "hotel_image": "/assets/hotel/兰溪_49.jpg"
+  },
+  "嵊州市": {
+    "food_image": "/assets/food/嵊州_50.jpg",
+    "hotel_image": "/assets/hotel/嵊州_50.jpg"
+  },
+  "新昌县": {
+    "food_image": "/assets/food/新昌_51.jpeg",
+    "hotel_image": "/assets/hotel/新昌_51.jpg"
+  },
+  "平阳县": {
+    "food_image": "/assets/food/平阳_52.jpg",
+    "hotel_image": "/assets/hotel/平阳_52.jpg"
+  },
+  "苍南县": {
+    "food_image": "/assets/food/苍南_53.jpg",
+    "hotel_image": "/assets/hotel/苍南_53.jpg"
+  },
+  "永嘉县": {
+    "food_image": "/assets/food/永嘉_54.jpg",
+    "hotel_image": "/assets/hotel/永嘉_54.jpeg"
+  },
+  "南安市": {
+    "food_image": "",
+    "hotel_image": "/assets/hotel/南安_57.gif"
+  },
+  "石狮市": {
+    "food_image": "/assets/food/石狮_58.jpg",
+    "hotel_image": "/assets/hotel/石狮_58.png"
+  },
+  "惠安县": {
+    "food_image": "/assets/food/惠安_59.jpg",
+    "hotel_image": "/assets/hotel/惠安_59.jpg"
+  },
+  "安溪县": {
+    "food_image": "/assets/food/安溪_60.jpg",
+    "hotel_image": "/assets/hotel/安溪_60.jpg"
+  },
+  "龙海市": {
+    "food_image": "/assets/food/龙海_61.jpg",
+    "hotel_image": "/assets/hotel/龙海_61.jpg"
+  },
+  "漳浦县": {
+    "food_image": "/assets/food/漳浦_62.jpg",
+    "hotel_image": "/assets/hotel/漳浦_62.jpg"
+  },
+  "仙游县": {
+    "food_image": "/assets/food/仙游_63.jpg",
+    "hotel_image": "/assets/hotel/仙游_63.png"
+  },
+  "福鼎市": {
+    "food_image": "/assets/food/福鼎_64.jpg",
+    "hotel_image": "/assets/hotel/福鼎_64.jpg"
+  },
+  "福安市": {
+    "food_image": "/assets/food/福安_65.jpg",
+    "hotel_image": "/assets/hotel/福安_65.jpg"
+  },
+  "永春县": {
+    "food_image": "/assets/food/永春_66.jpg",
+    "hotel_image": ""
+  },
+  "德化县": {
+    "food_image": "/assets/food/德化_67.jpg",
+    "hotel_image": "/assets/hotel/德化_67.png"
+  },
+  "胶州市": {
+    "food_image": "/assets/food/胶州_68.jpg",
+    "hotel_image": "/assets/hotel/胶州_68.jpg"
+  },
+  "即墨区": {
+    "food_image": "/assets/food/即墨_69.jpg",
+    "hotel_image": "/assets/hotel/即墨_69.png"
+  },
+  "平度市": {
+    "food_image": "/assets/food/平度_70.jpg",
+    "hotel_image": "/assets/hotel/平度_70.jpg"
+  },
+  "莱西市": {
+    "food_image": "/assets/food/莱西_71.jpeg",
+    "hotel_image": ""
+  },
+  "滕州市": {
+    "food_image": "/assets/food/滕州_72.jpg",
+    "hotel_image": "/assets/hotel/滕州_72.jpg"
+  },
+  "莱州市": {
+    "food_image": "/assets/food/莱州_74.jpg",
+    "hotel_image": "/assets/hotel/莱州_74.jpeg"
+  },
+  "莱阳市": {
+    "food_image": "/assets/food/莱阳_75.jpg",
+    "hotel_image": "/assets/hotel/莱阳_75.jpg"
+  },
+  "招远市": {
+    "food_image": "/assets/food/招远_76.jpg",
+    "hotel_image": ""
+  },
+  "栖霞市": {
+    "food_image": "/assets/food/栖霞_77.png",
+    "hotel_image": "/assets/hotel/栖霞_77.jpg"
+  },
+  "海阳市": {
+    "food_image": "/assets/food/海阳_78.jpg",
+    "hotel_image": "/assets/hotel/海阳_78.jpg"
+  },
+  "青州市": {
+    "food_image": "/assets/food/青州_79.jpg",
+    "hotel_image": "/assets/hotel/青州_79.jpg"
+  },
+  "诸城市": {
+    "food_image": "/assets/food/诸城_80.jpg",
+    "hotel_image": "/assets/hotel/诸城_80.jpg"
+  },
+  "寿光市": {
+    "food_image": "/assets/food/寿光_81.jpg",
+    "hotel_image": "/assets/hotel/寿光_81.jpg"
+  },
+  "安丘市": {
+    "food_image": "/assets/food/安丘_82.jpg",
+    "hotel_image": "/assets/hotel/安丘_82.jpg"
+  },
+  "高密市": {
+    "food_image": "/assets/food/高密_83.jpg",
+    "hotel_image": "/assets/hotel/高密_83.jpg"
+  },
+  "昌邑市": {
+    "food_image": "/assets/food/昌邑_84.jpeg",
+    "hotel_image": "/assets/hotel/昌邑_84.jpg"
+  },
+  "曲阜市": {
+    "food_image": "/assets/food/曲阜_85.jpg",
+    "hotel_image": "/assets/hotel/曲阜_85.png"
+  },
+  "邹城市": {
+    "food_image": "/assets/food/邹城_86.jpg",
+    "hotel_image": "/assets/hotel/邹城_86.jpeg"
+  },
+  "新泰市": {
+    "food_image": "/assets/food/新泰_87.jpg",
+    "hotel_image": "/assets/hotel/新泰_87.jpg"
+  },
+  "肥城市": {
+    "food_image": "/assets/food/肥城_88.jpg",
+    "hotel_image": "/assets/hotel/肥城_88.jpg"
+  },
+  "荣成市": {
+    "food_image": "/assets/food/荣成_89.jpg",
+    "hotel_image": "/assets/hotel/荣成_89.jpg"
+  },
+  "乳山市": {
+    "food_image": "/assets/food/乳山_90.jpg",
+    "hotel_image": "/assets/hotel/乳山_90.jpg"
+  },
+  "文登区": {
+    "food_image": "/assets/food/文登_91.jpg",
+    "hotel_image": "/assets/hotel/文登_91.jpg"
+  },
+  "桓台县": {
+    "food_image": "/assets/food/桓台_92.png",
+    "hotel_image": "/assets/hotel/桓台_92.pngbasetagimgScalem1w600h400c1"
+  },
+  "广饶县": {
+    "food_image": "/assets/food/广饶_93.jpg",
+    "hotel_image": "/assets/hotel/广饶_93.jpeg"
+  },
+  "垦利区": {
+    "food_image": "/assets/food/垦利_94.jpg",
+    "hotel_image": "/assets/hotel/垦利_94.jpg"
+  },
+  "邹平市": {
+    "food_image": "/assets/food/邹平_95.png",
+    "hotel_image": "/assets/hotel/邹平_95.jpg"
+  },
+  "博兴县": {
+    "food_image": "/assets/food/博兴_96.jpg",
+    "hotel_image": "/assets/hotel/博兴_96.jpg"
+  },
+  "沂水县": {
+    "food_image": "/assets/food/沂水_97.jpg",
+    "hotel_image": "/assets/hotel/沂水_97.jpg"
+  },
+  "兰陵县": {
+    "food_image": "/assets/food/兰陵_98.jpg",
+    "hotel_image": "/assets/hotel/兰陵_98.jpg"
+  },
+  "郯城县": {
+    "food_image": "/assets/food/郯城_99.jpg",
+    "hotel_image": "/assets/hotel/郯城_99.jpg"
+  },
+  "临沭县": {
+    "food_image": "/assets/food/临沭_100.jpg",
+    "hotel_image": "/assets/hotel/临沭_100.jpg"
+  },
+  "新郑市": {
+    "food_image": "/assets/food/新郑_101.jpg",
+    "hotel_image": "/assets/hotel/新郑_101.jpg"
+  },
+  "巩义市": {
+    "food_image": "/assets/food/巩义_102.jpg",
+    "hotel_image": ""
+  },
+  "荥阳市": {
+    "food_image": "/assets/food/荥阳_103.jpg",
+    "hotel_image": "/assets/hotel/荥阳_103.jpg"
+  },
+  "新密市": {
+    "food_image": "/assets/food/新密_104.jpg",
+    "hotel_image": "/assets/hotel/新密_104.jpg"
+  },
+  "登封市": {
+    "food_image": "/assets/food/登封_105.jpg",
+    "hotel_image": "/assets/hotel/登封_105.jpg"
+  },
+  "中牟县": {
+    "food_image": "/assets/food/中牟_106.jpg",
+    "hotel_image": "/assets/hotel/中牟_106.jpg"
+  },
+  "禹州市": {
+    "food_image": "/assets/food/禹州_107.jpg",
+    "hotel_image": ""
+  },
+  "长葛市": {
+    "food_image": "/assets/food/长葛_108.jpg",
+    "hotel_image": "/assets/hotel/长葛_108.html"
+  },
+  "永城市": {
+    "food_image": "/assets/food/永城_109.jpg",
+    "hotel_image": "/assets/hotel/永城_109.jpg"
+  },
+  "长垣市": {
+    "food_image": "/assets/food/长垣_110.jpg",
+    "hotel_image": "/assets/hotel/长垣_110.jpg"
+  },
+  "林州市": {
+    "food_image": "/assets/food/林州_111.jpg",
+    "hotel_image": "/assets/hotel/林州_111.jpg"
+  },
+  "安阳县": {
+    "food_image": "/assets/food/安阳_112.jpg",
+    "hotel_image": "/assets/hotel/安阳_112.png"
+  },
+  "滑县": {
+    "food_image": "/assets/food/滑_113.jpg",
+    "hotel_image": ""
+  },
+  "浚县": {
+    "food_image": "/assets/food/浚_114.jpg",
+    "hotel_image": "/assets/hotel/浚_114.jpg"
+  },
+  "淇县": {
+    "food_image": "/assets/food/淇_115.jpg",
+    "hotel_image": "/assets/hotel/淇_115.jpeg"
+  },
+  "辉县市": {
+    "food_image": "/assets/food/辉_116.jpg",
+    "hotel_image": "/assets/hotel/辉_116.jpg"
+  },
+  "卫辉市": {
+    "food_image": "/assets/food/卫辉_117.jpg",
+    "hotel_image": ""
+  },
+  "孟州市": {
+    "food_image": "/assets/food/孟州_118.jpg",
+    "hotel_image": "/assets/hotel/孟州_118.jpg"
+  },
+  "沁阳市": {
+    "food_image": "/assets/food/沁阳_119.jpg",
+    "hotel_image": "/assets/hotel/沁阳_119.jpgbasetagimgScalem1w600h400c1"
+  },
+  "温县": {
+    "food_image": "/assets/food/温_120.jpg",
+    "hotel_image": "/assets/hotel/温_120.jpg"
+  },
+  "武陟县": {
+    "food_image": "/assets/food/武陟_121.jpeg",
+    "hotel_image": "/assets/hotel/武陟_121.jpg"
+  },
+  "博爱县": {
+    "food_image": "/assets/food/博爱_122.jpg",
+    "hotel_image": "/assets/hotel/博爱_122.jpeg"
+  },
+  "肥西县": {
+    "food_image": "/assets/food/肥西_123.jpg",
+    "hotel_image": "/assets/hotel/肥西_123.jpg"
+  },
+  "肥东县": {
+    "food_image": "/assets/food/肥东_124.jpg",
+    "hotel_image": "/assets/hotel/肥东_124.jpg"
+  },
+  "长丰县": {
+    "food_image": "/assets/food/长丰_125.jpg",
+    "hotel_image": "/assets/hotel/长丰_125.jpg"
+  },
+  "庐江县": {
+    "food_image": "/assets/food/庐江_129.jpg",
+    "hotel_image": "/assets/hotel/庐江_129.jpg"
+  },
+  "巢湖市": {
+    "food_image": "/assets/food/巢湖_127.jpg",
+    "hotel_image": "/assets/hotel/巢湖_127.jpg"
+  },
+  "无为市": {
+    "food_image": "/assets/food/无为_128.jpg",
+    "hotel_image": "/assets/hotel/无为_128.jpg"
+  },
+  "芜湖县": {
+    "food_image": "/assets/food/芜湖_130.jpg",
+    "hotel_image": "/assets/hotel/芜湖_130.jpg"
+  },
+  "繁昌区": {
+    "food_image": "/assets/food/繁昌_131.jpg",
+    "hotel_image": "/assets/hotel/繁昌_131.jpg"
+  },
+  "南陵县": {
+    "food_image": "/assets/food/南陵_132.jpg",
+    "hotel_image": "/assets/hotel/南陵_132.jpg"
+  },
+  "怀宁县": {
+    "food_image": "/assets/food/怀宁_133.jpg",
+    "hotel_image": "/assets/hotel/怀宁_133.jpg"
+  },
+  "桐城市": {
+    "food_image": "/assets/food/桐城_134.jpg",
+    "hotel_image": "/assets/hotel/桐城_134.jpg"
+  },
+  "潜山市": {
+    "food_image": "/assets/food/潜山_135.jpg",
+    "hotel_image": "/assets/hotel/潜山_135.png"
+  },
+  "太湖县": {
+    "food_image": "/assets/food/太湖_136.png",
+    "hotel_image": ""
+  },
+  "宿松县": {
+    "food_image": "/assets/food/宿松_137.jpg",
+    "hotel_image": "/assets/hotel/宿松_137.jpg"
+  },
+  "望江县": {
+    "food_image": "/assets/food/望江_138.jpg",
+    "hotel_image": "/assets/hotel/望江_138.jpg"
+  },
+  "岳西县": {
+    "food_image": "/assets/food/岳西_139.jpg",
+    "hotel_image": "/assets/hotel/岳西_139.jpg"
+  },
+  "怀远县": {
+    "food_image": "/assets/food/怀远_140.jpg",
+    "hotel_image": "/assets/hotel/怀远_140.jpg"
+  },
+  "五河县": {
+    "food_image": "/assets/food/五河_141.jpg",
+    "hotel_image": "/assets/hotel/五河_141.html"
+  },
+  "固镇县": {
+    "food_image": "/assets/food/固镇_142.jpg",
+    "hotel_image": "/assets/hotel/固镇_142.jpg"
+  },
+  "凤阳县": {
+    "food_image": "/assets/food/凤阳_143.jpg",
+    "hotel_image": "/assets/hotel/凤阳_143.jpg"
+  },
+  "天长市": {
+    "food_image": "/assets/food/天长_144.png",
+    "hotel_image": ""
+  },
+  "明光市": {
+    "food_image": "/assets/food/明光_145.jpg",
+    "hotel_image": "/assets/hotel/明光_145.jpg"
+  },
+  "定远县": {
+    "food_image": "/assets/food/定远_146.jpg",
+    "hotel_image": "/assets/hotel/定远_146.jpg"
+  },
+  "全椒县": {
+    "food_image": "/assets/food/全椒_147.jpg",
+    "hotel_image": "/assets/hotel/全椒_147.png"
+  },
+  "来安县": {
+    "food_image": "/assets/food/来安_148.jpg",
+    "hotel_image": "/assets/hotel/来安_148.jpg"
+  },
+  "凤台县": {
+    "food_image": "/assets/food/凤台_149.jpg",
+    "hotel_image": "/assets/hotel/凤台_149.jpg"
+  },
+  "寿县": {
+    "food_image": "/assets/food/寿_150.jpg",
+    "hotel_image": "/assets/hotel/寿_150.html"
+  },
+  "霍邱县": {
+    "food_image": "/assets/food/霍邱_151.jpg",
+    "hotel_image": "/assets/hotel/霍邱_151.jpg"
+  },
+  "舒城县": {
+    "food_image": "/assets/food/舒城_152.jpeg",
+    "hotel_image": "/assets/hotel/舒城_152.jpg"
+  },
+  "金寨县": {
+    "food_image": "/assets/food/金寨_153.jpg",
+    "hotel_image": "/assets/hotel/金寨_153.jpg"
+  },
+  "霍山县": {
+    "food_image": "/assets/food/霍山_154.jpg",
+    "hotel_image": "/assets/hotel/霍山_154.jpg"
+  },
+  "郎溪县": {
+    "food_image": "/assets/food/郎溪_155.jpg",
+    "hotel_image": "/assets/hotel/郎溪_155.jpg"
+  },
+  "广德市": {
+    "food_image": "/assets/food/广德_156.jpg",
+    "hotel_image": "/assets/hotel/广德_156.jpg"
+  },
+  "泾县": {
+    "food_image": "/assets/food/泾_157.jpg",
+    "hotel_image": "/assets/hotel/泾_157.png"
+  },
+  "绩溪县": {
+    "food_image": "/assets/food/绩溪_158.jpg",
+    "hotel_image": ""
+  },
+  "旌德县": {
+    "food_image": "/assets/food/旌德_159.jpg",
+    "hotel_image": "/assets/hotel/旌德_159.jpg"
+  },
+  "宁国市": {
+    "food_image": "/assets/food/宁国_160.jpg",
+    "hotel_image": "/assets/hotel/宁国_160.jpg"
+  },
+  "当涂县": {
+    "food_image": "/assets/food/当涂_161.jpg",
+    "hotel_image": "/assets/hotel/当涂_161.jpg"
+  },
+  "含山县": {
+    "food_image": "/assets/food/含山_162.jpg",
+    "hotel_image": "/assets/hotel/含山_162.png"
+  },
+  "和县": {
+    "food_image": "/assets/food/和_163.png",
+    "hotel_image": "/assets/hotel/和_163.jpg"
+  },
+  "濉溪县": {
+    "food_image": "/assets/food/濉溪_164.jpg",
+    "hotel_image": "/assets/hotel/濉溪_164.png"
+  },
+  "枞阳县": {
+    "food_image": "/assets/food/枞阳_165.jpg",
+    "hotel_image": "/assets/hotel/枞阳_165.jpg"
+  },
+  "东至县": {
+    "food_image": "/assets/food/东至_166.jpg",
+    "hotel_image": "/assets/hotel/东至_166.jpg"
+  },
+  "石台县": {
+    "food_image": "/assets/food/石台_167.html",
+    "hotel_image": "/assets/hotel/石台_167.jpg"
+  },
+  "青阳县": {
+    "food_image": "/assets/food/青阳_168.jpg",
+    "hotel_image": "/assets/hotel/青阳_168.jpg"
+  },
+  "仙桃市": {
+    "food_image": "/assets/food/仙桃_169.jpg",
+    "hotel_image": "/assets/hotel/仙桃_169.jpg"
+  },
+  "潜江市": {
+    "food_image": "/assets/food/潜江_170.jpg",
+    "hotel_image": "/assets/hotel/潜江_170.jpg"
+  },
+  "天门市": {
+    "food_image": "/assets/food/天门_171.jpg",
+    "hotel_image": "/assets/hotel/天门_171.jpg"
+  },
+  "大冶市": {
+    "food_image": "/assets/food/大冶_172.jpg",
+    "hotel_image": "/assets/hotel/大冶_172.jpeg"
+  },
+  "宜都市": {
+    "food_image": "/assets/food/宜都_173.jpg",
+    "hotel_image": "/assets/hotel/宜都_173.jpg"
+  },
+  "枝江市": {
+    "food_image": "/assets/food/枝江_174.jpg",
+    "hotel_image": "/assets/hotel/枝江_174.jpg"
+  },
+  "当阳市": {
+    "food_image": "/assets/food/当阳_175.jpg",
+    "hotel_image": "/assets/hotel/当阳_175.jpg"
+  },
+  "枣阳市": {
+    "food_image": "/assets/food/枣阳_176.jpeg",
+    "hotel_image": "/assets/hotel/枣阳_176.jpgw1030"
+  },
+  "宜城市": {
+    "food_image": "/assets/food/宜城_177.jpg",
+    "hotel_image": "/assets/hotel/宜城_177.html"
+  },
+  "老河口市": {
+    "food_image": "/assets/food/老河口_178.jpg",
+    "hotel_image": "/assets/hotel/老河口_178.jpg"
+  },
+  "谷城县": {
+    "food_image": "/assets/food/谷城_179.png",
+    "hotel_image": "/assets/hotel/谷城_179.png"
+  },
+  "南漳县": {
+    "food_image": "/assets/food/南漳_180.jpg",
+    "hotel_image": "/assets/hotel/南漳_180.jpg"
+  },
+  "保康县": {
+    "food_image": "/assets/food/保康_181.jpg",
+    "hotel_image": "/assets/hotel/保康_181.gif"
+  },
+  "京山市": {
+    "food_image": "/assets/food/京山_182.jpg",
+    "hotel_image": "/assets/hotel/京山_182.jpg"
+  },
+  "钟祥市": {
+    "food_image": "/assets/food/钟祥_183.jpg",
+    "hotel_image": "/assets/hotel/钟祥_183.jpg"
+  },
+  "沙洋县": {
+    "food_image": "/assets/food/沙洋_184.jpg",
+    "hotel_image": "/assets/hotel/沙洋_184.jpg"
+  },
+  "监利市": {
+    "food_image": "/assets/food/监利_185.jpg",
+    "hotel_image": "/assets/hotel/监利_185.jpg"
+  },
+  "洪湖市": {
+    "food_image": "/assets/food/洪湖_186.jpg",
+    "hotel_image": "/assets/hotel/洪湖_186.jpg"
+  },
+  "松滋市": {
+    "food_image": "/assets/food/松滋_187.jpg",
+    "hotel_image": "/assets/hotel/松滋_187.png"
+  },
+  "石首市": {
+    "food_image": "/assets/food/石首_188.jpg",
+    "hotel_image": ""
+  },
+  "公安县": {
+    "food_image": "/assets/food/公安_191.jpg",
+    "hotel_image": "/assets/hotel/公安_191.jpeg"
+  },
+  "江陵县": {
+    "food_image": "/assets/food/江陵_190.jpeg",
+    "hotel_image": "/assets/hotel/江陵_190.jpg"
+  },
+  "浏阳市": {
+    "food_image": "/assets/food/浏阳_193.jpg",
+    "hotel_image": "/assets/hotel/浏阳_193.png"
+  },
+  "宁乡市": {
+    "food_image": "/assets/food/宁乡_194.jpg",
+    "hotel_image": "/assets/hotel/宁乡_194.png"
+  },
+  "醴陵市": {
+    "food_image": "/assets/food/醴陵_195.jpg",
+    "hotel_image": "/assets/hotel/醴陵_195.jpg"
+  },
+  "攸县": {
+    "food_image": "/assets/food/攸_196.jpg",
+    "hotel_image": "/assets/hotel/攸_196.jpg"
+  },
+  "茶陵县": {
+    "food_image": "/assets/food/茶陵_197.jpg",
+    "hotel_image": "/assets/hotel/茶陵_197.jpg"
+  },
+  "炎陵县": {
+    "food_image": "/assets/food/炎陵_198.jpg",
+    "hotel_image": "/assets/hotel/炎陵_198.jpg"
+  },
+  "湘乡市": {
+    "food_image": "/assets/food/湘乡_199.jpg",
+    "hotel_image": ""
+  },
+  "韶山市": {
+    "food_image": "/assets/food/韶山_200.jpg",
+    "hotel_image": "/assets/hotel/韶山_200.jpg"
+  },
+  "湘潭县": {
+    "food_image": "/assets/food/湘潭_201.jpg",
+    "hotel_image": ""
+  },
+  "衡阳县": {
+    "food_image": "/assets/food/衡阳_202.jpg",
+    "hotel_image": "/assets/hotel/衡阳_202.jpg"
+  },
+  "衡南县": {
+    "food_image": "/assets/food/衡南_203.jpg",
+    "hotel_image": "/assets/hotel/衡南_203.jpg"
+  },
+  "衡山县": {
+    "food_image": "/assets/food/衡山_204.jpg",
+    "hotel_image": "/assets/hotel/衡山_204.jpg"
+  },
+  "衡东县": {
+    "food_image": "/assets/food/衡东_205.jpg",
+    "hotel_image": "/assets/hotel/衡东_205.jpg"
+  },
+  "祁东县": {
+    "food_image": "/assets/food/祁东_206.jpg",
+    "hotel_image": "/assets/hotel/祁东_206.jpg"
+  }
+}

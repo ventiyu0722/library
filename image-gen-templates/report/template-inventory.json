@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "L01",
+    "name": "Chibi Cartoon",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "chibi, Q版, cartoon",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L02",
+    "name": "3D Pixar Animation",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "3D, Pixar, Disney",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.8
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L03",
+    "name": "Comic / Manga",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "comic, manga, 漫画",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.4
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L04",
+    "name": "Sketch / Pencil",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "sketch, 素描, pencil",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L05",
+    "name": "Clay / Claymation",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "clay, 黏土, stop-motion",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L06",
+    "name": "80s Retro Animation",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "80s, retro, synthwave",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.4
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L07",
+    "name": "Retro-Futurism",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "retro-future, space age",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.4
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L08",
+    "name": "Ukiyo-e / Chinese Painting",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "ukiyo-e, 国风, 古风",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L09",
+    "name": "Watercolor Portrait",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "watercolor, 水彩",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L10",
+    "name": "K-Pop Star",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "K-Pop, 韩风, idol",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L11",
+    "name": "Imperial / Royal",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "imperial, 帝王, royal",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L12",
+    "name": "90s Yearbook",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "90s, yearbook, 毕业照",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L13",
+    "name": "High Fashion",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "fashion, vogue, editorial",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L14",
+    "name": "Cyberpunk Portrait",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "cyberpunk, neon, 赛博朋克",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L15",
+    "name": "Oil Painting / Classical",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "oil painting, 油画, classical",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L16",
+    "name": "Pixel Art",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "pixel art, 像素, 8-bit",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 4.8
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L17",
+    "name": "Flat / Vector Illustration",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "flat, vector, 平面插画",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L18",
+    "name": "Anime / 二次元",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "anime, 二次元, 动漫",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L19",
+    "name": "Wool Felt / Needle Felt",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "wool felt, 羊毛毡, felted",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L20",
+    "name": "Colored Pencil",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "colored pencil, 彩铅, crayon",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.9
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L21",
+    "name": "Pop Art",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "pop art, 波普, Warhol",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L22",
+    "name": "Miniature / Diorama",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "miniature, 微缩景观, diorama",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L23",
+    "name": "Children's Drawing",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "children drawing, 儿童画",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L24",
+    "name": "Game CG / Thick Paint",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "game CG, 厚涂, digital painting",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L25",
+    "name": "Vaporwave",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "vaporwave, 蒸汽波, aesthetic",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L26",
+    "name": "Printmaking / Woodblock",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "printmaking, 版画, woodblock",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L27",
+    "name": "Fine Brush / Gongbi",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "gongbi, 工笔, 新工笔",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L28",
+    "name": "Pen Sketch / Simple Line",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "pen sketch, 简笔画, line drawing",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L29",
+    "name": "Dark Fairy Tale",
+    "category": "L·Stylization",
+    "priority": "P0",
+    "keywords": "dark fairy tale, 暗黑童话, gothic",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L30",
+    "name": "Studio Photoshoot",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "photoshoot, 写真, studio",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L31",
+    "name": "ID Photo",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "ID photo, 证件照, passport",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 5.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L32",
+    "name": "Emoji / Sticker Pack",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "emoji, sticker, 表情包",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L33",
+    "name": "Avatar / Profile Picture",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "avatar, 头像, profile",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.5
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L34",
+    "name": "Film / Cinematic Portrait",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "film, 电影写真, cinematic",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L35",
+    "name": "Dreamy / Hazy Portrait",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "dreamy, 朦胧, hazy",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.8
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L36",
+    "name": "Indoor Scene Portrait",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "indoor, 室内侧拍, 餐厅复古",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L37",
+    "name": "Dark Mood Portrait",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "dark mood, 暗调, low-key",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L38",
+    "name": "Iconic Location Shot",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "红墙, 中天门, 摩崖造像",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L39",
+    "name": "Spring Floral Portrait",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "spring, 樱花, 春日写真",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L40",
+    "name": "Natural Light & Shadow",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "dappled, 斑驳树影, 阳光",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L41",
+    "name": "Sunset / Golden Hour",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "sunset, 日落, golden hour",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L42",
+    "name": "Retro Film & Polaroid",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "polaroid, 拍立得, 车内胶片",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L43",
+    "name": "Winter Snow Portrait",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "snow, 雪地, 冬季写真",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L44",
+    "name": "Beach & Underwater",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "beach, 海边, underwater",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L45",
+    "name": "Fantasy / Magical Scene",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "magic, 魔法学院, fantasy",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L46",
+    "name": "Social Media / Street Style",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "OOTD, Plog, 网感头像",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L48",
+    "name": "Photo Grid Layout",
+    "category": "L·Portrait",
+    "priority": "P0",
+    "keywords": "三宫格, grid, triptych",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L50",
+    "name": "Pet Stylization",
+    "category": "L·Pets",
+    "priority": "P0",
+    "keywords": "pet, 萌宠, kawaii",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L51",
+    "name": "Baby Comic Grid",
+    "category": "L·Pets",
+    "priority": "P0",
+    "keywords": "baby, 宝宝, comic grid",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.4
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L52",
+    "name": "Pet VOGUE Magazine",
+    "category": "L·Pets",
+    "priority": "P0",
+    "keywords": "pet magazine, VOGUE",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L53",
+    "name": "Pet Costume Play",
+    "category": "L·Pets",
+    "priority": "P0",
+    "keywords": "pet costume, 宠物入狱, mugshot",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L54",
+    "name": "Pet Humanization",
+    "category": "L·Pets",
+    "priority": "P0",
+    "keywords": "pet human, 宠物拟人",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L60",
+    "name": "Outfit Change",
+    "category": "L·Editing",
+    "priority": "P1",
+    "keywords": "outfit, 换装, try-on",
+    "scores": {
+      "prompt_adherence": 4.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.0,
+      "overall": 4.3
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L61",
+    "name": "Hairstyle Change",
+    "category": "L·Editing",
+    "priority": "P1",
+    "keywords": "hairstyle, 发型, haircut",
+    "scores": {
+      "prompt_adherence": 4.0,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.0,
+      "overall": 4.3
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L62",
+    "name": "Background Change",
+    "category": "L·Editing",
+    "priority": "P1",
+    "keywords": "background, 换背景",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.5
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L63",
+    "name": "Image Outpainting",
+    "category": "L·Editing",
+    "priority": "P1",
+    "keywords": "outpaint, 扩图, expand",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L64",
+    "name": "Object Removal",
+    "category": "L·Editing",
+    "priority": "P1",
+    "keywords": "remove, 消除, erase",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "L65",
+    "name": "Image Enhancement",
+    "category": "L·Editing",
+    "priority": "P1",
+    "keywords": "enhance, 变清晰, sharpen",
+    "scores": {
+      "prompt_adherence": 4.7,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.6,
+      "style_accuracy": 4.8,
+      "overall": 4.7
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M01",
+    "name": "Social Media Post",
+    "category": "M·Media",
+    "priority": "P1",
+    "keywords": "social media, quote, 配图",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M02",
+    "name": "Poster Design",
+    "category": "M·Media",
+    "priority": "P1",
+    "keywords": "poster, 海报, flyer",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M03",
+    "name": "Storyboard",
+    "category": "M·Media",
+    "priority": "P1",
+    "keywords": "storyboard, 分镜, comic strip",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.5
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M04",
+    "name": "Handwritten Poster",
+    "category": "M·Media",
+    "priority": "P1",
+    "keywords": "手抄报, bulletin",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 5.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.5
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M05",
+    "name": "Illustration",
+    "category": "M·Media",
+    "priority": "P1",
+    "keywords": "illustration, 插画",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M06",
+    "name": "YouTube Thumbnail",
+    "category": "M·Media",
+    "priority": "P2",
+    "keywords": "YouTube, thumbnail, 缩略图",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M07",
+    "name": "Educational Visual",
+    "category": "M·Media",
+    "priority": "P2",
+    "keywords": "educational, infographic, 教育",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "M08",
+    "name": "Picture Book Illustration",
+    "category": "M·Media",
+    "priority": "P1",
+    "keywords": "picture book, 绘本, storybook",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P01",
+    "name": "E-commerce Main Image",
+    "category": "P·Design",
+    "priority": "P1",
+    "keywords": "e-commerce, 电商, product",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P02",
+    "name": "Sticker Set Design",
+    "category": "P·Design",
+    "priority": "P1",
+    "keywords": "sticker set, 贴纸集",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.5,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.6
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P03",
+    "name": "Interior Design",
+    "category": "P·Design",
+    "priority": "P1",
+    "keywords": "interior, 家装, room",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 4.5,
+      "overall": 4.5
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P04",
+    "name": "Logo Design",
+    "category": "P·Design",
+    "priority": "P1",
+    "keywords": "logo, 标志, brand",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P05",
+    "name": "Merchandise Design",
+    "category": "P·Design",
+    "priority": "P1",
+    "keywords": "merchandise, 手办, figure",
+    "scores": {
+      "prompt_adherence": 4.5,
+      "identity_preservation": 4.0,
+      "visual_quality": 4.5,
+      "style_accuracy": 4.5,
+      "overall": 4.4
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P06",
+    "name": "Coloring Book Page",
+    "category": "P·Design",
+    "priority": "P1",
+    "keywords": "coloring, 涂色, line art",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P07",
+    "name": "Game Asset Design",
+    "category": "P·Design",
+    "priority": "P2",
+    "keywords": "game, 游戏, character design",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  },
+  {
+    "id": "P08",
+    "name": "Product Marketing Design",
+    "category": "P·Design",
+    "priority": "P2",
+    "keywords": "marketing, 营销, ad campaign",
+    "scores": {
+      "prompt_adherence": 5.0,
+      "identity_preservation": 5.0,
+      "visual_quality": 5.0,
+      "style_accuracy": 5.0,
+      "overall": 5.0
+    },
+    "has_sample": true
+  }
+]
