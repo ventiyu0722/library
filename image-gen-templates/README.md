@@ -1,6 +1,6 @@
 # Image Generation — High-Heat Template Skill
 
-74 curated high-quality prompt templates for one-click image generation via **Gemini 3.1 Flash Image** (Nano Banana 2). Organized into 3 major categories — **Life & Entertainment** (61), **Media & Work** (8), **Professional Design** (8) — covering stylization, photo scenes, portraits, pets, editing tools, social media, and professional design.
+74 curated high-quality prompt templates for one-click image generation via **Gemini 3.1 Flash Image** (Nano Banana 2). Organized into 3 major categories — **Life & Entertainment** (58), **Media & Work** (8), **Professional Design** (8) — covering stylization, photo scenes, portraits, pets, editing tools, social media, and professional design.
 
 ## Results
 
