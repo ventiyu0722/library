@@ -1,0 +1,22 @@
+{
+  "compass_api": {
+    "client_token": "YOUR_COMPASS_CLIENT_TOKEN",
+    "base_url": "http://beeai.test.shopee.io/inbeeai/compass-api/v1",
+    "image_model": "gemini-3.1-flash-image-preview"
+  },
+  "user": {
+    "user_id": "local",
+    "city": "",
+    "reference_avatar": "",
+    "preferred_style": ""
+  },
+  "search_api": {
+    "provider": "serper",
+    "api_key": ""
+  },
+  "history": {
+    "enabled": true,
+    "max_entries": 30,
+    "storage": "local_json"
+  }
+}
