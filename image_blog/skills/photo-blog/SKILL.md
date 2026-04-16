@@ -31,7 +31,8 @@ Trigger this skill when the user:
 After delivering the blog, proactively suggest:
 1. "Would you like a **comic version** of this?" (invoke life-comic skill)
 2. "Want to try a **different theme**?" and list the `suggested_themes` from the output
-3. "Need a different format? I can provide **PNG image / HTML / rich text**."
+
+**Do NOT** ask format-related questions. All formats are generated and delivered automatically.
 
 ## Usage
 
@@ -69,11 +70,19 @@ python3 <SKILL_DIR>/main.py <image_dir_or_files> \
 ### Output Format Selection
 
 By default (`--format all`), all three formats are generated every time:
-- **HTML**: self-contained page with embedded images (best for Cursor / Claude Code)
+- **HTML**: self-contained page with embedded images (best visual quality, interactive)
 - **Rich Text**: Markdown compatible with Copilot block (`format: "markdown"`) (best for chat agents)
 - **PNG**: single composite image (best for sharing / social)
 
-The agent should pick the most appropriate format to display based on context, and always mention the PNG image path at the end.
+### Delivering Results to User
+
+**IMPORTANT**: After generation, upload ALL output files and provide **download links only** (no inline image preview):
+
+1. **PNG** — upload via `mcp__proxy__upload_file` and provide a download link (e.g. "📷 [PNG download](<url>)")
+2. **HTML** — upload via `mcp__proxy__upload_file` and provide a download link with i18n label:
+   - English: `📄 [HTML version (for internal testing)](<url>)`
+   - Chinese: `📄 [HTML 版本（供内部测试）](<url>)`
+3. **Do NOT** embed PNG as an inline image (`![...](<url>)`). Provide download links only.
 
 ### Image Count Support
 
@@ -82,6 +91,26 @@ Supports **1 to 9** input images. Works with a single photo up to large albums (
 ### Theme / Style Keywords
 
 Pass `--theme` to guide generation toward a specific angle. If the photos don't match the theme (fewer than 2 relevant photos), the skill falls back to auto-detected themes and returns `suggested_themes` with 3 alternatives.
+
+## Configuration
+
+The skill requires a `config.json` in the same directory as `main.py`. Copy from `config.json.example` and fill in the Compass API token:
+
+```json
+{
+  "compass_api": {
+    "base_url": "https://compass-api.example.com/v1",
+    "service_name": "erhe-pm-aigc",
+    "client_token": "<YOUR_TOKEN>",
+    "understanding_model": "gemini-3-pro-preview",
+    "generation_model": "gemini-3.1-flash-image-preview"
+  }
+}
+```
+
+Alternatively, set the `COMPASS_CLIENT_TOKEN` environment variable (takes precedence over config file).
+
+If `config.json` is missing and the env var is not set, the script exits with `ERROR: Compass API client_token not found.` — create the config file before running.
 
 ## Capabilities
 

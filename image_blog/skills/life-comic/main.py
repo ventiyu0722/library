@@ -110,11 +110,18 @@ def main():
             if date_str:
                 break
 
+    def _detect_lang(text):
+        if not text:
+            return "en"
+        cjk = sum(1 for c in text if '\u4e00' <= c <= '\u9fff' or '\u3400' <= c <= '\u4dbf')
+        return "zh" if cjk / max(len(text.replace(" ", "")), 1) > 0.15 else "en"
+
+    lang = _detect_lang(user_theme)
     if user_theme:
-        print(f"\n  Theme: '{user_theme}'")
+        print(f"\n  Theme: '{user_theme}' (lang={lang})")
 
     print(f"\n[4/5] Generating storyboard and narrative...")
-    storyboard = generate_storyboard(selected_dicts, date_str=date_str, user_theme=user_theme)
+    storyboard = generate_storyboard(selected_dicts, date_str=date_str, user_theme=user_theme, lang=lang)
     print(f"  Theme: {storyboard.get('theme', '?')}")
     print(f"  Title: {storyboard.get('narrative', {}).get('title', '?')}")
     print(f"  Panels: {len(storyboard.get('panels', []))}")
@@ -175,6 +182,20 @@ def main():
     if "richtext" in generated_files:
         print(f"  >>> RICH TEXT (for chat): {generated_files['richtext']}")
     print(f"{'=' * 60}")
+
+    _html_label = ("HTML \u7248\u672c\uff08\u4f9b\u5185\u90e8\u6d4b\u8bd5\uff09"
+                   if lang == "zh" else "HTML version (for internal testing)")
+    print(f"\n>>> UPLOAD INSTRUCTIONS (follow exactly):")
+    if "png" in generated_files:
+        print(f"  Upload {generated_files['png']}")
+        print(f'  Link text: "\U0001f4f7 [PNG download](<url>)"')
+    if "html" in generated_files:
+        print(f"  Upload {generated_files['html']}")
+        print(f'  Link text: "\U0001f4c4 [{_html_label}](<url>)"')
+    if comic_image_path:
+        print(f"  Upload {comic_image_path}")
+        print(f'  Link text: "\U0001f3a8 [Comic art](<url>)"')
+    print(f"  Do NOT embed images inline with ![...]. Provide download links only.")
 
 
 if __name__ == "__main__":
