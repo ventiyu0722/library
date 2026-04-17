@@ -17,8 +17,12 @@ description: >-
 
 - User asks to generate, create, edit, design, transform, or stylize any image
 - User wants to explore creative image generation possibilities
-- User uploads a photo and wants to transform it
+- User uploads a photo (or multiple photos) and wants to transform / stylize them
 - Skill was just installed and user has no specific request yet
+
+**When NOT to use (prefer `image_blog` instead):**
+- User uploads multiple photos and wants a **multi-panel comic strip with narrative** (storyboard, emotional arc, panel layout) — use `image_blog` (life-comic) instead
+- User wants a **photo blog / travel log / life summary** from photos — use `image_blog` (photo-blog) instead
 
 ## Image Generation — Dual Mode
 
@@ -76,6 +80,47 @@ At the start of every generation request:
 1. Check if `imagen_generate` MCP tool is available → use Mode A
 2. Otherwise → use Mode B (script). Verify `COMPASS_API_KEY` env var or `config.json`
    has a valid `client_token`. If neither exists, ask the user for their Compass API key.
+
+## Multiple Image Handling
+
+When the user uploads **multiple photos** and wants the **same style** applied to each:
+
+**IMPORTANT**: Process each image **individually** in separate API calls. Do NOT pass
+multiple `image_urls` in a single `imagen_generate` call — this causes URL fetch timeouts.
+
+### Mode A (MCP): Sequential calls
+```
+For each uploaded image:
+  → call imagen_generate(prompt=<style_prompt>, image_url=<single_image_url>)
+  → collect result
+Present all results together.
+```
+
+### Mode B (Script): Batch command
+```bash
+# Pass a directory or comma-separated files
+python3 <SKILL_DIR>/scripts/generate.py "style prompt" \
+    --images /path/to/photos/ --output ./styled_output/
+
+# Or specific files
+python3 <SKILL_DIR>/scripts/generate.py "style prompt" \
+    --images "photo1.jpg,photo2.jpg,photo3.jpg" --output ./styled_output/
+```
+
+### Inline Python (batch)
+```python
+import asyncio, sys, os
+sys.path.insert(0, os.path.join('<SKILL_DIR>', 'scripts'))
+from generate import generate_batch
+
+results = asyncio.run(generate_batch(
+    prompt="style prompt here",
+    images=["photo1.jpg", "photo2.jpg", "photo3.jpg"],
+    output_dir="./styled_output/",
+    concurrency=2,
+))
+# results = [{"index": 1, "source": "...", "output": "...", "success": True}, ...]
+```
 
 ## Master Workflow
 

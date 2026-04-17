@@ -5,6 +5,7 @@ Reused and adapted from image-gen-skill project. Provides:
 - Config loading (config.json / env vars)
 - Gemini API client management
 - Single image generation with optional reference image
+- Multi-image batch stylization (same prompt applied to each image)
 - Batch generation for template evaluation
 """
 
@@ -187,6 +188,75 @@ async def generate_for_template(
     return meta
 
 
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
+
+
+def collect_images(path: str) -> list[str]:
+    """Collect image file paths from a directory or single file."""
+    p = Path(path)
+    if p.is_dir():
+        return sorted(
+            str(f) for f in p.iterdir()
+            if f.suffix.lower() in IMAGE_EXTS and f.is_file()
+        )
+    if p.is_file() and p.suffix.lower() in IMAGE_EXTS:
+        return [str(p)]
+    return []
+
+
+async def generate_batch(
+    prompt: str,
+    images: list[str],
+    output_dir: str,
+    concurrency: int = 2,
+) -> list[dict]:
+    """Apply the same style prompt to multiple reference images.
+
+    Each image is processed independently in its own API call to avoid
+    URL_REJECTED / timeout issues seen with multi-image single calls.
+    Results are saved as <output_dir>/styled_<N>.png.
+    """
+    import asyncio as _aio
+
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    sem = _aio.Semaphore(concurrency)
+    total = len(images)
+
+    async def _run(idx: int, img_path: str) -> dict:
+        async with sem:
+            out_name = f"styled_{idx + 1}.png"
+            out_path = os.path.join(output_dir, out_name)
+            print(f"  [{idx + 1}/{total}] {os.path.basename(img_path)} -> {out_name}")
+            result = await generate_image(prompt, out_path, reference_image=img_path)
+            return {
+                "index": idx + 1,
+                "source": img_path,
+                "output": out_path if result["success"] else None,
+                "success": result["success"],
+                "error": result.get("error"),
+            }
+
+    print(f"\n{'=' * 60}")
+    print(f"  BATCH STYLIZATION — {total} images")
+    print(f"  Prompt: {prompt[:80]}...")
+    print(f"  Output: {output_dir}")
+    print(f"{'=' * 60}\n")
+
+    tasks = [_run(i, img) for i, img in enumerate(images)]
+    results = await _aio.gather(*tasks)
+    results = sorted(results, key=lambda r: r["index"])
+
+    ok = sum(1 for r in results if r["success"])
+    print(f"\n{'=' * 60}")
+    print(f"  Done: {ok}/{total} succeeded")
+    for r in results:
+        tag = "OK" if r["success"] else f"FAIL: {r['error']}"
+        print(f"  [{r['index']}] {tag}")
+    print(f"{'=' * 60}")
+
+    return results
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(
@@ -194,18 +264,42 @@ if __name__ == "__main__":
         epilog="Auth: set COMPASS_API_KEY env var, use --api-key, or configure config.json",
     )
     parser.add_argument("prompt", help="The image generation prompt")
-    parser.add_argument("--image", help="Reference image path (for photo-based templates)")
-    parser.add_argument("--output", default=f"generated_{int(time.time())}_{uuid.uuid4().hex[:6]}.png",
-                        help="Output file path (default: generated_<ts>_<id>.png)")
+    parser.add_argument("--image", help="Single reference image path")
+    parser.add_argument("--images", help="Multiple images: directory path or comma-separated files")
+    parser.add_argument("--output", default=None,
+                        help="Output file path (single) or directory (batch)")
+    parser.add_argument("--concurrency", type=int, default=2,
+                        help="Max parallel API calls for batch mode (default: 2)")
     parser.add_argument("--api-key", help="Compass API key (overrides env var and config.json)")
     args = parser.parse_args()
 
     if args.api_key:
         os.environ["COMPASS_API_KEY"] = args.api_key
 
-    result = asyncio.run(generate_image(args.prompt, args.output, args.image))
-    if result["success"]:
-        print(f"Image saved: {os.path.abspath(result['output'])}")
+    if args.images:
+        image_list: list[str] = []
+        if os.path.isdir(args.images):
+            image_list = collect_images(args.images)
+        else:
+            for p in args.images.split(","):
+                p = p.strip()
+                if os.path.isfile(p):
+                    image_list.append(p)
+
+        if not image_list:
+            print(f"ERROR: No images found in '{args.images}'")
+            sys.exit(1)
+
+        out_dir = args.output or f"batch_{int(time.time())}_{uuid.uuid4().hex[:4]}"
+        results = asyncio.run(generate_batch(args.prompt, image_list, out_dir, args.concurrency))
+        failed = [r for r in results if not r["success"]]
+        if failed:
+            sys.exit(1)
     else:
-        print(f"Failed: {result.get('error')}")
-        sys.exit(1)
+        out_path = args.output or f"generated_{int(time.time())}_{uuid.uuid4().hex[:6]}.png"
+        result = asyncio.run(generate_image(args.prompt, out_path, args.image))
+        if result["success"]:
+            print(f"Image saved: {os.path.abspath(result['output'])}")
+        else:
+            print(f"Failed: {result.get('error')}")
+            sys.exit(1)
