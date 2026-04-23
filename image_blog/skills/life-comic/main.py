@@ -2,7 +2,7 @@
 """Life Comic Generator — main entry point.
 
 Usage:
-    python3 main.py <image_dir_or_files> [--panels 6] [--output comic.html] [--date 2026-04-13]
+    python3 main.py <image_dir_or_files> [--panels 8] [--output comic.html] [--date 2026-04-13]
         [--theme "food journey"] [--format html]
 
 Workflow:
@@ -59,7 +59,7 @@ def moment_to_dict(m: ComicMoment) -> dict:
 def main():
     parser = argparse.ArgumentParser(description="Life Comic Generator")
     parser.add_argument("input", help="Image directory or file path")
-    parser.add_argument("--panels", type=int, default=6, help="Number of comic panels (1-9)")
+    parser.add_argument("--panels", type=int, default=8, help="Number of comic panels (1-10)")
     parser.add_argument("--output", default="comic_output.html", help="Output HTML path")
     parser.add_argument("--date", default=None, help="Date string for footer")
     parser.add_argument("--output-dir", default=".", help="Directory for generated images")
@@ -72,7 +72,7 @@ def main():
     args = parser.parse_args()
 
     user_theme = args.theme or args.style
-    panel_count = min(max(args.panels, 1), 9)
+    panel_count = min(max(args.panels, 1), 10)
 
     print("=" * 60)
     print("  LIFE COMIC GENERATOR v0.2")
@@ -121,10 +121,13 @@ def main():
         print(f"\n  Theme: '{user_theme}' (lang={lang})")
 
     print(f"\n[4/5] Generating storyboard and narrative...")
-    storyboard = generate_storyboard(selected_dicts, date_str=date_str, user_theme=user_theme, lang=lang)
+    storyboard = generate_storyboard(selected_dicts, date_str=date_str, user_theme=user_theme, lang=lang, target_panel_count=effective_panels)
     print(f"  Theme: {storyboard.get('theme', '?')}")
     print(f"  Title: {storyboard.get('narrative', {}).get('title', '?')}")
     print(f"  Panels: {len(storyboard.get('panels', []))}")
+    actual_panels = len(storyboard.get("panels", []))
+    if actual_panels < effective_panels:
+        print(f"  [WARN] Storyboard returned {actual_panels} panels, expected {effective_panels}")
 
     suggested = storyboard.get("suggested_themes", [])
     if suggested:

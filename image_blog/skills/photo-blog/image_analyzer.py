@@ -38,15 +38,23 @@ def _load_config() -> dict:
 
 def _get_client(cfg: dict):
     api_cfg = cfg.get("compass_api", {})
-    token = os.environ.get("COMPASS_CLIENT_TOKEN", api_cfg.get("client_token", ""))
-    base_url = api_cfg.get("base_url", "http://beeai.test.shopee.io/inbeeai/compass-api/v1")
+    token = (os.environ.get("COMPASS_CLIENT_TOKEN")
+             or os.environ.get("COMPASS_API_KEY")
+             or os.environ.get("ANTHROPIC_API_KEY")
+             or os.environ.get("GOOGLE_API_KEY")
+             or os.environ.get("GEMINI_API_KEY")
+             or api_cfg.get("client_token", ""))
+    base_url = (os.environ.get("COMPASS_BASE_URL")
+                or os.environ.get("ANTHROPIC_BASE_URL")
+                or api_cfg.get("base_url", ""))
     if not token:
-        print("ERROR: Compass API client_token not found.")
-        print("FIX: Either set COMPASS_CLIENT_TOKEN env var, or create config.json from config.json.example:")
+        print("ERROR: API key not found.")
+        print("FIX: Set one of: COMPASS_CLIENT_TOKEN, COMPASS_API_KEY, ANTHROPIC_API_KEY, GOOGLE_API_KEY, GEMINI_API_KEY")
+        print(f"  Or create config.json from config.json.example:")
         print(f"  cp {os.path.join(SCRIPT_DIR, 'config.json.example')} {os.path.join(SCRIPT_DIR, 'config.json')}")
-        print("  Then edit config.json and fill in client_token.")
         sys.exit(1)
-    return genai.Client(api_key=token, http_options=types.HttpOptions(base_url=base_url))
+    http_opts = types.HttpOptions(base_url=base_url) if base_url else None
+    return genai.Client(api_key=token, http_options=http_opts)
 
 
 @dataclass
@@ -94,6 +102,7 @@ class PhotoAnalysis:
     time_of_day: str = ""
     objects: str = ""
     narrative_hook: str = ""
+    orientation_correct: bool = True
     score: PhotoScore = field(default_factory=PhotoScore)
 
 
@@ -115,6 +124,7 @@ For each photo, output the following JSON format (return a JSON array):
     "time_of_day": "Inferred time of day (e.g., dawn, afternoon, dusk, night)",
     "objects": "Key objects / food / architecture in the frame",
     "narrative_hook": "The most compelling narrative point of this photo (one sentence, evocative style)",
+    "orientation_correct": true,
     "scores": {
       "visual_appeal": 7.5,
       "story_value": 8.0,
@@ -125,6 +135,11 @@ For each photo, output the following JSON format (return a JSON array):
   }
 ]
 ```
+
+**orientation_correct**: Look at the image as displayed. Is the orientation natural and correct?
+- true = the image looks correct (people standing upright, text readable, horizon level)
+- false = the image appears rotated or sideways (e.g., a landscape photo displayed as portrait, people tilted 90°, food plate on its side)
+This is critical for detecting photos where EXIF orientation was incorrectly applied.
 
 Scoring criteria (1-10):
 - visual_appeal: composition aesthetics, color, lighting
@@ -229,7 +244,7 @@ def analyze_photos(image_paths: List[str], batch_size: int = BATCH_SIZE) -> List
     """Analyze all photos in batches and return scored/structured results."""
     cfg = _load_config()
     client = _get_client(cfg)
-    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-image-preview")
+    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-preview")
 
     all_results: List[PhotoAnalysis] = []
     total_batches = math.ceil(len(image_paths) / batch_size)
@@ -263,6 +278,7 @@ def analyze_photos(image_paths: List[str], batch_size: int = BATCH_SIZE) -> List
                     time_of_day=r.get("time_of_day", ""),
                     objects=r.get("objects", ""),
                     narrative_hook=r.get("narrative_hook", ""),
+                    orientation_correct=r.get("orientation_correct", True),
                     score=score,
                 )
             else:

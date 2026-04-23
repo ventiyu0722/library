@@ -36,15 +36,23 @@ def _load_config() -> dict:
 
 def _get_client(cfg: dict):
     api_cfg = cfg.get("compass_api", {})
-    token = os.environ.get("COMPASS_CLIENT_TOKEN", api_cfg.get("client_token", ""))
-    base_url = api_cfg.get("base_url", "http://beeai.test.shopee.io/inbeeai/compass-api/v1")
+    token = (os.environ.get("COMPASS_CLIENT_TOKEN")
+             or os.environ.get("COMPASS_API_KEY")
+             or os.environ.get("ANTHROPIC_API_KEY")
+             or os.environ.get("GOOGLE_API_KEY")
+             or os.environ.get("GEMINI_API_KEY")
+             or api_cfg.get("client_token", ""))
+    base_url = (os.environ.get("COMPASS_BASE_URL")
+                or os.environ.get("ANTHROPIC_BASE_URL")
+                or api_cfg.get("base_url", ""))
     if not token:
-        print("ERROR: Compass API client_token not found.")
-        print("FIX: Either set COMPASS_CLIENT_TOKEN env var, or create config.json from config.json.example:")
+        print("ERROR: API key not found.")
+        print("FIX: Set one of: COMPASS_CLIENT_TOKEN, COMPASS_API_KEY, ANTHROPIC_API_KEY, GOOGLE_API_KEY, GEMINI_API_KEY")
+        print(f"  Or create config.json from config.json.example:")
         print(f"  cp {os.path.join(SCRIPT_DIR, 'config.json.example')} {os.path.join(SCRIPT_DIR, 'config.json')}")
-        print("  Then edit config.json and fill in client_token.")
         sys.exit(1)
-    return genai.Client(api_key=token, http_options=types.HttpOptions(base_url=base_url))
+    http_opts = types.HttpOptions(base_url=base_url) if base_url else None
+    return genai.Client(api_key=token, http_options=http_opts)
 
 
 @dataclass
@@ -207,7 +215,7 @@ def analyze_batch(client, model: str, image_paths: List[str]) -> List[dict]:
 def analyze_photos(image_paths: List[str], batch_size: int = BATCH_SIZE) -> List[ComicMoment]:
     cfg = _load_config()
     client = _get_client(cfg)
-    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-image-preview")
+    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-preview")
 
     all_moments: List[ComicMoment] = []
     total_batches = math.ceil(len(image_paths) / batch_size)
@@ -244,7 +252,7 @@ def analyze_photos(image_paths: List[str], batch_size: int = BATCH_SIZE) -> List
     return all_moments
 
 
-def select_comic_panels(moments: List[ComicMoment], panel_count: int = 6) -> List[ComicMoment]:
+def select_comic_panels(moments: List[ComicMoment], panel_count: int = 8) -> List[ComicMoment]:
     """Select the best moments for comic panels with narrative flow and diversity."""
     sorted_moments = sorted(moments, key=lambda m: m.composite_score, reverse=True)
 
@@ -281,7 +289,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     target = sys.argv[1]
-    panels = int(sys.argv[2]) if len(sys.argv) > 2 else 6
+    panels = int(sys.argv[2]) if len(sys.argv) > 2 else 8
 
     exts = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
     if os.path.isdir(target):

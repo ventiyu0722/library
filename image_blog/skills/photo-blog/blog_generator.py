@@ -26,9 +26,17 @@ def _load_config() -> dict:
 
 def _get_client(cfg: dict):
     api_cfg = cfg.get("compass_api", {})
-    token = os.environ.get("COMPASS_CLIENT_TOKEN", api_cfg.get("client_token", ""))
-    base_url = api_cfg.get("base_url", "")
-    return genai.Client(api_key=token, http_options=types.HttpOptions(base_url=base_url))
+    token = (os.environ.get("COMPASS_CLIENT_TOKEN")
+             or os.environ.get("COMPASS_API_KEY")
+             or os.environ.get("ANTHROPIC_API_KEY")
+             or os.environ.get("GOOGLE_API_KEY")
+             or os.environ.get("GEMINI_API_KEY")
+             or api_cfg.get("client_token", ""))
+    base_url = (os.environ.get("COMPASS_BASE_URL")
+                or os.environ.get("ANTHROPIC_BASE_URL")
+                or api_cfg.get("base_url", ""))
+    http_opts = types.HttpOptions(base_url=base_url) if base_url else None
+    return genai.Client(api_key=token, http_options=http_opts)
 
 
 BLOG_GENERATION_PROMPT = """You are a content creator with both artistic sensibility and lifestyle aesthetics. Based on the following photo analysis data, generate a "Photo Blog" post.
@@ -53,29 +61,35 @@ BLOG_GENERATION_PROMPT = """You are a content creator with both artistic sensibi
   "title": "A poetic title of 3-6 words (e.g., 'Afternoon Among the Peaks', 'Rainy Lanes & Red Broth')",
   "hero_image_index": 0,
   "description": {{
-    "text": "A coherent 2-4 sentence narrative covering time, place, actions, and atmosphere, in an evocative, warm style",
+    "text": "One short atmospheric sentence, MUST be under 150 characters.",
     "image_index": 0
   }},
   "insights": [
     {{
-      "text": "A 2-3 sentence insight for this photo, describing scene details and reflections with vivid imagery",
+      "text": "A short, evocative caption for this photo, MUST be under 150 characters. Think magazine caption, not paragraph.",
       "image_index": 0
     }}
   ],
-  "tip": "A 1-2 sentence personalized practical tip based on the scene (outdoor/indoor/food/travel etc.)",
+  "tip": "One practical tip sentence, MUST be under 150 characters.",
   "footer_date": "YYYY-MM-DD",
   "suggested_themes": ["theme1", "theme2", "theme3"]
 }}
 ```
 
 **Notes**:
-- The insights array should contain one item per highlight photo (up to 9), each mapped by image_index
+- **CRITICAL**: The insights array MUST contain exactly {highlight_count} items — one per highlight photo, each mapped by image_index. Do NOT skip any.
 - hero_image_index points to the best hero photo in the highlights array
 - description.image_index also points to the highlights array
 - Title should be concise and evocative — not too long
-- Each insight text must be unique, with different focus areas covering various scene dimensions
-- **Important**: Titles must be creative and distinctive. Avoid overused clichés. Draw unique imagery from the photo scenes — landscapes, culinary memories, light and shadow, travel moods, etc.
-- **suggested_themes**: Always provide 3 alternative theme suggestions based on actual photo content (short phrases). These help the user explore different angles."""
+- Each insight text must be unique, covering different dimensions of the scene
+- **Important**: Titles must be creative and distinctive. Avoid overused clichés.
+- **suggested_themes**: Always provide 3 alternative theme suggestions based on actual photo content (short phrases).
+
+**HARD LENGTH CONSTRAINT (non-negotiable)**:
+- description.text: MUST be under 150 characters
+- Each insight text: MUST be under 150 characters
+- tip: MUST be under 150 characters
+- Write like a magazine caption — punchy and evocative, never an essay."""
 
 
 def _detect_lang(text: str) -> str:
@@ -92,6 +106,7 @@ def generate_blog_content(
     date_str: Optional[str] = None,
     user_theme: Optional[str] = None,
     lang: Optional[str] = None,
+    target_count: Optional[int] = None,
 ) -> dict:
     """Generate blog content from photo analyses and selected highlights.
 
@@ -109,9 +124,11 @@ def generate_blog_content(
     if not date_str:
         date_str = date.today().strftime("%Y-%m-%d")
 
+    highlight_count = target_count if target_count is not None else len(highlights)
+
     cfg = _load_config()
     client = _get_client(cfg)
-    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-image-preview")
+    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-preview")
 
     analysis_summary = []
     for a in all_analyses[:30]:
@@ -159,6 +176,7 @@ def generate_blog_content(
         highlights_json=json.dumps(highlights_detail, ensure_ascii=False, indent=2),
         theme_instruction=theme_instruction,
         lang_instruction=lang_instruction,
+        highlight_count=highlight_count,
     )
 
     try:
@@ -199,13 +217,39 @@ def generate_blog_content(
 
     blog["footer_date"] = date_str
     blog["_lang"] = lang
+
+    _enforce_char_limits(blog)
     return blog
+
+
+def _truncate_at_sentence(text: str, limit: int) -> str:
+    """Truncate text at the last complete sentence within the limit."""
+    if len(text) <= limit:
+        return text
+    candidate = text[:limit]
+    for sep in [". ", "。", "! ", "? ", "！", "？"]:
+        pos = candidate.rfind(sep)
+        if pos > 0:
+            return candidate[:pos + len(sep)].rstrip()
+    return candidate.rsplit(" ", 1)[0] + "…"
+
+
+def _enforce_char_limits(blog: dict, limit: int = 150):
+    """Truncate text fields at sentence boundaries if they exceed the limit."""
+    desc = blog.get("description", {})
+    if isinstance(desc, dict) and len(desc.get("text", "")) > limit:
+        desc["text"] = _truncate_at_sentence(desc["text"], limit)
+    for ins in blog.get("insights", []):
+        if len(ins.get("text", "")) > limit:
+            ins["text"] = _truncate_at_sentence(ins["text"], limit)
+    if len(blog.get("tip", "")) > limit:
+        blog["tip"] = _truncate_at_sentence(blog["tip"], limit)
 
 
 def _fallback_content(highlights: List[dict], date_str: str, lang: str = "en") -> dict:
     """Minimal fallback when LLM generation fails."""
     insights = []
-    for i, h in enumerate(highlights[:9]):
+    for i, h in enumerate(highlights[:10]):
         insights.append({
             "text": h.get("narrative_hook", h.get("scene", "\u7cbe\u5f69\u77ac\u95f4" if lang == "zh" else "A wonderful moment")),
             "image_index": i,

@@ -74,7 +74,7 @@ NEW_TEMPLATES = {
     "L27": {
         "name": "Fine Brush / Gongbi",
         "prompt": (
-            "Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary 新工笔 sensibility — "
+            "Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary gongbi sensibility — "
             "while preserving the subject's facial identity and calm, dignified presence. "
             "Support: fine silk with subtle fiber texture and mineral glow of traditional pigments. "
             "Technique: extremely fine controlled brush lines for hair strands, eyelashes, and fabric weave; "
@@ -301,7 +301,7 @@ NEW_TEMPLATES = {
         "name": "Social Media / Street Style",
         "prompt": (
             "Transform the uploaded photo into a high-engagement social-media-ready portrait. "
-            "Preserve the subject's identity while optimizing for contemporary 网感 aesthetics. "
+            "Preserve the subject's identity while optimizing for contemporary social-media-ready aesthetics. "
             "Mood: effortless confidence — natural street fashion, subtle attitude, clean skin with realistic texture. "
             "Setting: urban street corner with soft background compression, city bokeh. "
             "Styling: layered OOTD — jacket, tee, accessories with clear silhouette; hair and makeup current but believable. "
@@ -326,7 +326,7 @@ NEW_TEMPLATES = {
             "right: close profile with petals falling past cheek. "
             "Color grade: unified across panels — matched white balance and contrast. "
             "Output: one image, square 1:1. No text, no watermark. "
-            "The overall style is a polished social triptych / 三宫格 — cohesive, romantic, and ready for platform posting."
+            "The overall style is a polished social triptych — cohesive, romantic, and ready for platform posting."
         ),
         "ref": SELFIE,
     },

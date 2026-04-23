@@ -468,7 +468,7 @@
     "notes": "Perfect flat design execution — zero gradients, crisp geometric shapes, harmonious 6-color palette, identity clearly recognizable through simplified forms"
   },
   "L18": {
-    "template_name": "Anime / 二次元",
+    "template_name": "Anime",
     "category": "L",
     "scores": {
       "prompt_adherence": 5.0,

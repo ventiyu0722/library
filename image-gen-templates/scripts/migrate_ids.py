@@ -13,24 +13,24 @@ PROJECT_DIR = Path(__file__).parent.parent
 RESULTS_DIR = PROJECT_DIR / "test" / "results"
 
 ID_MAP = {
-    # L: 生活与娱乐 — 风格化
+    # L: Life & Entertainment — Stylization
     "A01": "L01", "A02": "L02", "A03": "L03", "A04": "L04", "A05": "L05",
     "A06": "L06", "A07": "L07", "A08": "L08", "A09": "L09", "A10": "L10",
     "A11": "L11", "A12": "L12", "A13": "L13", "A14": "L14", "A15": "L15",
     "A16": "L16", "A17": "L17", "A18": "L18", "A19": "L19", "A20": "L20",
     "A21": "L21", "A22": "L22", "A23": "L23",
-    # L: 生活与娱乐 — 写真/人像
+    # L: Life & Entertainment — Portrait
     "B01": "L30", "B02": "L31", "B04": "L32", "B05": "L33",
     "B06": "L34", "B07": "L35",
-    # L: 生活与娱乐 — 萌宠/宝宝
+    # L: Life & Entertainment — Pets & Babies
     "C01": "L50", "C02": "L51", "C03": "L52", "C04": "L53",
     "B03": "L54",
-    # L: 生活与娱乐 — 换装/编辑
+    # L: Life & Entertainment — Try-on & Editing
     "D01": "L60", "D02": "L61", "D03": "L62",
-    # M: 日常工作与自媒体
+    # M: Media & Work
     "E01": "M01", "E02": "M02", "E03": "M03", "E04": "M04", "E05": "M05",
     "E06": "M06", "E07": "M07", "E08": "M08",
-    # P: 专业设计
+    # P: Professional Design
     "F01": "P01", "F02": "P02", "F03": "P03", "F04": "P04",
     "F05": "P05", "F06": "P06", "F07": "P07", "F08": "P08",
 }

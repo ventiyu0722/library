@@ -7,13 +7,14 @@ import os
 from typing import Dict, List, Optional
 
 
-def _img_to_base64(path: str, max_width: int = 800) -> str:
-    """Convert image to base64 with EXIF orientation fix and resize."""
+def _img_to_base64(path: str, max_width: int = 800, skip_exif: bool = False) -> str:
+    """Convert image to base64 with optional EXIF orientation fix and resize."""
     try:
         from PIL import Image, ImageOps
         import io
         img = Image.open(path)
-        img = ImageOps.exif_transpose(img)
+        if not skip_exif:
+            img = ImageOps.exif_transpose(img)
         if img.mode in ("RGBA", "P", "LA"):
             img = img.convert("RGB")
         w, h = img.size
@@ -38,6 +39,8 @@ def render_blog_html(
     blog_content: dict,
     highlight_paths: List[str],
     output_path: str = "blog_output.html",
+    cover_path: Optional[str] = None,
+    orientation_flags: Optional[List[bool]] = None,
 ) -> str:
     """Render blog content to a self-contained HTML file.
 
@@ -45,6 +48,9 @@ def render_blog_html(
         blog_content: Generated blog dict (title, description, insights, tip, etc.)
         highlight_paths: File paths of highlight images (ordered by selection)
         output_path: Where to save the HTML file
+        cover_path: Optional path to AI-generated cover image (replaces hero photo)
+        orientation_flags: Per-image flags from Gemini analysis. True = EXIF was correctly
+            applied, False = EXIF correction made orientation wrong (skip EXIF for this image).
 
     Returns:
         Absolute path to the generated HTML file
@@ -60,8 +66,11 @@ def render_blog_html(
     footer_date = blog_content.get("footer_date", "")
 
     hero_b64 = ""
-    if highlight_paths and hero_idx < len(highlight_paths):
-        hero_b64 = _img_to_base64(highlight_paths[hero_idx], max_width=1000)
+    if cover_path and os.path.exists(cover_path):
+        hero_b64 = _img_to_base64(cover_path, max_width=1200)
+    elif highlight_paths and hero_idx < len(highlight_paths):
+        skip = orientation_flags and hero_idx < len(orientation_flags) and not orientation_flags[hero_idx]
+        hero_b64 = _img_to_base64(highlight_paths[hero_idx], max_width=1000, skip_exif=skip)
 
     insight_blocks = []
     for ins in insights:
@@ -69,17 +78,17 @@ def render_blog_html(
         text = ins.get("text", "")
         img_b64 = ""
         if idx < len(highlight_paths):
-            img_b64 = _img_to_base64(highlight_paths[idx], max_width=600)
+            skip = orientation_flags and idx < len(orientation_flags) and not orientation_flags[idx]
+            img_b64 = _img_to_base64(highlight_paths[idx], max_width=600, skip_exif=skip)
         insight_blocks.append({"text": text, "img_b64": img_b64})
 
     insights_html = ""
     for i, block in enumerate(insight_blocks):
         img_tag = f'<img src="data:image/jpeg;base64,{block["img_b64"]}" alt="insight-{i}" class="insight-img" loading="lazy">' if block["img_b64"] else ""
-        is_reverse = "reverse" if i % 2 == 1 else ""
         insights_html += f"""
-        <div class="insight-card {is_reverse}">
-            <div class="insight-text"><p>{block["text"]}</p></div>
+        <div class="insight-card">
             <div class="insight-image">{img_tag}</div>
+            <div class="insight-caption"><p>{block["text"]}</p></div>
         </div>"""
 
     html_lang = "zh-CN" if lang == "zh" else "en"
@@ -152,29 +161,27 @@ h1 {{
     border-left: 3px solid #5b9bd5;
 }}
 .insight-card {{
-    display: flex;
-    gap: 14px;
     margin-bottom: 20px;
-    align-items: flex-start;
+    border-radius: 12px;
+    overflow: hidden;
 }}
 .insight-card.reverse {{
     flex-direction: row-reverse;
 }}
-.insight-text {{
-    flex: 1;
-    font-size: 14px;
-    color: #b8b8c4;
-    line-height: 1.85;
-    padding-top: 4px;
+.insight-caption {{
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    padding: 8px 4px 0;
+    line-height: 1.6;
 }}
 .insight-image {{
-    flex: 0 0 140px;
+    width: 100%;
 }}
 .insight-img {{
-    width: 140px;
-    height: 105px;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 12px;
+    display: block;
     border: 1px solid rgba(255,255,255,0.08);
 }}
 .tip-box {{

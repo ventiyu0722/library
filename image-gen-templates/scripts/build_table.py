@@ -7,113 +7,113 @@ from pathlib import Path
 
 PROJECT_DIR = Path(__file__).parent.parent
 RESULTS_DIR = PROJECT_DIR / "test" / "results"
-OUTPUT_DIR = Path.home() / "Desktop" / "模板效果表"
+OUTPUT_DIR = Path.home() / "Desktop" / "template_effect_table"
 IMAGES_DIR = OUTPUT_DIR / "output_images"
 
 ROWS = [
-    # (序号, 场景大类, 玩法, template_id, input_query, photo_type)
+    # (index, category, play, template_id, input_query, photo_type)
     # photo_type: "selfie", "pet", "baby", "room", None (text-only)
 
-    # 1. 生活与娱乐-风格化 (29)
-    (1, "1.生活与娱乐-风格化", "Q版卡通", "L01", "把我的照片变成Q版卡通风格", "selfie"),
-    (2, "1.生活与娱乐-风格化", "3D皮克斯", "L02", "把我变成3D皮克斯动画角色", "selfie"),
-    (3, "1.生活与娱乐-风格化", "漫画", "L03", "把我的照片转成漫画风格", "selfie"),
-    (4, "1.生活与娱乐-风格化", "素描", "L04", "帮我画一张素描肖像", "selfie"),
-    (5, "1.生活与娱乐-风格化", "黏土", "L05", "把我变成黏土动画角色", "selfie"),
-    (6, "1.生活与娱乐-风格化", "80年代复古", "L06", "把我变成80年代复古动画风格", "selfie"),
-    (7, "1.生活与娱乐-风格化", "复古科幻", "L07", "把我变成复古科幻风格", "selfie"),
-    (8, "1.生活与娱乐-风格化", "浮世绘/国风", "L08", "把我的照片变成浮世绘国风", "selfie"),
-    (9, "1.生活与娱乐-风格化", "水彩", "L09", "帮我画一张水彩肖像", "selfie"),
-    (10, "1.生活与娱乐-风格化", "K-Pop", "L10", "把我变成K-Pop偶像风格", "selfie"),
-    (11, "1.生活与娱乐-风格化", "帝王", "L11", "把我变成帝王画像风格", "selfie"),
-    (12, "1.生活与娱乐-风格化", "90年代毕业照", "L12", "把我变成90年代毕业照风格", "selfie"),
-    (13, "1.生活与娱乐-风格化", "高级时尚", "L13", "把我变成高级时尚杂志风格", "selfie"),
-    (14, "1.生活与娱乐-风格化", "赛博朋克", "L14", "把我变成赛博朋克风格", "selfie"),
-    (15, "1.生活与娱乐-风格化", "油画", "L15", "把我变成古典油画风格", "selfie"),
-    (16, "1.生活与娱乐-风格化", "像素", "L16", "把我变成像素风格", "selfie"),
-    (17, "1.生活与娱乐-风格化", "扁平插画", "L17", "把我变成扁平矢量插画风格", "selfie"),
-    (18, "1.生活与娱乐-风格化", "二次元", "L18", "把我变成二次元动漫风格", "selfie"),
-    (19, "1.生活与娱乐-风格化", "羊毛毡", "L19", "把我变成羊毛毡风格", "selfie"),
-    (20, "1.生活与娱乐-风格化", "彩铅", "L20", "把我变成彩铅画风格", "selfie"),
-    (21, "1.生活与娱乐-风格化", "波普", "L21", "把我变成波普艺术风格", "selfie"),
-    (22, "1.生活与娱乐-风格化", "微缩景观", "L22", "把我变成微缩景观小人国风格", "selfie"),
-    (23, "1.生活与娱乐-风格化", "儿童画", "L23", "把我变成儿童画风格", "selfie"),
-    (24, "1.生活与娱乐-风格化", "游戏CG厚涂", "L24", "把我变成游戏CG厚涂风格", "selfie"),
-    (25, "1.生活与娱乐-风格化", "蒸汽波", "L25", "把我变成蒸汽波风格", "selfie"),
-    (26, "1.生活与娱乐-风格化", "版画", "L26", "把我变成版画风格", "selfie"),
-    (27, "1.生活与娱乐-风格化", "工笔", "L27", "把我变成工笔画风格", "selfie"),
-    (28, "1.生活与娱乐-风格化", "简笔画", "L28", "把我变成简笔画风格", "selfie"),
-    (29, "1.生活与娱乐-风格化", "暗黑童话", "L29", "把我变成暗黑童话风格", "selfie"),
+    # 1. Life & Entertainment - Stylization (29)
+    (1, "1.Life-Stylization", "Chibi Cartoon", "L01", "Turn my photo into chibi cartoon style", "selfie"),
+    (2, "1.Life-Stylization", "3D Pixar", "L02", "Turn me into a 3D Pixar animation character", "selfie"),
+    (3, "1.Life-Stylization", "Comic/Manga", "L03", "Turn my photo into comic/manga style", "selfie"),
+    (4, "1.Life-Stylization", "Sketch", "L04", "Draw a sketch portrait of me", "selfie"),
+    (5, "1.Life-Stylization", "Clay", "L05", "Turn me into a claymation character", "selfie"),
+    (6, "1.Life-Stylization", "80s Retro", "L06", "Turn me into 80s retro animation style", "selfie"),
+    (7, "1.Life-Stylization", "Retro-Futurism", "L07", "Turn me into retro-futurism style", "selfie"),
+    (8, "1.Life-Stylization", "Ukiyo-e/Chinese Painting", "L08", "Turn my photo into ukiyo-e/Chinese painting style", "selfie"),
+    (9, "1.Life-Stylization", "Watercolor", "L09", "Draw a watercolor portrait of me", "selfie"),
+    (10, "1.Life-Stylization", "K-Pop", "L10", "Turn me into K-Pop idol style", "selfie"),
+    (11, "1.Life-Stylization", "Imperial", "L11", "Turn me into imperial portrait style", "selfie"),
+    (12, "1.Life-Stylization", "90s Yearbook", "L12", "Turn me into 90s yearbook style", "selfie"),
+    (13, "1.Life-Stylization", "High Fashion", "L13", "Turn me into high fashion magazine style", "selfie"),
+    (14, "1.Life-Stylization", "Cyberpunk", "L14", "Turn me into cyberpunk style", "selfie"),
+    (15, "1.Life-Stylization", "Oil Painting", "L15", "Turn me into classical oil painting style", "selfie"),
+    (16, "1.Life-Stylization", "Pixel Art", "L16", "Turn me into pixel art style", "selfie"),
+    (17, "1.Life-Stylization", "Flat Illustration", "L17", "Turn me into flat vector illustration style", "selfie"),
+    (18, "1.Life-Stylization", "Anime", "L18", "Turn me into anime style", "selfie"),
+    (19, "1.Life-Stylization", "Wool Felt", "L19", "Turn me into wool felt style", "selfie"),
+    (20, "1.Life-Stylization", "Colored Pencil", "L20", "Turn me into colored pencil drawing style", "selfie"),
+    (21, "1.Life-Stylization", "Pop Art", "L21", "Turn me into pop art style", "selfie"),
+    (22, "1.Life-Stylization", "Miniature Diorama", "L22", "Turn me into miniature diorama style", "selfie"),
+    (23, "1.Life-Stylization", "Children Drawing", "L23", "Turn me into children's drawing style", "selfie"),
+    (24, "1.Life-Stylization", "Game CG", "L24", "Turn me into game CG thick paint style", "selfie"),
+    (25, "1.Life-Stylization", "Vaporwave", "L25", "Turn me into vaporwave style", "selfie"),
+    (26, "1.Life-Stylization", "Printmaking", "L26", "Turn me into printmaking style", "selfie"),
+    (27, "1.Life-Stylization", "Gongbi", "L27", "Turn me into gongbi painting style", "selfie"),
+    (28, "1.Life-Stylization", "Simple Line", "L28", "Turn me into simple line drawing style", "selfie"),
+    (29, "1.Life-Stylization", "Dark Fairy Tale", "L29", "Turn me into dark fairy tale style", "selfie"),
 
-    # 1. 生活与娱乐-写真生成 (18)
-    (30, "1.生活与娱乐-写真生成", "写真", "L30", "帮我拍一张专业写真", "selfie"),
-    (31, "1.生活与娱乐-写真生成", "证件照", "L31", "帮我生成一张证件照", "selfie"),
-    (32, "1.生活与娱乐-写真生成", "表情包", "L32", "用我的照片做一套表情包", "selfie"),
-    (33, "1.生活与娱乐-写真生成", "头像", "L33", "帮我生成一个个性头像", "selfie"),
-    (34, "1.生活与娱乐-写真生成", "电影写真", "L34", "把我的照片变成电影写真风格", "selfie"),
-    (35, "1.生活与娱乐-写真生成", "朦胧肖像", "L35", "帮我生成朦胧梦幻风格的肖像", "selfie"),
-    (36, "1.生活与娱乐-写真生成", "室内侧拍", "L36", "帮我生成一张室内侧拍写真", "selfie"),
-    (37, "1.生活与娱乐-写真生成", "暗调情绪", "L37", "帮我拍一张暗调情绪写真", "selfie"),
-    (38, "1.生活与娱乐-写真生成", "红墙拍照", "L38", "帮我在红墙前拍一张照片", "selfie"),
-    (39, "1.生活与娱乐-写真生成", "春日樱花写真", "L39", "帮我拍一张樱花春日写真", "selfie"),
-    (40, "1.生活与娱乐-写真生成", "斑驳树影", "L40", "帮我拍一张斑驳树影光影写真", "selfie"),
-    (41, "1.生活与娱乐-写真生成", "日落时分", "L41", "帮我拍一张日落时分的写真", "selfie"),
-    (42, "1.生活与娱乐-写真生成", "车内胶片拍立得", "L42", "帮我生成一张车内胶片拍立得风格照片", "selfie"),
-    (43, "1.生活与娱乐-写真生成", "冬季雪景", "L43", "帮我拍一张冬天下雪的写真", "selfie"),
-    (44, "1.生活与娱乐-写真生成", "海边写真", "L44", "帮我拍一张海边写真", "selfie"),
-    (45, "1.生活与娱乐-写真生成", "魔法学院", "L45", "把我变成魔法学院的学生", "selfie"),
-    (46, "1.生活与娱乐-写真生成", "网感OOTD", "L46", "帮我拍一张网感OOTD街拍", "selfie"),
-    (47, "1.生活与娱乐-写真生成", "樱花三宫格", "L48", "帮我做一张樱花主题三宫格", "selfie"),
+    # 1. Life & Entertainment - Portrait (18)
+    (30, "1.Life-Portrait", "Studio Photoshoot", "L30", "Take a professional studio portrait of me", "selfie"),
+    (31, "1.Life-Portrait", "ID Photo", "L31", "Generate an ID photo for me", "selfie"),
+    (32, "1.Life-Portrait", "Emoji/Sticker", "L32", "Make an emoji/sticker pack from my photo", "selfie"),
+    (33, "1.Life-Portrait", "Avatar", "L33", "Generate a stylish avatar for me", "selfie"),
+    (34, "1.Life-Portrait", "Cinematic Portrait", "L34", "Turn my photo into cinematic portrait style", "selfie"),
+    (35, "1.Life-Portrait", "Dreamy Hazy", "L35", "Generate a dreamy hazy portrait of me", "selfie"),
+    (36, "1.Life-Portrait", "Indoor Side Shot", "L36", "Generate an indoor side shot portrait of me", "selfie"),
+    (37, "1.Life-Portrait", "Dark Mood", "L37", "Take a dark mood portrait of me", "selfie"),
+    (38, "1.Life-Portrait", "Red Wall Shot", "L38", "Take a photo of me in front of a red wall", "selfie"),
+    (39, "1.Life-Portrait", "Spring Cherry Blossom", "L39", "Take a spring cherry blossom portrait of me", "selfie"),
+    (40, "1.Life-Portrait", "Dappled Shadow", "L40", "Take a dappled tree shadow portrait of me", "selfie"),
+    (41, "1.Life-Portrait", "Sunset Golden Hour", "L41", "Take a sunset golden hour portrait of me", "selfie"),
+    (42, "1.Life-Portrait", "Retro Film Polaroid", "L42", "Generate a retro film Polaroid style photo of me", "selfie"),
+    (43, "1.Life-Portrait", "Winter Snow", "L43", "Take a winter snow portrait of me", "selfie"),
+    (44, "1.Life-Portrait", "Beach Portrait", "L44", "Take a beach portrait of me", "selfie"),
+    (45, "1.Life-Portrait", "Magic Academy", "L45", "Turn me into a magic academy student", "selfie"),
+    (46, "1.Life-Portrait", "Street Style OOTD", "L46", "Take a street style OOTD photo of me", "selfie"),
+    (47, "1.Life-Portrait", "Cherry Blossom Triptych", "L48", "Make a cherry blossom themed photo triptych", "selfie"),
 
-    # 1. 生活与娱乐-萌宠/宝宝 (5)
-    (48, "1.生活与娱乐-萌宠/宝宝", "萌宠风格化", "L50", "把我的宠物变成萌宠风格化", "pet"),
-    (49, "1.生活与娱乐-萌宠/宝宝", "宠物VOGUE杂志", "L52", "帮我的宠物拍一张VOGUE杂志封面", "pet"),
-    (50, "1.生活与娱乐-萌宠/宝宝", "宠物入狱", "L53", "帮我的宠物拍一张入狱照", "pet"),
-    (51, "1.生活与娱乐-萌宠/宝宝", "宠物拟人", "L54", "把我的宠物拟人化", "pet"),
-    (52, "1.生活与娱乐-萌宠/宝宝", "宝宝漫画宫格", "L51", "帮我的宝宝做一张漫画表情宫格", "baby"),
+    # 1. Life & Entertainment - Pets & Babies (5)
+    (48, "1.Life-Pets", "Pet Stylization", "L50", "Stylize my pet into a cute character", "pet"),
+    (49, "1.Life-Pets", "Pet VOGUE Magazine", "L52", "Make a VOGUE magazine cover for my pet", "pet"),
+    (50, "1.Life-Pets", "Pet Mugshot", "L53", "Make a pet mugshot photo", "pet"),
+    (51, "1.Life-Pets", "Pet Humanization", "L54", "Humanize my pet", "pet"),
+    (52, "1.Life-Pets", "Baby Comic Grid", "L51", "Make a comic expression grid for my baby", "baby"),
 
-    # 2. 日常工作与自媒体-编辑工具 (6)
-    (53, "2.日常工作与自媒体-编辑工具", "换装（换成西装）", "L60", "帮我换装，换成西装", "selfie"),
-    (54, "2.日常工作与自媒体-编辑工具", "换发型（短发）", "L61", "帮我换个短发发型", "selfie"),
-    (55, "2.日常工作与自媒体-编辑工具", "换背景（沙滩）", "L62", "帮我把背景换成沙滩", "selfie"),
-    (56, "2.日常工作与自媒体-编辑工具", "扩图（左右各扩30%）", "L63", "帮我把照片左右各扩展30%", "selfie"),
-    (57, "2.日常工作与自媒体-编辑工具", "消除（去掉背景杂物）", "L64", "帮我把背景杂物消除掉", "selfie"),
-    (58, "2.日常工作与自媒体-编辑工具", "变清晰", "L65", "帮我把照片变清晰", "selfie"),
+    # 2. Media & Work - Editing Tools (6)
+    (53, "2.Media-Editing", "Outfit Change (suit)", "L60", "Change my outfit to a suit", "selfie"),
+    (54, "2.Media-Editing", "Hairstyle Change (short)", "L61", "Change my hairstyle to short hair", "selfie"),
+    (55, "2.Media-Editing", "Background Change (beach)", "L62", "Change my background to a beach", "selfie"),
+    (56, "2.Media-Editing", "Outpaint (expand 30%)", "L63", "Expand my photo 30% on each side", "selfie"),
+    (57, "2.Media-Editing", "Object Removal", "L64", "Remove background clutter from my photo", "selfie"),
+    (58, "2.Media-Editing", "Image Enhancement", "L65", "Enhance my photo to make it clearer", "selfie"),
 
-    # 2. 日常工作与自媒体-Social Media配图 (1)
-    (59, "2.日常工作与自媒体-Social Media配图", "Social Media Post", "M01", "帮我生成一张'Stay Hungry, Stay Foolish'的名言配图", None),
+    # 2. Media & Work - Social Media (1)
+    (59, "2.Media-Social", "Social Media Post", "M01", "Generate a 'Stay Hungry, Stay Foolish' quote card", None),
 
-    # 2. 日常工作与自媒体-海报 (4)
-    (60, "2.日常工作与自媒体-海报", "Poster Design", "M02", "帮我设计一张春季音乐会海报", None),
-    (61, "2.日常工作与自媒体-海报", "Handwritten Poster", "M04", "帮我做一张环保主题手抄报", None),
-    (62, "2.日常工作与自媒体-海报", "Illustration", "M05", "帮我画一幅吉卜力风格的浮空岛插画", None),
-    (63, "2.日常工作与自媒体-海报", "Picture Book Illustration", "M08", "帮我画一幅小狐狸发现树洞的绘本插画", None),
+    # 2. Media & Work - Poster (4)
+    (60, "2.Media-Poster", "Poster Design", "M02", "Design a spring concert poster", None),
+    (61, "2.Media-Poster", "Handwritten Poster", "M04", "Make an eco-themed bulletin board poster", None),
+    (62, "2.Media-Poster", "Illustration", "M05", "Draw a Ghibli-style floating island illustration", None),
+    (63, "2.Media-Poster", "Picture Book Illustration", "M08", "Draw a picture book illustration of a fox finding a tree hole", None),
 
-    # 2. 日常工作与自媒体-动画图/分镜图 (1)
-    (64, "2.日常工作与自媒体-动画图/分镜图", "Storyboard", "M03", "帮我画一个4格漫画讲述一天的生活", None),
+    # 2. Media & Work - Storyboard (1)
+    (64, "2.Media-Storyboard", "Storyboard", "M03", "Draw a 4-panel comic about a day in life", None),
 
-    # 2. 日常工作与自媒体-YouTube缩略图 (1)
-    (65, "2.日常工作与自媒体-YouTube缩略图", "YouTube Thumbnail", "M06", "帮我做一张'AI工具TOP10'的YouTube缩略图", None),
+    # 2. Media & Work - YouTube Thumbnail (1)
+    (65, "2.Media-Thumbnail", "YouTube Thumbnail", "M06", "Make an 'AI Tools TOP 10' YouTube thumbnail", None),
 
-    # 2. 日常工作与自媒体-教育类视觉图 (1)
-    (66, "2.日常工作与自媒体-教育类视觉图", "Educational Visual", "M07", "帮我做一张光合作用的教学图", None),
+    # 2. Media & Work - Educational Visual (1)
+    (66, "2.Media-Educational", "Educational Visual", "M07", "Make a photosynthesis educational diagram", None),
 
-    # 3. 专业设计 (8)
-    (67, "3.专业设计", "E-commerce Main Image", "P01", "帮我做一张蜂蜜产品电商头图", None),
-    (68, "3.专业设计", "Sticker Set Design", "P02", "用我的照片做一套贴纸集", "selfie"),
-    (69, "3.专业设计", "Interior Design", "P03", "帮我把房间设计成北欧简约风", "room"),
-    (70, "3.专业设计", "Logo Design", "P04", "帮我设计一个ALPINE品牌的山峰Logo", None),
-    (71, "3.专业设计", "Merchandise Design", "P05", "用我的照片做一个手办", "selfie"),
-    (72, "3.专业设计", "Coloring Book Page", "P06", "帮我画一页童话涂色书", None),
-    (73, "3.专业设计", "Game Asset Design", "P07", "帮我设计一个RPG战斗法师角色", None),
-    (74, "3.专业设计", "Product Marketing Design", "P08", "帮我设计一张耳机产品营销图", None),
+    # 3. Professional Design (8)
+    (67, "3.Pro-Design", "E-commerce Main Image", "P01", "Make a honey product e-commerce hero image", None),
+    (68, "3.Pro-Design", "Sticker Set Design", "P02", "Make a sticker set from my photo", "selfie"),
+    (69, "3.Pro-Design", "Interior Design", "P03", "Redesign my room in Nordic minimalist style", "room"),
+    (70, "3.Pro-Design", "Logo Design", "P04", "Design an ALPINE brand mountain logo", None),
+    (71, "3.Pro-Design", "Merchandise Design", "P05", "Make a figurine from my photo", "selfie"),
+    (72, "3.Pro-Design", "Coloring Book Page", "P06", "Draw a fairy tale coloring book page", None),
+    (73, "3.Pro-Design", "Game Asset Design", "P07", "Design an RPG battle mage character", None),
+    (74, "3.Pro-Design", "Product Marketing Design", "P08", "Design a headphone product marketing image", None),
 ]
 
 PHOTO_LABEL = {
-    "selfie": "[上传自拍照] ",
-    "pet": "[上传宠物照] ",
-    "baby": "[上传宝宝照] ",
-    "room": "[上传房间照] ",
+    "selfie": "[Upload selfie] ",
+    "pet": "[Upload pet photo] ",
+    "baby": "[Upload baby photo] ",
+    "room": "[Upload room photo] ",
 }
 
 
@@ -131,10 +131,10 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
-    csv_path = OUTPUT_DIR / "效果表.csv"
+    csv_path = OUTPUT_DIR / "effect_table.csv"
     with open(csv_path, "w", newline="", encoding="utf-8-sig") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["序号", "场景大类", "玩法", "模板ID", "input", "output图片文件名"])
+        writer.writerow(["Index", "Category", "Play", "Template ID", "Input", "Output Image Filename"])
 
         ok = 0
         miss = 0
@@ -143,13 +143,13 @@ def main():
             img = find_image(tid)
             if img:
                 fname = f"{idx:02d}_{tid}_{play}.png"
-                fname = fname.replace("/", "_").replace("（", "(").replace("）", ")")
+                fname = fname.replace("/", "_")
                 dest = IMAGES_DIR / fname
                 shutil.copy2(img, dest)
                 writer.writerow([idx, cat, play, tid, full_input, fname])
                 ok += 1
             else:
-                writer.writerow([idx, cat, play, tid, full_input, "（未生成）"])
+                writer.writerow([idx, cat, play, tid, full_input, "(not generated)"])
                 miss += 1
 
     print(f"CSV saved: {csv_path}")

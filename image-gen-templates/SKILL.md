@@ -149,111 +149,111 @@ END
 74 templates organized in 3 categories. Read `TEMPLATES.md` in the same skill directory
 for the full prompt patterns.
 
-### L: 生活与娱乐 Life & Entertainment (58 templates)
+### L: Life & Entertainment (58 templates)
 
 #### Stylization (29 templates)
 
-| ID | Template | Keywords (EN) | Keywords (ZH) | Input |
-|----|----------|---------------|---------------|-------|
-| L01 | Chibi Cartoon | chibi, Q-version, cute cartoon, mini me | Q版, 卡通, 萌版, 迷你 | Photo |
-| L02 | 3D Pixar Animation | 3D, Pixar, Disney, animated | 3D, 皮克斯, 迪士尼, 动画 | Photo |
-| L03 | Comic / Manga | comic, manga, graphic novel | 漫画, 日漫 | Photo |
-| L04 | Sketch / Pencil | sketch, pencil, drawing, graphite | 素描, 铅笔画, 手绘 | Photo |
-| L05 | Clay / Claymation | clay, claymation, plasticine, stop-motion | 黏土, 粘土, 定格动画 | Photo |
-| L06 | 80s Retro Animation | 80s, retro, synthwave, vintage cartoon | 80年代, 复古, 怀旧动画 | Photo |
-| L07 | Retro-Futurism | retro-future, space age, vintage sci-fi | 未来复古, 复古科幻 | Photo |
-| L08 | Ukiyo-e / Chinese Painting | ukiyo-e, Chinese painting, ink wash | 浮世绘, 国画, 国风, 古风, 水墨 | Photo |
-| L09 | Watercolor Portrait | watercolor, aquarelle, painting | 水彩, 水彩画 | Photo |
-| L10 | K-Pop Star | K-Pop, Korean idol, idol photo | K-Pop, 韩风, 韩国偶像, 明星 | Photo |
-| L11 | Imperial / Royal | imperial, royal, king, queen, emperor | 帝王, 皇帝, 王室, 帝王范 | Photo |
-| L12 | 90s Yearbook | 90s, yearbook, high school, retro photo | 90年代, 毕业照, 复古照 | Photo |
-| L13 | High Fashion | high fashion, vogue, editorial, couture | 高级时尚, 时尚大片, 杂志 | Photo |
-| L14 | Cyberpunk Portrait | cyberpunk, neon, cyber, futuristic | 赛博朋克, 赛博, 霓虹 | Photo |
-| L15 | Oil Painting / Classical | oil painting, classical, renaissance | 油画, 古典, 印象派 | Photo |
-| L16 | Pixel Art | pixel art, 8-bit, retro game, 16-bit | 像素, 像素风, 像素画 | Photo |
-| L17 | Flat / Vector Illustration | flat, vector, minimalist illustration | 平面插画, 扁平风, 矢量 | Photo |
-| L18 | Anime / 二次元 | anime, 二次元, Japanese animation | 二次元, 动漫, 番剧 | Photo |
-| L19 | Wool Felt / Needle Felt | wool felt, needle felt, felted | 羊毛毡, 毛毡, 手工毡 | Photo |
-| L20 | Colored Pencil | colored pencil, Prismacolor, crayon | 彩铅, 彩铅画, 彩色铅笔 | Photo |
-| L21 | Pop Art | pop art, Warhol, Lichtenstein | 波普, 波普艺术, 名画风 | Photo |
-| L22 | Miniature / Diorama | miniature, diorama, tilt-shift | 微缩景观, 微缩, 小人国 | Photo |
-| L23 | Children's Drawing | children drawing, kid art, crayon | 儿童绘画, 儿童画, 童画 | Photo |
-| L24 | Game CG / Thick Paint | game CG, digital painting, thick paint | 游戏CG, CG厚涂, 厚涂 | Photo |
-| L25 | Vaporwave | vaporwave, aesthetic, retrowave, glitch | 蒸汽波, 蒸汽波美学 | Photo |
-| L26 | Printmaking / Woodblock | printmaking, woodblock, linocut | 版画, 木版画, 油墨印刷 | Photo |
-| L27 | Fine Brush / Gongbi | gongbi, fine brush, meticulous | 工笔, 新工笔, 工笔画 | Photo |
-| L28 | Pen Sketch / Simple Line | pen sketch, line drawing, ink pen | 钢笔速写, 简笔画, 线描 | Photo |
-| L29 | Dark Fairy Tale | dark fairy tale, gothic, Tim Burton | 暗黑童话, 哥特, 暗黑 | Photo |
+| ID | Template | Keywords (EN) | Input |
+|----|----------|---------------|-------|
+| L01 | Chibi Cartoon | chibi, Q-version, cute cartoon, mini me | Photo |
+| L02 | 3D Pixar Animation | 3D, Pixar, Disney, animated | Photo |
+| L03 | Comic / Manga | comic, manga, graphic novel | Photo |
+| L04 | Sketch / Pencil | sketch, pencil, drawing, graphite | Photo |
+| L05 | Clay / Claymation | clay, claymation, plasticine, stop-motion | Photo |
+| L06 | 80s Retro Animation | 80s, retro, synthwave, vintage cartoon | Photo |
+| L07 | Retro-Futurism | retro-future, space age, vintage sci-fi | Photo |
+| L08 | Ukiyo-e / Chinese Painting | ukiyo-e, Chinese painting, ink wash | Photo |
+| L09 | Watercolor Portrait | watercolor, aquarelle, painting | Photo |
+| L10 | K-Pop Star | K-Pop, Korean idol, idol photo | Photo |
+| L11 | Imperial / Royal | imperial, royal, king, queen, emperor | Photo |
+| L12 | 90s Yearbook | 90s, yearbook, high school, retro photo | Photo |
+| L13 | High Fashion | high fashion, vogue, editorial, couture | Photo |
+| L14 | Cyberpunk Portrait | cyberpunk, neon, cyber, futuristic | Photo |
+| L15 | Oil Painting / Classical | oil painting, classical, renaissance | Photo |
+| L16 | Pixel Art | pixel art, 8-bit, retro game, 16-bit | Photo |
+| L17 | Flat / Vector Illustration | flat, vector, minimalist illustration | Photo |
+| L18 | Anime | anime, Japanese animation, cartoon | Photo |
+| L19 | Wool Felt / Needle Felt | wool felt, needle felt, felted | Photo |
+| L20 | Colored Pencil | colored pencil, Prismacolor, crayon | Photo |
+| L21 | Pop Art | pop art, Warhol, Lichtenstein | Photo |
+| L22 | Miniature / Diorama | miniature, diorama, tilt-shift | Photo |
+| L23 | Children's Drawing | children drawing, kid art, crayon | Photo |
+| L24 | Game CG / Thick Paint | game CG, digital painting, thick paint | Photo |
+| L25 | Vaporwave | vaporwave, aesthetic, retrowave, glitch | Photo |
+| L26 | Printmaking / Woodblock | printmaking, woodblock, linocut | Photo |
+| L27 | Fine Brush / Gongbi | gongbi, fine brush, meticulous | Photo |
+| L28 | Pen Sketch / Simple Line | pen sketch, line drawing, ink pen | Photo |
+| L29 | Dark Fairy Tale | dark fairy tale, gothic, Tim Burton | Photo |
 
 #### Portrait & Photo Scenes (18 templates)
 
-| ID | Template | Keywords (EN) | Keywords (ZH) | Input |
-|----|----------|---------------|---------------|-------|
-| L30 | Studio Photoshoot | photoshoot, studio, professional portrait | 写真, 棚拍, 专业照 | Photo |
-| L31 | ID Photo | ID photo, passport, headshot | 证件照, 一寸照, 登记照 | Photo |
-| L32 | Emoji / Sticker Pack | emoji, sticker, emoticon | 表情包, 贴纸, 表情 | Photo |
-| L33 | Avatar / Profile Picture | avatar, profile, pfp, icon | 头像, 个性头像, 头像生成 | Photo |
-| L34 | Film / Cinematic Portrait | film photography, cinematic, movie still | 电影写真, 胶片, 电影感 | Photo |
-| L35 | Dreamy / Hazy Portrait | dreamy, hazy, soft focus, ethereal | 朦胧, 朦胧肖像, 梦幻 | Photo |
-| L36 | Indoor Scene Portrait | indoor, side angle, restaurant vintage | 室内侧拍, 室内自拍, 室内, 餐厅复古 | Photo |
-| L37 | Dark Mood Portrait | dark mood, low-key, moody | 暗调, 暗调情绪, 低调 | Photo |
-| L38 | Iconic Location Shot | red wall, landmark, Forbidden City | 红墙, 中天门, 摩崖造像, 古建筑 | Photo |
-| L39 | Spring Floral Portrait | spring, cherry blossom, pear blossom | 春日写真, 樱花, 梨花, 蔷薇 | Photo |
-| L40 | Natural Light & Shadow | dappled light, tree shadow, sunlight | 斑驳树影, 阳光特写, 发丝发光 | Photo |
-| L41 | Sunset / Golden Hour | sunset, golden hour, silhouette | 日落, 落日叠影, 黄金时段 | Photo |
-| L42 | Retro Film & Polaroid | polaroid, film, vintage camera | 车内胶片, 拍立得, 古早自拍 | Photo |
-| L43 | Winter Snow Portrait | winter, snow, frosty, cold | 下雪天, 雪地人像, 冬季写真, 清冷雪景 | Photo |
-| L44 | Beach & Underwater | beach, underwater, ocean, diving | 海边写真, 水下写真, 水中 | Photo |
-| L45 | Fantasy / Magical Scene | magic, wizard, fantasy, spell | 魔法学院, 变成岛主, 星空眼眸 | Photo |
-| L46 | Social Media / Street Style | OOTD, Plog, street style | 网感头像, OOTD, Plog, 站姐 | Photo |
-| L48 | Photo Grid Layout | grid, triptych, photo grid | 三宫格, 樱花三宫格, 宫格 | Photo |
+| ID | Template | Keywords (EN) | Input |
+|----|----------|---------------|-------|
+| L30 | Studio Photoshoot | photoshoot, studio, professional portrait | Photo |
+| L31 | ID Photo | ID photo, passport, headshot | Photo |
+| L32 | Emoji / Sticker Pack | emoji, sticker, emoticon | Photo |
+| L33 | Avatar / Profile Picture | avatar, profile, pfp, icon | Photo |
+| L34 | Film / Cinematic Portrait | film photography, cinematic, movie still | Photo |
+| L35 | Dreamy / Hazy Portrait | dreamy, hazy, soft focus, ethereal | Photo |
+| L36 | Indoor Scene Portrait | indoor, side angle, restaurant vintage | Photo |
+| L37 | Dark Mood Portrait | dark mood, low-key, moody | Photo |
+| L38 | Iconic Location Shot | red wall, landmark, Forbidden City | Photo |
+| L39 | Spring Floral Portrait | spring, cherry blossom, pear blossom | Photo |
+| L40 | Natural Light & Shadow | dappled light, tree shadow, sunlight | Photo |
+| L41 | Sunset / Golden Hour | sunset, golden hour, silhouette | Photo |
+| L42 | Retro Film & Polaroid | polaroid, film, vintage camera | Photo |
+| L43 | Winter Snow Portrait | winter, snow, frosty, cold | Photo |
+| L44 | Beach & Underwater | beach, underwater, ocean, diving | Photo |
+| L45 | Fantasy / Magical Scene | magic, wizard, fantasy, spell | Photo |
+| L46 | Social Media / Street Style | OOTD, Plog, street style | Photo |
+| L48 | Photo Grid Layout | grid, triptych, photo grid | Photo |
 
 #### Pets & Babies (5 templates)
 
-| ID | Template | Keywords (EN) | Keywords (ZH) | Input |
-|----|----------|---------------|---------------|-------|
-| L50 | Pet Stylization | cute pet, pet portrait, kawaii pet | 萌宠, 宠物造型, 宠物 | Pet photo |
-| L51 | Baby Comic Grid | baby comic, baby expressions, grid | 宝宝, 宝宝漫画, 宫格 | Baby photo |
-| L52 | Pet VOGUE Magazine | pet magazine, pet cover, VOGUE | 宠物杂志, 宠物封面 | Pet photo |
-| L53 | Pet Costume Play | pet costume, pet mugshot, pet dress-up | 宠物入狱, 萌宠打工, 宠物变装 | Pet photo |
-| L54 | Pet Humanization | pet humanization, anthropomorphic | 宠物拟人, 宠物拟人化 | Pet photo |
+| ID | Template | Keywords (EN) | Input |
+|----|----------|---------------|-------|
+| L50 | Pet Stylization | cute pet, pet portrait, kawaii pet | Pet photo |
+| L51 | Baby Comic Grid | baby comic, baby expressions, grid | Baby photo |
+| L52 | Pet VOGUE Magazine | pet magazine, pet cover, VOGUE | Pet photo |
+| L53 | Pet Costume Play | pet costume, pet mugshot, pet dress-up | Pet photo |
+| L54 | Pet Humanization | pet humanization, anthropomorphic | Pet photo |
 
 #### Try-on, Editing & Enhancement (6 templates)
 
-| ID | Template | Keywords (EN) | Keywords (ZH) | Input |
-|----|----------|---------------|---------------|-------|
-| L60 | Outfit Change | outfit, clothes, wardrobe, try-on | 换装, 换衣服, 试穿 | Photo + text |
-| L61 | Hairstyle Change | hairstyle, haircut, hair color | 发型, 换发型, 理发 | Photo + text |
-| L62 | Background Change | background, backdrop, remove bg | 换背景, 抠图, 背景 | Photo + text |
-| L63 | Image Outpainting | outpaint, expand, extend canvas | 扩图, 扩展, 外扩 | Photo + direction |
-| L64 | Object Removal | remove, erase, delete object | 消除, 擦除, 移除物体 | Photo + target |
-| L65 | Image Enhancement | enhance, sharpen, upscale, super resolution | 变清晰, 增强, 超分辨率 | Photo |
+| ID | Template | Keywords (EN) | Input |
+|----|----------|---------------|-------|
+| L60 | Outfit Change | outfit, clothes, wardrobe, try-on | Photo + text |
+| L61 | Hairstyle Change | hairstyle, haircut, hair color | Photo + text |
+| L62 | Background Change | background, backdrop, remove bg | Photo + text |
+| L63 | Image Outpainting | outpaint, expand, extend canvas | Photo + direction |
+| L64 | Object Removal | remove, erase, delete object | Photo + target |
+| L65 | Image Enhancement | enhance, sharpen, upscale, super resolution | Photo |
 
-### M: 日常工作与自媒体 Media & Work (8 templates)
+### M: Media & Work (8 templates)
 
-| ID | Template | Keywords (EN) | Keywords (ZH) | Input |
-|----|----------|---------------|---------------|-------|
-| M01 | Social Media Post | social media, Instagram, quote card | 配图, 朋友圈, 社交, 名言 | Text (+photo) |
-| M02 | Poster Design | poster, flyer, banner, event | 海报, 传单, 横幅 | Text |
-| M03 | Storyboard / Comic Strip | storyboard, comic strip, panels | 分镜, 漫画条, 故事板 | Text (+photo) |
-| M04 | Handwritten Poster | handwritten, bulletin, class poster | 手抄报, 板报 | Text |
-| M05 | Illustration | illustration, artwork, digital art | 插画, 插图, 绘画 | Text |
-| M06 | YouTube Thumbnail | YouTube, thumbnail, video cover | YouTube缩略图, 封面, 视频封面 | Text (+photo) |
-| M07 | Educational Visual | educational, infographic, diagram | 教育, 知识图, 教学图 | Text |
-| M08 | Picture Book Illustration | picture book, storybook, bedtime | 绘本, 童话, 儿童读物 | Text |
+| ID | Template | Keywords (EN) | Input |
+|----|----------|---------------|-------|
+| M01 | Social Media Post | social media, Instagram, quote card | Text (+photo) |
+| M02 | Poster Design | poster, flyer, banner, event | Text |
+| M03 | Storyboard / Comic Strip | storyboard, comic strip, panels | Text (+photo) |
+| M04 | Handwritten Poster | handwritten, bulletin, class poster | Text |
+| M05 | Illustration | illustration, artwork, digital art | Text |
+| M06 | YouTube Thumbnail | YouTube, thumbnail, video cover | Text (+photo) |
+| M07 | Educational Visual | educational, infographic, diagram | Text |
+| M08 | Picture Book Illustration | picture book, storybook, bedtime | Text |
 
-### P: 专业设计 Professional Design (8 templates)
+### P: Professional Design (8 templates)
 
-| ID | Template | Keywords (EN) | Keywords (ZH) | Input |
-|----|----------|---------------|---------------|-------|
-| P01 | E-commerce Main Image | e-commerce, product, Amazon, shop | 电商, 头图, 产品图 | Product photo/text |
-| P02 | Sticker Set Design | sticker set, character stickers | 贴纸集, 表情贴纸 | Photo |
-| P03 | Interior Design | interior, room design, home decor | 家装, 室内设计, 装修 | Room photo |
-| P04 | Logo Design | logo, brand, identity, icon | Logo, 标志, 品牌 | Text |
-| P05 | Merchandise Design | merchandise, keychain, figure | 手办, 钥匙扣, 周边 | Photo/text |
-| P06 | Coloring Book Page | coloring, line art, coloring page | 涂色, 线稿, 涂色页 | Text (+photo) |
-| P07 | Game Asset Design | game character, concept art, game asset | 游戏, 游戏角色, 游戏资产 | Text/photo |
-| P08 | Product Marketing Design | marketing, ad creative, campaign | 营销, 广告, 产品营销 | Product + text |
+| ID | Template | Keywords (EN) | Input |
+|----|----------|---------------|-------|
+| P01 | E-commerce Main Image | e-commerce, product, Amazon, shop | Product photo/text |
+| P02 | Sticker Set Design | sticker set, character stickers | Photo |
+| P03 | Interior Design | interior, room design, home decor | Room photo |
+| P04 | Logo Design | logo, brand, identity, icon | Text |
+| P05 | Merchandise Design | merchandise, keychain, figure | Photo/text |
+| P06 | Coloring Book Page | coloring, line art, coloring page | Text (+photo) |
+| P07 | Game Asset Design | game character, concept art, game asset | Text/photo |
+| P08 | Product Marketing Design | marketing, ad creative, campaign | Product + text |
 
 ---
 
@@ -269,7 +269,7 @@ most popular ones to try:
 🎨 **STYLIZATION** (29 styles to transform your photo)
   • Chibi Cartoon — Turn yourself into an adorable Q-version character
   • 3D Pixar Animation — Become a Disney/Pixar movie character
-  • Anime / 二次元 — Beautiful Japanese animation style portrait
+  • Anime — Beautiful Japanese animation style portrait
   • Oil Painting — Classical masterpiece portrait
   • Game CG / Thick Paint — AAA game cutscene illustration
   • Vaporwave — 90s aesthetic with glitch effects
@@ -328,79 +328,79 @@ Template Registry above. If a keyword matches, select that template.
 
 | User intent pattern | Matched template |
 |---------------------|-----------------|
-| "turn me into" / "变成" / "make me look like" + style word | L category stylization (match specific style) |
-| "把我变成" / "帮我生成...风格" | L01-L29 |
-| photo + "cartoon" / "anime" / "卡通" / "动漫" | L01 (Chibi) or L03 (Comic) |
-| photo + "3D" / "皮克斯" / "Pixar" | L02 |
-| photo + "sketch" / "draw" / "素描" | L04 |
-| photo + "clay" / "黏土" | L05 |
-| photo + "古风" / "国风" / "水墨" | L08 |
-| photo + "水彩" / "watercolor" | L09 |
-| photo + "油画" / "oil painting" / "classical" / "古典" | L15 |
-| photo + "像素" / "pixel" / "8-bit" / "retro game" | L16 |
-| photo + "扁平" / "flat" / "vector" / "平面插画" | L17 |
-| photo + "二次元" / "anime" / "动漫" / "番剧" | L18 |
-| photo + "羊毛毡" / "wool felt" / "needle felt" / "毛毡" | L19 |
-| photo + "彩铅" / "colored pencil" / "彩色铅笔" | L20 |
-| photo + "波普" / "pop art" / "Warhol" / "名画风" | L21 |
-| photo + "微缩" / "miniature" / "diorama" / "小人国" | L22 |
-| photo + "儿童画" / "children drawing" / "kid art" / "童画" | L23 |
-| photo + "游戏CG" / "game CG" / "厚涂" / "digital painting" | L24 |
-| photo + "蒸汽波" / "vaporwave" / "aesthetic" / "retrowave" | L25 |
-| photo + "版画" / "printmaking" / "woodblock" / "木版画" | L26 |
-| photo + "工笔" / "gongbi" / "fine brush" / "新工笔" | L27 |
-| photo + "速写" / "简笔画" / "pen sketch" / "line drawing" | L28 |
-| photo + "暗黑童话" / "dark fairy tale" / "gothic" / "Tim Burton" | L29 |
-| photo + "写真" / "portrait" / "photoshoot" | L30 |
-| photo + "证件照" / "ID photo" / "passport" | L31 |
-| photo + "表情包" / "sticker" / "emoji" | L32 |
-| photo + "头像" / "avatar" / "profile" | L33 |
-| photo + "电影" / "cinematic" / "film photography" / "胶片" | L34 |
-| photo + "朦胧" / "dreamy" / "hazy" / "梦幻" / "soft focus" | L35 |
-| photo + "室内" / "indoor" / "室内侧拍" / "餐厅" | L36 |
-| photo + "暗调" / "dark mood" / "low-key" / "暗调情绪" | L37 |
-| photo + "红墙" / "red wall" / "中天门" / "摩崖造像" / "古建筑" | L38 |
-| photo + "春日" / "樱花" / "cherry blossom" / "梨花" / "蔷薇" | L39 |
-| photo + "树影" / "斑驳" / "dappled light" / "阳光" / "发丝发光" | L40 |
-| photo + "日落" / "sunset" / "golden hour" / "落日" | L41 |
-| photo + "拍立得" / "polaroid" / "车内胶片" / "古早自拍" | L42 |
-| photo + "雪" / "snow" / "冬季" / "冬天" / "下雪" | L43 |
-| photo + "海边" / "beach" / "水下" / "underwater" / "ocean" | L44 |
-| photo + "魔法" / "magic" / "fantasy" / "wizard" / "魔法学院" | L45 |
-| photo + "OOTD" / "Plog" / "网感" / "street style" / "站姐" | L46 |
-| photo + "三宫格" / "grid" / "triptych" / "宫格" | L48 |
+| "turn me into" / "make me look like" + style word | L category stylization (match specific style) |
+| "turn me into [style]" / "generate [style] for me" | L01-L29 |
+| photo + "cartoon" / "anime" | L01 (Chibi) or L03 (Comic) |
+| photo + "3D" / "Pixar" | L02 |
+| photo + "sketch" / "draw" | L04 |
+| photo + "clay" / "claymation" | L05 |
+| photo + "Chinese style" / "ink wash" | L08 |
+| photo + "watercolor" / "aquarelle" | L09 |
+| photo + "oil painting" / "classical" | L15 |
+| photo + "pixel" / "8-bit" / "retro game" | L16 |
+| photo + "flat" / "vector" / "illustration" | L17 |
+| photo + "anime" / "Japanese animation" | L18 |
+| photo + "wool felt" / "needle felt" | L19 |
+| photo + "colored pencil" / "crayon" | L20 |
+| photo + "pop art" / "Warhol" | L21 |
+| photo + "miniature" / "diorama" | L22 |
+| photo + "children drawing" / "kid art" | L23 |
+| photo + "game CG" / "thick paint" / "digital painting" | L24 |
+| photo + "vaporwave" / "aesthetic" / "retrowave" | L25 |
+| photo + "printmaking" / "woodblock" | L26 |
+| photo + "gongbi" / "fine brush" | L27 |
+| photo + "pen sketch" / "line drawing" | L28 |
+| photo + "dark fairy tale" / "gothic" / "Tim Burton" | L29 |
+| photo + "portrait" / "photoshoot" | L30 |
+| photo + "ID photo" / "passport" | L31 |
+| photo + "sticker" / "emoji" | L32 |
+| photo + "avatar" / "profile" | L33 |
+| photo + "cinematic" / "film photography" | L34 |
+| photo + "dreamy" / "hazy" / "soft focus" | L35 |
+| photo + "indoor" / "side angle" / "cafe" | L36 |
+| photo + "dark mood" / "low-key" / "moody" | L37 |
+| photo + "red wall" / "landmark" / "ancient architecture" | L38 |
+| photo + "spring" / "cherry blossom" / "floral" | L39 |
+| photo + "dappled light" / "tree shadow" / "sunlight" | L40 |
+| photo + "sunset" / "golden hour" | L41 |
+| photo + "polaroid" / "instant film" / "retro" | L42 |
+| photo + "snow" / "winter" | L43 |
+| photo + "beach" / "underwater" / "ocean" | L44 |
+| photo + "magic" / "fantasy" / "wizard" | L45 |
+| photo + "OOTD" / "Plog" / "street style" | L46 |
+| photo + "grid" / "triptych" | L48 |
 | pet photo + styling keywords | L50 |
-| baby photo + "漫画" / "comic" / "grid" | L51 |
-| pet photo + "杂志" / "magazine" / "VOGUE" | L52 |
-| pet photo + "入狱" / "mugshot" / "打工" / "costume" / "变装" | L53 |
-| pet photo + "拟人" / "humanize" / "as human" | L54 |
-| photo + "换装" / "换衣服" / "try on" / "outfit" | L60 |
-| photo + "发型" / "hairstyle" / "hair" | L61 |
-| photo + "背景" / "background" | L62 |
-| photo + "扩图" / "outpaint" / "expand" / "extend canvas" | L63 |
-| photo + "消除" / "remove" / "erase" / "擦除" / "删除物体" | L64 |
-| photo + "变清晰" / "enhance" / "sharpen" / "upscale" / "超分辨率" | L65 |
+| baby photo + "comic" / "grid" | L51 |
+| pet photo + "magazine" / "VOGUE" | L52 |
+| pet photo + "mugshot" / "costume" / "dress-up" | L53 |
+| pet photo + "humanize" / "as human" | L54 |
+| photo + "outfit" / "try on" / "wardrobe" | L60 |
+| photo + "hairstyle" / "hair" | L61 |
+| photo + "background" / "backdrop" | L62 |
+| photo + "outpaint" / "expand" / "extend canvas" | L63 |
+| photo + "remove" / "erase" / "delete object" | L64 |
+| photo + "enhance" / "sharpen" / "upscale" | L65 |
 | text about social media / quotes / cards | M01 |
 | text about events / posters / flyers | M02 |
 | text about stories / panels / storyboard | M03 |
-| text about 手抄报 / bulletin | M04 |
+| text about bulletin / handwritten poster | M04 |
 | text about illustration / artwork / scene | M05 |
-| text about YouTube / thumbnail / 缩略图 / video cover | M06 |
-| text about educational / infographic / 教育 / diagram | M07 |
-| text about picture book / 绘本 / storybook / 童话 | M08 |
-| product + "电商" / "e-commerce" / "product shot" | P01 |
-| photo + "贴纸集" / "sticker set" | P02 |
-| room photo + "设计" / "design" / "装修" | P03 |
+| text about YouTube / thumbnail / thumbnail / video cover | M06 |
+| text about educational / infographic / educational / diagram | M07 |
+| text about picture book / storybook / picture book | M08 |
+| product + "e-commerce" / "product shot" | P01 |
+| photo + "sticker set" / "sticker design" | P02 |
+| room photo + "design" / "renovation" | P03 |
 | text about logo / brand / identity | P04 |
-| photo/text + "手办" / "钥匙扣" / "figure" | P05 |
-| text about coloring / 涂色 / line art | P06 |
-| text about game / 游戏 / character design / concept art | P07 |
-| text/product about marketing / 营销 / ad / campaign / 广告 | P08 |
+| photo/text + "figurine" / "keychain" / "figure" | P05 |
+| text about coloring / coloring / line art | P06 |
+| text about game / game / character design / concept art | P07 |
+| text/product about marketing / marketing / ad / campaign | P08 |
 
 ### Step 3: Ambiguity resolution
 
 If multiple templates could match:
-1. Prefer the MORE SPECIFIC template (e.g., "Q版卡通" → L01, not generic L03)
+1. Prefer the MORE SPECIFIC template (e.g., "chibi cartoon" → L01, not generic L03)
 2. If the user provided a photo, prefer photo-based templates
 3. If still ambiguous, ask the user to choose between the top 2-3 candidates
 

@@ -43,11 +43,11 @@ Covers **all P0-P2 scenarios** from competitive analysis:
 | **P0 — Portraits** | Studio, ID photo, Film/Cinematic, Dreamy, + 13 new photo scene templates (Indoor, Dark Mood, Red Wall, Spring Floral, Sunset, Polaroid, Snow, Beach, Fantasy, Street Style, Beauty Close-up, Photo Grid) |
 | **P0 — Pets & Babies** | Pet stylization, baby comic grid, pet magazine, pet costume, pet humanization |
 | **P1 — Editing** | Outfit change, hairstyle change, background change |
-| **P1 — Enhancement** | Image outpainting (扩图), object removal (消除), image enhancement (变清晰) |
+| **P1 — Enhancement** | Image outpainting, object removal, image enhancement |
 | **P1 — Social Media** | Quote cards, posters, storyboards, handwritten posters, illustrations, YouTube thumbnails |
 | **P1 — Professional Design** | E-commerce, sticker sets, interior design, logos, merchandise, coloring books, game assets, product marketing |
-| **豆包P图玩法** | 樱花三宫格, 室内侧拍, 暗调情绪, 红墙拍照, 春日写真, 斑驳树影, 日落时分, 车内胶片, 雪地人像, 海边写真, 魔法学院, 网感头像, 美甲特写... |
-| **竞品功能** | ChatGPT, Grok, Doubao AI创作 全部覆盖 |
+| **Douyin-style Photo Play** | Cherry Blossom Triptych, Indoor Side Shot, Dark Mood, Red Wall Shot, Spring Floral, Dappled Shadow, Sunset, Retro Film, Snow Portrait, Beach, Magic Academy, Street Style Avatar, Nail Close-up... |
+| **Competitor Coverage** | ChatGPT, Grok, Doubao AI — all covered |
 
 ## Prompt Methodology
 

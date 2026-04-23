@@ -1,11 +1,13 @@
 ---
 name: photo-blog
 description: >-
-  Photo blog generator. Analyze photos with Gemini 3 Pro, score and select highlights
-  with diversity optimization, generate narrative-driven blog with poetic title, scene
-  insights, and tips. Supports 1-9 images, theme/style keywords, and triple output
-  (HTML, rich text, PNG). Triggers when users request photo blog, life summary, travel
-  log, photo diary, or visual story from images.
+  Photo blog generator with AI cover image. Analyze photos with Gemini 3 Pro, score
+  and select highlights with diversity optimization, generate narrative-driven blog with
+  poetic title, scene insights, and tips. Generates diverse AI cover images using a
+  89-template style library matched to blog content (mood, theme, photo count).
+  Supports 1-10 images, theme/style keywords, and triple output (HTML, rich text, PNG).
+  Triggers when users request photo blog, life summary, travel log, photo diary, or
+  visual story from images.
 argument-hint: <image_directory_or_file>
 metadata:
   execution_mode: sandbox
@@ -13,9 +15,9 @@ metadata:
     - imagen_generate
 ---
 
-# Photo Blog Generator
+# Photo Blog Generator (with AI Cover)
 
-Generate a beautiful, narrative-driven photo blog from a set of images. Analyzes photos using Gemini 3 Pro for scene understanding, selects highlights with diversity optimization, and produces a styled blog with title, narrative, insights, and practical tips.
+Generate a beautiful, narrative-driven photo blog with an AI-generated cover image. Analyzes photos using Gemini 3 Pro for scene understanding, selects highlights with diversity optimization, generates a diverse cover via template-matched Gemini 3.1 Flash Image, and produces a styled blog with title, narrative, insights, and practical tips.
 
 ## When to Use
 
@@ -45,12 +47,13 @@ The `main.py` script lives in the same directory as this SKILL.md. Use the direc
 #   ~/.cursor/skills/photo-blog/main.py   (Cursor)
 
 python3 <SKILL_DIR>/main.py <image_dir_or_files> \
-    [--max-highlights 9] \
+    [--max-highlights 10] \
     [--output blog.html] \
     [--date 2026-04-13] \
     [--theme "food journey"] \
     [--style "minimalist"] \
     [--format html|richtext|png|all] \
+    [--skip-cover] \
     [--save-analysis analysis.json]
 ```
 
@@ -59,12 +62,13 @@ python3 <SKILL_DIR>/main.py <image_dir_or_files> \
 | Arg | Description | Default |
 |-----|-------------|---------|
 | `input` | Image directory or file path | required |
-| `--max-highlights` | Number of highlight photos (1-9) | 9 |
+| `--max-highlights` | Number of highlight photos (1-10) | 10 |
 | `--output` | Output file path | `blog_output.html` |
 | `--date` | Date for footer (auto-detected from EXIF if omitted) | auto |
 | `--theme` | Theme keyword to guide generation (e.g., "food", "nightlife") | auto |
 | `--style` | Style keyword (alias for --theme) | auto |
 | `--format` | Output format: `html` / `richtext` / `png` / `all` | `all` |
+| `--skip-cover` | Skip AI cover generation, use original photo as hero | false |
 | `--save-analysis` | Save analysis JSON for debugging | none |
 
 ### Output Format Selection
@@ -81,12 +85,12 @@ By default (`--format all`), all three formats are generated every time:
 1. **PNG** — upload via `mcp__proxy__upload_file` and provide a download link (e.g. "📷 [PNG download](<url>)")
 2. **HTML** — upload via `mcp__proxy__upload_file` and provide a download link with i18n label:
    - English: `📄 [HTML version (for internal testing)](<url>)`
-   - Chinese: `📄 [HTML 版本（供内部测试）](<url>)`
+   - Chinese: `📄 [HTML version (for internal testing)](<url>)`
 3. **Do NOT** embed PNG as an inline image (`![...](<url>)`). Provide download links only.
 
 ### Image Count Support
 
-Supports **1 to 9** input images. Works with a single photo up to large albums (auto-selects top 9 highlights from any number of inputs).
+Supports **1 to 10** input images. Works with a single photo up to large albums (auto-selects top 10 highlights from any number of inputs).
 
 ### Theme / Style Keywords
 
@@ -112,6 +116,17 @@ Alternatively, set the `COMPASS_CLIENT_TOKEN` environment variable (takes preced
 
 If `config.json` is missing and the env var is not set, the script exits with `ERROR: Compass API client_token not found.` — create the config file before running.
 
+## AI Cover Image
+
+By default, an AI-generated cover image replaces the hero photo at the top of the blog. The cover is:
+
+- **Template-driven**: Matched from a library of 89 analyzed reference styles
+- **Content-aware**: Scoring considers photo count, mood, theme, and visual diversity
+- **Style-diverse**: Diversity penalty ensures consecutive runs produce different aesthetics (kawaii, grunge, minimalist, magazine, retro, etc.)
+- **Language-aware**: Text on the cover follows the blog language (English by default)
+
+Use `--skip-cover` to fall back to the original highlight photo as hero.
+
 ## Capabilities
 
 - Gemini 3 Pro multi-modal photo understanding (scene, mood, objects, narrative hooks)
@@ -119,4 +134,5 @@ If `config.json` is missing and the env var is not set, the script exits with `E
 - Diversity-optimized highlight selection (mood + location + scene variety)
 - EXIF-based date extraction and orientation correction
 - Theme-guided or auto-detected narrative generation
+- AI cover image with 89-template style library and content-aware matching
 - Triple output: HTML, rich text (Markdown), PNG composite

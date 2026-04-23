@@ -3,7 +3,7 @@ name: life-comic
 description: >-
   Life comic generator. Analyze photos with Gemini 3 Pro for comic-worthy moments,
   design storyboard with emotional narrative, generate warm hand-drawn illustration
-  style multi-panel comic via Gemini 3.1 Flash Image. Supports 1-9 panels with
+  style multi-panel comic via Gemini 3.1 Flash Image. Supports 1-10 panels with
   adaptive grid layout, theme/style keywords, and triple output (HTML, rich text, PNG).
   Triggers when users request comic strip, manga, illustrated story, visual diary,
   or comic-style summary from photos.
@@ -62,7 +62,7 @@ python3 <SKILL_DIR>/main.py <image_dir_or_files> \
 | Arg | Description | Default |
 |-----|-------------|---------|
 | `input` | Image directory or file path | required |
-| `--panels` | Number of comic panels (1-9) | 6 |
+| `--panels` | Number of comic panels (1-10) | 6 |
 | `--output` | Output file path | `comic_output.html` |
 | `--date` | Date for footer (auto-detected from EXIF if omitted) | auto |
 | `--output-dir` | Directory for generated comic images | `.` |
@@ -86,13 +86,13 @@ By default (`--format all`), all three formats are generated every time:
 1. **PNG** — upload via `mcp__proxy__upload_file` and provide a download link (e.g. "📷 [PNG download](<url>)")
 2. **HTML** — upload via `mcp__proxy__upload_file` and provide a download link with i18n label:
    - English: `📄 [HTML version (for internal testing)](<url>)`
-   - Chinese: `📄 [HTML 版本（供内部测试）](<url>)`
+   - Chinese: `📄 [HTML version (for internal testing)](<url>)`
 3. **Do NOT** embed PNG as an inline image (`![...](<url>)`). Provide download links only.
 
 ### Panel Count Support
 
-Supports **1 to 9** panels. The grid layout adapts automatically:
-- 1 panel: 1x1 | 2: 1x2 | 3: 1x3 | 4: 2x2 | 5-6: 2x3 | 7-8: 2x4 | 9: 3x3
+Supports **1 to 10** panels. The grid layout adapts automatically:
+- 1 panel: 1x1 | 2: 1x2 | 3: 1x3 | 4: 2x2 | 5-6: 2x3 | 7-8: 2x4 | 9: 3x3 | 10: 2x5
 
 ### Theme / Style Keywords
 

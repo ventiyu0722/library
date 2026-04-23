@@ -2,7 +2,7 @@
 """Photo Blog Generator — main entry point.
 
 Usage:
-    python3 main.py <image_dir_or_files> [--max-highlights 9] [--output blog.html] [--date 2026-04-13]
+    python3 main.py <image_dir_or_files> [--max-highlights 10] [--output blog.html] [--date 2026-04-13]
         [--theme "food journey"] [--format html] [--skip-cover] [--output-dir .]
 
 Workflow:
@@ -59,6 +59,7 @@ def analysis_to_dict(a: PhotoAnalysis) -> dict:
         "time_of_day": a.time_of_day,
         "objects": a.objects,
         "narrative_hook": a.narrative_hook,
+        "orientation_correct": a.orientation_correct,
         "score": a.score.composite,
         "tier": a.score.tier,
     }
@@ -67,7 +68,7 @@ def analysis_to_dict(a: PhotoAnalysis) -> dict:
 def main():
     parser = argparse.ArgumentParser(description="Photo Blog Generator")
     parser.add_argument("input", help="Image directory or file path")
-    parser.add_argument("--max-highlights", type=int, default=9, help="Max highlight photos (1-9)")
+    parser.add_argument("--max-highlights", type=int, default=10, help="Max highlight photos (1-10)")
     parser.add_argument("--output", default="blog_output.html", help="Output HTML path")
     parser.add_argument("--date", default=None, help="Date string for footer")
     parser.add_argument("--save-analysis", default=None, help="Save analysis JSON to file")
@@ -82,7 +83,7 @@ def main():
     args = parser.parse_args()
 
     user_theme = args.theme or args.style
-    max_hl = min(max(args.max_highlights, 1), 9)
+    max_hl = min(max(args.max_highlights, 1), 10)
 
     print("=" * 60)
     print("  PHOTO BLOG GENERATOR v0.2")
@@ -133,15 +134,19 @@ def main():
         print(f"\n  Theme: '{user_theme}' (lang={lang})")
 
     print(f"\n[4/{total_steps}] Generating blog content...")
-    blog_content = generate_blog_content(all_dicts, highlight_dicts, date_str=date_str, user_theme=user_theme, lang=lang)
+    blog_content = generate_blog_content(all_dicts, highlight_dicts, date_str=date_str, user_theme=user_theme, lang=lang, target_count=len(highlight_dicts))
     print(f"  Title: {blog_content.get('title', '?')}")
     print(f"  Insights: {len(blog_content.get('insights', []))} items")
+    actual_insights = len(blog_content.get("insights", []))
+    if actual_insights < len(highlight_dicts):
+        print(f"  [WARN] Blog returned {actual_insights} insights, expected {len(highlight_dicts)}")
 
     suggested = blog_content.get("suggested_themes", [])
     if suggested:
         print(f"  Suggested themes: {', '.join(suggested)}")
 
     highlight_paths = [h.file_path for h in highlights]
+    orientation_flags = [h.orientation_correct for h in highlights]
     output_base = os.path.splitext(args.output)[0]
     output_dir = args.output_dir or os.path.dirname(os.path.abspath(args.output)) or "."
     os.makedirs(output_dir, exist_ok=True)
@@ -149,7 +154,7 @@ def main():
     cover_path = None
     if not skip_cover:
         print(f"\n[5/{total_steps}] Generating AI cover image...")
-        cover_path = generate_cover_image(blog_content, highlight_paths, output_dir=output_dir)
+        cover_path = generate_cover_image(blog_content, highlight_paths, output_dir=output_dir, lang=lang)
         if cover_path:
             print(f"  Cover generated: {cover_path}")
         else:
@@ -161,14 +166,14 @@ def main():
     html_output = None
 
     if args.format in ("html", "all"):
-        html_output = render_blog_html(blog_content, highlight_paths, args.output)
+        html_output = render_blog_html(blog_content, highlight_paths, args.output, cover_path=cover_path, orientation_flags=orientation_flags)
         generated_files["html"] = html_output
         print(f"\n  [HTML] {html_output}")
 
     if args.format in ("richtext", "all"):
         from richtext_renderer import render_blog_richtext
         rt_path = output_base + "_richtext.md"
-        render_blog_richtext(blog_content, highlight_paths, rt_path)
+        render_blog_richtext(blog_content, highlight_paths, rt_path, cover_path=cover_path)
         generated_files["richtext"] = rt_path
         print(f"  [Rich Text] {rt_path}")
 
@@ -176,7 +181,7 @@ def main():
         from png_renderer import render_blog_png
         png_path = output_base + ".png"
         if not html_output:
-            html_output = render_blog_html(blog_content, highlight_paths, output_base + "_tmp.html")
+            html_output = render_blog_html(blog_content, highlight_paths, output_base + "_tmp.html", cover_path=cover_path, orientation_flags=orientation_flags)
         result = render_blog_png(blog_content, highlight_paths, png_path, html_path=html_output)
         if result:
             generated_files["png"] = png_path

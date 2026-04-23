@@ -6,13 +6,13 @@ Each template provides a ready-to-use prompt pattern with `{placeholder}` slots 
 ---
 
 
-## 生活与娱乐 (Life & Entertainment)
+## Life & Entertainment
 
-### 风格化
+### Stylization
 
 ### L01 — Chibi Cartoon
 
-**Keywords:** chibi, Q版, 卡通, cute cartoon, mini me, SD character
+**Keywords:** chibi, cute cartoon, mini me, SD character
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -38,7 +38,7 @@ The overall style is a premium collectible chibi figure with Pixar-quality rende
 
 ### L02 — 3D Pixar Animation
 
-**Keywords:** 3D, Pixar, 皮克斯, animated, Disney style, 3D动画
+**Keywords:** 3D, Pixar, animated, Disney style
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 4:5
 
@@ -68,7 +68,7 @@ The overall style is a premium animated movie character portrait with cinematic 
 
 ### L03 — Comic / Manga
 
-**Keywords:** comic, manga, 漫画, 漫画风格, anime, 动漫
+**Keywords:** comic, manga, anime, animation
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -99,7 +99,7 @@ The overall style is a high-quality manga cover illustration with professional-g
 
 ### L04 — Sketch / Pencil Drawing
 
-**Keywords:** sketch, pencil, 素描, 铅笔画, drawing, hand-drawn
+**Keywords:** sketch, pencil, drawing, hand-drawn
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -127,7 +127,7 @@ The overall style is a museum-quality graphite portrait combining photorealistic
 
 ### L05 — Clay / Claymation
 
-**Keywords:** clay, claymation, 黏土, 粘土, stop-motion, plasticine
+**Keywords:** clay, claymation, stop-motion, plasticine
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -157,7 +157,7 @@ The overall style is a premium Aardman/Laika-quality claymation character with h
 
 ### L06 — 80s Retro Animation
 
-**Keywords:** 80s, retro, 80年代, retro animation, vintage cartoon, synthwave
+**Keywords:** 80s, retro, retro animation, vintage cartoon, synthwave
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 4:5
 
@@ -189,7 +189,7 @@ The overall style is a premium 80s animation cel portrait blending City Pop aest
 
 ### L07 — Retro-Futurism
 
-**Keywords:** retro-futurism, 未来复古, retro sci-fi, space age, vintage future
+**Keywords:** retro-futurism, retro sci-fi, space age, vintage future
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -219,7 +219,7 @@ The overall style is a premium retro-futuristic painted illustration evoking the
 
 ### L08 — Ukiyo-e / Chinese Painting
 
-**Keywords:** ukiyo-e, 浮世绘, Chinese painting, 国画, 国风, 古风, Japanese woodblock, ink wash
+**Keywords:** ukiyo-e, Chinese painting, Chinese style, classical Chinese, Japanese woodblock, ink wash
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -251,7 +251,7 @@ The overall style is a museum-quality traditional East Asian art portrait with a
 
 ### L09 — Watercolor Portrait
 
-**Keywords:** watercolor, 水彩, 水彩画, aquarelle, painting
+**Keywords:** watercolor, aquarelle, painting
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -281,7 +281,7 @@ The overall style is a gallery-quality watercolor portrait with the luminous tra
 
 ### L10 — K-Pop Star
 
-**Keywords:** K-Pop, kpop, 韩风, Korean idol, 明星, idol photo
+**Keywords:** K-Pop, kpop, K-style, Korean idol, celebrity, idol photo
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -315,7 +315,7 @@ The overall style is an official K-Pop idol concept photo worthy of a debut albu
 
 ### L11 — Imperial / Royal
 
-**Keywords:** imperial, royal, 帝王, 皇帝, 王室, king, queen, emperor, 帝王范
+**Keywords:** imperial, royal, emperor, king, queen, regal aura
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -347,7 +347,7 @@ The overall style is a museum-worthy classical royal portrait with the gravitas 
 
 ### L12 — 90s Yearbook
 
-**Keywords:** 90s, yearbook, 毕业照, 90年代, high school, retro photo
+**Keywords:** 90s, yearbook, high school, retro photo
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -377,7 +377,7 @@ The overall style is an authentic 1990s American high school yearbook page photo
 
 ### L13 — High Fashion
 
-**Keywords:** high fashion, 高级时尚, vogue, editorial, fashion photography, 时尚大片
+**Keywords:** high fashion, vogue, editorial, fashion photography, fashion editorial
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -411,7 +411,7 @@ The overall style is a cover-worthy high-fashion editorial portrait with dramati
 
 ### L14 — Cyberpunk Portrait
 
-**Keywords:** cyberpunk, 赛博朋克, neon, cyber, futuristic, sci-fi portrait
+**Keywords:** cyberpunk, neon, cyber, futuristic, sci-fi portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 9:16
 
@@ -441,13 +441,13 @@ The overall style is a cinematic cyberpunk portrait blending Blade Runner atmosp
 
 ---
 
-## Category B: Portrait (写真/人像) — P0
+## Category B: Portrait — P0
 
 ---
 
 ### L15 — Oil Painting / Classical Art
 
-**Keywords:** oil painting, 油画, classical, 古典, impressionist, 印象派, renaissance
+**Keywords:** oil painting, classical, impressionist, renaissance
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -479,7 +479,7 @@ The overall style is a museum-worthy oil portrait combining photographic identit
 
 ### L16 — Pixel Art
 
-**Keywords:** pixel art, 像素, 8-bit, retro game, 像素风, pixel, 16-bit
+**Keywords:** pixel art, 8-bit, retro game, pixel style, pixel, 16-bit
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -513,7 +513,7 @@ The overall style is a nostalgic, professionally crafted pixel art portrait wort
 
 ### L17 — Flat / Vector Illustration
 
-**Keywords:** flat illustration, vector, 平面插画, 扁平风, flat design, minimalist illustration
+**Keywords:** flat illustration, vector, flat design, minimalist illustration
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -547,16 +547,16 @@ The overall style is a premium flat vector illustration portrait suitable for a 
 
 ---
 
-### L18 — Anime / 二次元
+### L18 — Anime
 
-**Keywords:** anime, 二次元, 动漫, Japanese animation, light novel, アニメ, otaku
+**Keywords:** anime, animation, Japanese animation, light novel, アニメ, otaku
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
 **Prompt Pattern:**
 
 ```
-Transform the uploaded photo into a beautiful anime/二次元 character portrait in the style of {style, default: "a modern high-budget anime series like Violet Evergarden or Makoto Shinkai's films"}. Preserve the subject's facial identity — face shape, eye characteristics, hairstyle, and distinguishing features — while applying authentic Japanese animation aesthetics.
+Transform the uploaded photo into a beautiful anime character portrait in the style of {style, default: "a modern high-budget anime series like Violet Evergarden or Makoto Shinkai's films"}. Preserve the subject's facial identity — face shape, eye characteristics, hairstyle, and distinguishing features — while applying authentic Japanese animation aesthetics.
 
 Character rendering: large, detailed anime eyes with {eye_detail, default: "multiple layers of color, light reflections, and subtle gradient irises — deep, expressive, with small star-shaped catch-lights"}. Skin: smooth, luminous, with anime-style shading — hard shadow edges on the neck and under the hair, soft blush on cheeks. Hair: {hair, default: "flowing, dynamic strands with rich color depth, individual highlight streaks in a lighter tone, and wispy flyaway hairs at the edges"}.
 
@@ -583,7 +583,7 @@ The overall style is a breathtaking anime character portrait worthy of a light n
 
 ### L19 — Wool Felt / Needle Felt
 
-**Keywords:** wool felt, needle felt, 羊毛毡, felt craft, felted, plush, handmade
+**Keywords:** wool felt, needle felt, felt craft, felted, plush, handmade
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -619,7 +619,7 @@ The overall style is a premium handmade needle-felted wool art portrait with hea
 
 ### L20 — Colored Pencil Drawing
 
-**Keywords:** colored pencil, 彩铅, 彩铅画, crayon, Prismacolor, colored drawing
+**Keywords:** colored pencil, crayon, Prismacolor, colored drawing
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -657,7 +657,7 @@ The overall style is a gallery-quality colored pencil portrait demonstrating exc
 
 ### L21 — Pop Art
 
-**Keywords:** pop art, 波普, Warhol, 波普艺术, Lichtenstein, 名画风, art movement
+**Keywords:** pop art, Warhol, pop art style, Lichtenstein, famous painting style, art movement
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -694,7 +694,7 @@ The overall style is an authentic Warhol-inspired Pop Art silkscreen that transf
 
 ### L22 — Miniature / Diorama
 
-**Keywords:** miniature, diorama, 微缩景观, tilt-shift, small world, tiny world, 微缩
+**Keywords:** miniature, diorama, tilt-shift, small world, tiny world, miniature
 **Input:** User photo (portrait or scene)
 **Aspect Ratio:** 1:1
 
@@ -728,7 +728,7 @@ The overall style is a professionally photographed miniature diorama that sparks
 
 ### L23 — Children's Drawing
 
-**Keywords:** children drawing, kid art, 儿童绘画, 儿童画, crayon drawing, child style
+**Keywords:** children drawing, kid art, crayon drawing, child style
 **Input:** User photo (portrait or scene)
 **Aspect Ratio:** 1:1
 
@@ -765,13 +765,13 @@ The overall style is a genuine, heartwarming children's artwork that makes viewe
 
 ---
 
-## Category B: Portrait (写真/人像) — P0 (continued)
+## Category B: Portrait — P0 (continued)
 
 ---
 
 ### L24 — Game CG / Thick Paint
 
-**Keywords:** game CG, 游戏CG, CG厚涂, digital painting, thick paint, AAA illustration
+**Keywords:** game CG, CG thick paint, digital painting, thick paint, AAA illustration
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -805,7 +805,7 @@ The overall style is a collector-worthy game CG portrait that balances thick-pai
 
 ### L25 — Vaporwave
 
-**Keywords:** vaporwave, 蒸汽波, aesthetic, retrowave, glitch, 80s-90s nostalgia
+**Keywords:** vaporwave, aesthetic, retrowave, glitch, 80s-90s nostalgia
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -839,7 +839,7 @@ The overall style is a refined vaporwave artwork: nostalgic, slightly uncanny, a
 
 ### L26 — Printmaking / Woodblock
 
-**Keywords:** printmaking, woodblock, 版画, linocut, woodcut, relief print
+**Keywords:** printmaking, woodblock, linocut, woodcut, relief print
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -869,16 +869,16 @@ The overall style is a gallery-quality woodcut / linocut interpretation: graphic
 
 ---
 
-### L27 — Fine Brush / Gongbi (新工笔)
+### L27 — Fine Brush / Gongbi (contemporary gongbi)
 
-**Keywords:** gongbi, 工笔, 新工笔, fine brush, meticulous Chinese painting, mineral pigment
+**Keywords:** gongbi, contemporary gongbi, fine brush, meticulous Chinese painting, mineral pigment
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
 **Prompt Pattern:**
 
 ```
-Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary 新工笔 sensibility — while preserving the subject's facial identity and calm, dignified presence.
+Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary gongbi sensibility — while preserving the subject's facial identity and calm, dignified presence.
 
 Support: imagine the work painted on {support, default: "fine silk or aged paper with subtle fiber texture"}, with the slight absorbency and mineral glow of traditional pigments.
 
@@ -905,7 +905,7 @@ The overall style is a museum-quality contemporary gongbi portrait: precise, ser
 
 ### L28 — Pen Sketch / Simple Line
 
-**Keywords:** pen sketch, 钢笔速写, 简笔画, line drawing, ink pen, gestural drawing
+**Keywords:** pen sketch, simple line, line drawing, ink pen, gestural drawing
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -937,7 +937,7 @@ The overall style is an illustrator's on-location pen capture: lively, readable,
 
 ### L29 — Dark Fairy Tale
 
-**Keywords:** dark fairy tale, 暗黑童话, gothic, Tim Burton, dark fantasy, spooky whimsy
+**Keywords:** dark fairy tale, gothic, Tim Burton, dark fantasy, spooky whimsy
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -967,11 +967,11 @@ The overall style is a dark fairy tale character portrait: eerie, elegant, and e
 
 ---
 
-### 写真/人像
+### Portrait
 
 ### L30 — Studio Photoshoot
 
-**Keywords:** photoshoot, portrait, 写真, 棚拍, studio photo, professional portrait
+**Keywords:** photoshoot, portrait, studio shot, studio photo, professional portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1005,7 +1005,7 @@ The overall style is a premium studio portrait with magazine-grade lighting, nat
 
 ### L31 — ID Photo
 
-**Keywords:** ID photo, passport photo, 证件照, 一寸照, headshot, visa photo
+**Keywords:** ID photo, passport photo, headshot, visa photo
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1037,7 +1037,7 @@ The overall style is a regulation-compliant ID photograph with professional stud
 
 ### L32 — Emoji / Sticker Pack
 
-**Keywords:** emoji, sticker, 表情包, 贴纸, emoticon, reaction
+**Keywords:** emoji, sticker, emoticon, reaction
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -1076,7 +1076,7 @@ The overall style is a highly engaging, cute, and expressive premium sticker pac
 
 ### L33 — Avatar / Profile Picture
 
-**Keywords:** avatar, profile, 头像, profile picture, pfp, icon
+**Keywords:** avatar, profile, profile picture, pfp, icon
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -1108,13 +1108,13 @@ The overall style is an ultra-detailed premium illustration portrait that functi
 
 ---
 
-## Category C: Pets & Babies (萌宠/宝宝) — P0
+## Category C: Pets & Babies — P0
 
 ---
 
 ### L34 — Film / Cinematic Portrait
 
-**Keywords:** film photography, cinematic, 电影写真, movie still, film grain, 胶片, cinematic portrait
+**Keywords:** film photography, cinematic, movie still, film grain, film, cinematic portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1148,7 +1148,7 @@ The overall style is a hauntingly beautiful cinematic portrait that tells a stor
 
 ### L35 — Dreamy / Hazy Portrait
 
-**Keywords:** dreamy, hazy, soft focus, 朦胧, 朦胧肖像, ethereal, gauze, romantic
+**Keywords:** dreamy, hazy, soft focus, hazy portrait, ethereal, gauze, romantic
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1184,13 +1184,13 @@ The overall style is an impossibly romantic and ethereal portrait that looks lik
 
 ---
 
-## Category C: Pets & Babies (萌宠/宝宝) — P0 (continued)
+## Category C: Pets & Babies — P0 (continued)
 
 ---
 
 ### L36 — Indoor Scene Portrait
 
-**Keywords:** indoor, 室内, 室内侧拍, 室内自拍, 餐厅复古, interior portrait
+**Keywords:** indoor, indoor side shot, indoor selfie, cafe retro, interior portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1222,7 +1222,7 @@ The overall style is a believable high-quality indoor portrait suitable for soci
 
 ### L37 — Dark Mood Portrait
 
-**Keywords:** dark mood, 暗调, 暗调情绪, moody, low-key, dramatic portrait
+**Keywords:** dark mood, moody, low-key, dramatic portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1256,7 +1256,7 @@ The overall style is an editorial dark-mood portrait: cinematic, intimate, and e
 
 ### L38 — Iconic Location Shot
 
-**Keywords:** 红墙, red wall, 中天门, 摩崖造像, landmark, cultural backdrop
+**Keywords:** red wall, Zhongtianmen Gate, cliff carvings, landmark, cultural backdrop
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1267,7 +1267,7 @@ Transform the uploaded photo into a striking environmental portrait at an iconic
 
 Default setting: {default_place, default: "the subject stands before a vast vermillion red wall reminiscent of the Forbidden City — even, weathered lacquer texture, subtle horizontal seams, and a thin stone base at the bottom — monumental scale emphasizing the figure"}.
 
-Alternative landmarks (if specified): {alt, default: "mountain gate architecture like 中天门 — stone steps and mist; or cliffside 摩崖造像 — weathered rock carvings softly out of focus behind the subject"}.
+Alternative landmarks (if specified): {alt, default: "mountain gate architecture like Zhongtianmen Gate — stone steps and mist; or cliffside cliff carvings — weathered rock carvings softly out of focus behind the subject"}.
 
 Lighting: {lighting, default: "soft overcast or open shade for even skin tones on red wall scenes; golden side-light for stone monument scenes to reveal texture"}.
 
@@ -1290,7 +1290,7 @@ The overall style is a travel-editorial hero shot — iconic, dignified, and imm
 
 ### L39 — Spring Floral Portrait
 
-**Keywords:** spring, 春日, 樱花, 梨花, 蔷薇, cherry blossom, floral portrait
+**Keywords:** spring, cherry blossom, pear blossom, rose, floral portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1326,7 +1326,7 @@ The overall style is a seasonal editorial portrait — fresh, romantic, and unmi
 
 ### L40 — Natural Light & Shadow
 
-**Keywords:** 斑驳树影, dappled light, 阳光特写, 发丝发光, sunlight, nature portrait
+**Keywords:** dappled tree shadow, dappled light, sunlight close-up, glowing hair, sunlight, nature portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1362,7 +1362,7 @@ The overall style is a fine-art natural-light portrait — organic, fresh, and t
 
 ### L41 — Sunset / Golden Hour
 
-**Keywords:** sunset, 日落, 落日叠影, golden hour, silhouette, rim light
+**Keywords:** sunset, sunset overlay, golden hour, silhouette, rim light
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 16:9
 
@@ -1396,7 +1396,7 @@ The overall style is a cinematic golden-hour environmental portrait — warm, va
 
 ### L42 — Retro Film & Polaroid
 
-**Keywords:** 车内胶片, 拍立得, polaroid, 古早自拍, film, retro camera
+**Keywords:** in-car film, polaroid, vintage selfie, film, retro camera
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -1430,7 +1430,7 @@ The overall style is a believable vintage instant print — intimate, imperfect,
 
 ### L43 — Winter Snow Portrait
 
-**Keywords:** winter, snow, 下雪, 雪地, 冬季写真, 清冷雪景, cold season
+**Keywords:** winter, snow, snowing, snow field, winter portrait, cold snow scene, cold season
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1468,7 +1468,7 @@ The overall style is a premium winter editorial — crisp, serene, and tactilely
 
 ### L44 — Beach & Underwater
 
-**Keywords:** beach, 海边, underwater, 水下, 水中, ocean portrait
+**Keywords:** beach, underwater, in water, ocean portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1502,7 +1502,7 @@ The overall style is a high-end travel or swim editorial — luminous, aquatic, 
 
 ### L45 — Fantasy / Magical Scene
 
-**Keywords:** 魔法学院, magic, 星空眼眸, fantasy, wizard, 变成岛主, magical portrait
+**Keywords:** magic academy, magic, starry eyes, fantasy, wizard, become island lord, magical portrait
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
@@ -1538,18 +1538,18 @@ The overall style is a premium fantasy cinematic still — Harry-Potter-adjacent
 
 ### L46 — Social Media / Street Style
 
-**Keywords:** OOTD, Plog, 网感头像, street style, 站姐, 签售会, social aesthetic
+**Keywords:** OOTD, Plog, social media avatar, street style, fan photographer, fan-signing event, social aesthetic
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 3:4
 
 **Prompt Pattern:**
 
 ```
-Transform the uploaded photo into a high-engagement social-media-ready portrait. Preserve the subject's identity while optimizing for contemporary "网感" aesthetics.
+Transform the uploaded photo into a high-engagement social-media-ready portrait. Preserve the subject's identity while optimizing for contemporary "social-media-ready" aesthetics.
 
 Mood: {mood, default: "effortless confidence — natural street fashion, subtle attitude, clean skin with realistic texture (not plastic)"}.
 
-Setting variants: {setting, default: "A) Urban street corner with soft background compression. B) Event periphery — 签售会 or fan-meet energy with soft bokeh crowd lights. C) Minimal studio corner mimicking 站姐 long-lens candid"}.
+Setting variants: {setting, default: "A) Urban street corner with soft background compression. B) Event periphery — fan-signing event or fan-meet energy with soft bokeh crowd lights. C) Minimal studio corner mimicking fan photographer long-lens candid"}.
 
 Styling: {style_notes, default: "layered OOTD — jacket, tee, accessories with clear silhouette; hair and makeup current but believable"}.
 
@@ -1574,7 +1574,7 @@ The overall style is a polished plog / street-style / fan-photo aesthetic — sh
 
 ### L48 — Photo Grid Layout
 
-**Keywords:** grid, 三宫格, 樱花三宫格, photo grid, triptych, multi-panel
+**Keywords:** grid, triptych, cherry blossom triptych, photo grid, multi-panel
 **Input:** User photo (selfie / portrait)
 **Aspect Ratio:** 1:1
 
@@ -1595,7 +1595,7 @@ Color grade: unified across panels — matched white balance and contrast.
 
 Output: one image, square 1:1, no text, no watermark.
 
-The overall style is a polished social triptych / 三宫格 — cohesive, romantic, and ready for platform posting.
+The overall style is a polished social triptych / triptych — cohesive, romantic, and ready for platform posting.
 ```
 
 **Quality Checklist:**
@@ -1606,11 +1606,11 @@ The overall style is a polished social triptych / 三宫格 — cohesive, romant
 
 ---
 
-### 萌宠/宝宝
+### Pets & Babies
 
 ### L50 — Pet Stylization
 
-**Keywords:** pet, cute, 萌宠, 宠物, 宠物造型, furry friend
+**Keywords:** pet, cute, cute pet, pet styling, furry friend
 **Input:** User pet photo
 **Aspect Ratio:** 1:1
 
@@ -1642,7 +1642,7 @@ The overall style is a heart-melting kawaii pet portrait with ultra-detailed tex
 
 ### L51 — Baby Comic Grid
 
-**Keywords:** baby, 宝宝, comic grid, 宫格漫画, baby expressions, four panel
+**Keywords:** baby, comic grid, grid comic, baby expressions, four panel
 **Input:** User baby photo
 **Aspect Ratio:** 1:1
 
@@ -1678,7 +1678,7 @@ The overall style is a vibrant baby comic page bursting with personality and kaw
 
 ### L52 — Pet VOGUE Magazine Cover
 
-**Keywords:** pet magazine, 宠物杂志, VOGUE pet, pet cover, magazine cover
+**Keywords:** pet magazine, VOGUE pet, pet cover, magazine cover
 **Input:** User pet photo
 **Aspect Ratio:** 3:4
 
@@ -1708,13 +1708,13 @@ The overall style is a premium, high-fashion pet magazine cover indistinguishabl
 
 ---
 
-## Category D: Try-on & Editing (换装/编辑) — P1
+## Category D: Try-on & Editing — P1
 
 ---
 
 ### L53 — Pet Costume Play / Mugshot
 
-**Keywords:** pet costume, 宠物入狱, pet mugshot, 萌宠打工, pet dress-up, 宠物变装, pet job
+**Keywords:** pet costume, pet mugshot, pet working, pet dress-up, pet job
 **Input:** User pet photo
 **Aspect Ratio:** 1:1
 
@@ -1749,13 +1749,13 @@ The overall style is a viral-worthy comedic pet photo that makes everyone laugh 
 
 ---
 
-## Category E: Social Media & Creative (自媒体/创意) — P1 (continued)
+## Category E: Social Media & Creative — P1 (continued)
 
 ---
 
 ### L54 — Pet Humanization
 
-**Keywords:** pet humanization, 宠物拟人化, pet portrait, pet as human, anthropomorphic
+**Keywords:** pet humanization, pet portrait, pet as human, anthropomorphic
 **Input:** User pet photo
 **Aspect Ratio:** 3:4
 
@@ -1785,11 +1785,11 @@ The overall style is a premium anthropomorphic pet portrait with the elegance of
 - [ ] Clothing rendered realistically on animal body
 - [ ] Dignified, appealing result
 
-### 换装/编辑
+### Try-on & Editing
 
 ### L60 — Outfit Change
 
-**Keywords:** outfit, clothing, change clothes, 换装, 换衣服, try on, wardrobe
+**Keywords:** outfit, clothing, change clothes, outfit change, try on, wardrobe
 **Input:** User photo + outfit description
 **Aspect Ratio:** (preserve original)
 
@@ -1826,7 +1826,7 @@ The result is a seamless, photorealistic outfit swap indistinguishable from an o
 
 ### L61 — Hairstyle Change
 
-**Keywords:** hairstyle, hair, 发型, 换发型, haircut, hair color, 改发型
+**Keywords:** hairstyle, hair, change hairstyle, haircut, hair color, change hairstyle
 **Input:** User photo + hairstyle description
 **Aspect Ratio:** (preserve original)
 
@@ -1863,7 +1863,7 @@ The result is a seamless, photorealistic hairstyle change indistinguishable from
 
 ### L62 — Background Change
 
-**Keywords:** background, 背景, 换背景, remove background, change background, 抠图
+**Keywords:** background, change background, remove background, cutout
 **Input:** User photo + background description
 **Aspect Ratio:** (preserve original)
 
@@ -1899,13 +1899,13 @@ The result is a seamless composite where the subject appears to have been genuin
 
 ---
 
-## Category E: Social Media & Creative (自媒体/创意) — P1
+## Category E: Social Media & Creative — P1
 
 ---
 
-### L63 — Image Outpainting (扩图)
+### L63 — Image Outpainting (outpaint)
 
-**Keywords:** outpaint, expand, 扩图, extend canvas, content-aware fill
+**Keywords:** outpaint, expand, extend canvas, content-aware fill
 **Input:** User photo + direction (which sides to extend)
 **Aspect Ratio:** (preserve original — output matches expanded canvas request)
 
@@ -1937,9 +1937,9 @@ The overall result is a believable wider frame that looks like it was always sho
 
 ---
 
-### L64 — Object Removal (消除)
+### L64 — Object Removal (erase)
 
-**Keywords:** remove, erase, 消除, delete object, clean up, inpaint
+**Keywords:** remove, erase, delete object, clean up, inpaint
 **Input:** User photo + object(s) to remove
 **Aspect Ratio:** (preserve original)
 
@@ -1969,9 +1969,9 @@ The overall result is a clean photograph suitable for print or portfolio — dis
 
 ---
 
-### L65 — Image Enhancement (变清晰)
+### L65 — Image Enhancement (enhance)
 
-**Keywords:** enhance, sharpen, 变清晰, upscale, super resolution, clarity boost
+**Keywords:** enhance, sharpen, upscale, super resolution, clarity boost
 **Input:** User photo
 **Aspect Ratio:** (preserve original)
 
@@ -2003,11 +2003,11 @@ The overall result should read as the same photo taken with a better lens and se
 
 ---
 
-## 日常工作与自媒体 (Media & Work)
+## Media & Work
 
 ### M01 — Social Media Post
 
-**Keywords:** social media, Instagram, 配图, social post, quote card, 名言卡
+**Keywords:** social media, Instagram, post image, social post, quote card
 **Input:** Text content (quote, caption) + optional photo
 **Aspect Ratio:** 1:1
 
@@ -2045,7 +2045,7 @@ The overall style is a premium social media graphic that looks professionally de
 
 ### M02 — Poster Design
 
-**Keywords:** poster, flyer, 海报, banner, event poster, 宣传海报
+**Keywords:** poster, flyer, banner, event poster, promotional poster
 **Input:** Event/content details (text)
 **Aspect Ratio:** 3:4
 
@@ -2081,7 +2081,7 @@ The overall style is a professional, print-ready event poster with striking typo
 
 ### M03 — Storyboard / Comic Strip
 
-**Keywords:** storyboard, comic strip, 分镜图, 漫画条, 动画分镜, panels
+**Keywords:** storyboard, comic strip, animation storyboard, panels
 **Input:** Scene description + optional photo
 **Aspect Ratio:** 16:9
 
@@ -2117,7 +2117,7 @@ The overall style is a professional storyboard/comic strip with clear narrative 
 
 ### M04 — Handwritten Poster
 
-**Keywords:** handwritten poster, 手抄报, bulletin, class poster, notice board
+**Keywords:** handwritten poster, bulletin board, bulletin, class poster, notice board
 **Input:** Topic/content text
 **Aspect Ratio:** 3:4
 
@@ -2158,7 +2158,7 @@ The overall style is a heartwarming, creative class poster that looks genuinely 
 
 ### M05 — Illustration
 
-**Keywords:** illustration, 插画, artwork, digital art, 绘画, drawing
+**Keywords:** illustration, artwork, digital art, drawing
 **Input:** Scene/subject description
 **Aspect Ratio:** 3:4
 
@@ -2192,13 +2192,13 @@ The overall style is a breathtaking illustration worthy of a children's book cov
 
 ---
 
-## Category F: Professional Design (专业设计) — P1
+## Category F: Professional Design — P1
 
 ---
 
 ### M06 — YouTube Thumbnail
 
-**Keywords:** YouTube thumbnail, thumbnail, 缩略图, video cover, 封面, clickbait
+**Keywords:** YouTube thumbnail, thumbnail, video cover, cover, clickbait
 **Input:** Text description + optional photo
 **Aspect Ratio:** 16:9
 
@@ -2241,7 +2241,7 @@ The overall style is a professional, high-CTR YouTube thumbnail optimized for ma
 
 ### M07 — Educational Visual / Infographic
 
-**Keywords:** educational, infographic, 教育, 知识图, diagram, visual learning, 教育类视觉图
+**Keywords:** educational, infographic, knowledge diagram, diagram, visual learning, educational visual
 **Input:** Topic/content description
 **Aspect Ratio:** 3:4
 
@@ -2284,7 +2284,7 @@ The overall style is a premium educational infographic worthy of a classroom wal
 
 ### M08 — Picture Book / Storybook Illustration
 
-**Keywords:** picture book, storybook, 绘本, children's book, 童话, bedtime story
+**Keywords:** picture book, storybook, children's book, fairy tale, bedtime story
 **Input:** Scene/story description
 **Aspect Ratio:** 16:9
 
@@ -2318,15 +2318,15 @@ The overall style is a breathtaking picture book double-page spread that makes b
 
 ---
 
-## Category F: Professional Design (专业设计) — P1 (continued)
+## Category F: Professional Design — P1 (continued)
 
 ---
 
-## 专业设计 (Professional Design)
+## Professional Design
 
 ### P01 — E-commerce Main Image
 
-**Keywords:** e-commerce, product, 电商, 头图, product photo, Amazon, shop listing
+**Keywords:** e-commerce, product, hero image, product photo, Amazon, shop listing
 **Input:** Product photo or description
 **Aspect Ratio:** 1:1
 
@@ -2362,7 +2362,7 @@ The overall style is a cinematic luxury advertising product shot with premium or
 
 ### P02 — Sticker Set Design
 
-**Keywords:** sticker set, art design, 贴纸集, 美术设计, sticker sheet, character stickers
+**Keywords:** sticker set, art design, sticker sheet, character stickers
 **Input:** User photo or character description
 **Aspect Ratio:** 4:5
 
@@ -2403,7 +2403,7 @@ The overall style is a premium collectible sticker pack with consistent characte
 
 ### P03 — Interior Design
 
-**Keywords:** interior, room design, 家装, 室内设计, 装修, redesign room, home decor
+**Keywords:** interior, room design, interior design, renovation, redesign room, home decor
 **Input:** Room photo + style description
 **Aspect Ratio:** 16:9
 
@@ -2437,7 +2437,7 @@ The overall style is a magazine-quality interior design visualization ready for 
 
 ### P04 — Logo Design
 
-**Keywords:** logo, brand, 标志, Logo设计, brand identity, icon design
+**Keywords:** logo, brand, logo design, brand identity, icon design
 **Input:** Brand name + style description
 **Aspect Ratio:** 1:1
 
@@ -2473,7 +2473,7 @@ The overall style is a premium, professionally designed brand logo that communic
 
 ### P05 — Merchandise / Keychain Design
 
-**Keywords:** merchandise, keychain, 钥匙扣, figure, 手办, 实物设计, figurine
+**Keywords:** merchandise, keychain, figure, figurine, physical product design
 **Input:** User photo or character description
 **Aspect Ratio:** 1:1
 
@@ -2507,7 +2507,7 @@ The overall style is a premium collectible figure product photo ready for pre-or
 
 ### P06 — Coloring Book Page
 
-**Keywords:** coloring, coloring book, 涂色, 涂色线稿, line art, coloring page
+**Keywords:** coloring, coloring book, coloring line art, line art, coloring page
 **Input:** Subject description or photo
 **Aspect Ratio:** 3:4
 
@@ -2543,7 +2543,7 @@ The overall style is a premium adult/family coloring book page with intricate de
 
 ### P07 — Game Asset / Character Design
 
-**Keywords:** game asset, game character, 游戏, 游戏资产, game design, character sheet, concept art
+**Keywords:** game asset, game character, game, game design, character sheet, concept art
 **Input:** Character description or photo
 **Aspect Ratio:** 1:1
 
@@ -2583,7 +2583,7 @@ The overall style is a professional AAA game studio character concept sheet read
 
 ### P08 — Product Marketing Design
 
-**Keywords:** marketing, campaign, 营销, 广告, promotion, ad creative, 产品营销
+**Keywords:** marketing, campaign, advertising, promotion, ad creative, product marketing
 **Input:** Product/service description + text
 **Aspect Ratio:** 9:16
 
@@ -2644,7 +2644,7 @@ The overall style is a premium brand campaign visual worthy of an Apple or Sony 
 | A15 | Oil Painting / Classical | Stylization | Photo | P0 |
 | A16 | Pixel Art | Stylization | Photo | P0 |
 | A17 | Flat / Vector Illustration | Stylization | Photo | P0 |
-| A18 | Anime / 二次元 | Stylization | Photo | P0 |
+| A18 | Anime | Stylization | Photo | P0 |
 | A19 | Wool Felt / Needle Felt | Stylization | Photo | P0 |
 | A20 | Colored Pencil | Stylization | Photo | P0 |
 | A21 | Pop Art | Stylization | Photo | P0 |
@@ -2687,77 +2687,77 @@ The overall style is a premium brand campaign visual worthy of an Apple or Sony 
 
 | ID | Name | Category | Input |
 |----|------|----------|-------|
-| L01 | Chibi Cartoon | L · 生活与娱乐 · 风格化 | Photo |
-| L02 | 3D Pixar Animation | L · 生活与娱乐 · 风格化 | Photo |
-| L03 | Comic / Manga | L · 生活与娱乐 · 风格化 | Photo |
-| L04 | Sketch / Pencil Drawing | L · 生活与娱乐 · 风格化 | Photo |
-| L05 | Clay / Claymation | L · 生活与娱乐 · 风格化 | Photo |
-| L06 | 80s Retro Animation | L · 生活与娱乐 · 风格化 | Photo |
-| L07 | Retro-Futurism | L · 生活与娱乐 · 风格化 | Photo |
-| L08 | Ukiyo-e / Chinese Painting | L · 生活与娱乐 · 风格化 | Photo |
-| L09 | Watercolor Portrait | L · 生活与娱乐 · 风格化 | Photo |
-| L10 | K-Pop Star | L · 生活与娱乐 · 风格化 | Photo |
-| L11 | Imperial / Royal | L · 生活与娱乐 · 风格化 | Photo |
-| L12 | 90s Yearbook | L · 生活与娱乐 · 风格化 | Photo |
-| L13 | High Fashion | L · 生活与娱乐 · 风格化 | Photo |
-| L14 | Cyberpunk Portrait | L · 生活与娱乐 · 风格化 | Photo |
-| L15 | Oil Painting / Classical Art | L · 生活与娱乐 · 风格化 | Photo |
-| L16 | Pixel Art | L · 生活与娱乐 · 风格化 | Photo |
-| L17 | Flat / Vector Illustration | L · 生活与娱乐 · 风格化 | Photo |
-| L18 | Anime / 二次元 | L · 生活与娱乐 · 风格化 | Photo |
-| L19 | Wool Felt / Needle Felt | L · 生活与娱乐 · 风格化 | Photo |
-| L20 | Colored Pencil Drawing | L · 生活与娱乐 · 风格化 | Photo |
-| L21 | Pop Art | L · 生活与娱乐 · 风格化 | Photo |
-| L22 | Miniature / Diorama | L · 生活与娱乐 · 风格化 | Photo |
-| L23 | Children's Drawing | L · 生活与娱乐 · 风格化 | Photo |
-| L24 | Game CG / Thick Paint | L · 生活与娱乐 · 风格化 | Photo |
-| L25 | Vaporwave | L · 生活与娱乐 · 风格化 | Photo |
-| L26 | Printmaking / Woodblock | L · 生活与娱乐 · 风格化 | Photo |
-| L27 | Fine Brush / Gongbi (新工笔) | L · 生活与娱乐 · 风格化 | Photo |
-| L28 | Pen Sketch / Simple Line | L · 生活与娱乐 · 风格化 | Photo |
-| L29 | Dark Fairy Tale | L · 生活与娱乐 · 风格化 | Photo |
-| L30 | Studio Photoshoot | L · 生活与娱乐 · 写真/人像 | Photo |
-| L31 | ID Photo | L · 生活与娱乐 · 写真/人像 | Photo |
-| L32 | Emoji / Sticker Pack | L · 生活与娱乐 · 写真/人像 | Photo |
-| L33 | Avatar / Profile Picture | L · 生活与娱乐 · 写真/人像 | Photo |
-| L34 | Film / Cinematic Portrait | L · 生活与娱乐 · 写真/人像 | Photo |
-| L35 | Dreamy / Hazy Portrait | L · 生活与娱乐 · 写真/人像 | Photo |
-| L36 | Indoor Scene Portrait | L · 生活与娱乐 · 写真/人像 | Photo |
-| L37 | Dark Mood Portrait | L · 生活与娱乐 · 写真/人像 | Photo |
-| L38 | Iconic Location Shot | L · 生活与娱乐 · 写真/人像 | Photo |
-| L39 | Spring Floral Portrait | L · 生活与娱乐 · 写真/人像 | Photo |
-| L40 | Natural Light & Shadow | L · 生活与娱乐 · 写真/人像 | Photo |
-| L41 | Sunset / Golden Hour | L · 生活与娱乐 · 写真/人像 | Photo |
-| L42 | Retro Film & Polaroid | L · 生活与娱乐 · 写真/人像 | Photo |
-| L43 | Winter Snow Portrait | L · 生活与娱乐 · 写真/人像 | Photo |
-| L44 | Beach & Underwater | L · 生活与娱乐 · 写真/人像 | Photo |
-| L45 | Fantasy / Magical Scene | L · 生活与娱乐 · 写真/人像 | Photo |
-| L46 | Social Media / Street Style | L · 生活与娱乐 · 写真/人像 | Photo |
-| L48 | Photo Grid Layout | L · 生活与娱乐 · 写真/人像 | Photo |
-| L50 | Pet Stylization | L · 生活与娱乐 · 萌宠/宝宝 | Pet photo |
-| L51 | Baby Comic Grid | L · 生活与娱乐 · 萌宠/宝宝 | Baby photo |
-| L52 | Pet VOGUE Magazine Cover | L · 生活与娱乐 · 萌宠/宝宝 | Pet photo |
-| L53 | Pet Costume Play / Mugshot | L · 生活与娱乐 · 萌宠/宝宝 | Pet photo |
-| L54 | Pet Humanization | L · 生活与娱乐 · 萌宠/宝宝 | Pet photo |
-| L60 | Outfit Change | L · 生活与娱乐 · 换装/编辑 | Photo + text |
-| L61 | Hairstyle Change | L · 生活与娱乐 · 换装/编辑 | Photo + text |
-| L62 | Background Change | L · 生活与娱乐 · 换装/编辑 | Photo + text |
-| L63 | Image Outpainting (扩图) | L · 生活与娱乐 · 换装/编辑 | Photo + direction |
-| L64 | Object Removal (消除) | L · 生活与娱乐 · 换装/编辑 | Photo + object to remove |
-| L65 | Image Enhancement (变清晰) | L · 生活与娱乐 · 换装/编辑 | Photo |
-| M01 | Social Media Post | M · 日常工作与自媒体 · 社交媒体配图 | Text (+ photo) |
-| M02 | Poster Design | M · 日常工作与自媒体 · 海报 | Text |
-| M03 | Storyboard / Comic Strip | M · 日常工作与自媒体 · 分镜/漫画条 | Text (+ photo) |
-| M04 | Handwritten Poster | M · 日常工作与自媒体 · 手抄报 | Text |
-| M05 | Illustration | M · 日常工作与自媒体 · 插画 | Text |
-| M06 | YouTube Thumbnail | M · 日常工作与自媒体 · YouTube 缩略图 | Text (+ photo) |
-| M07 | Educational Visual / Infographic | M · 日常工作与自媒体 · 教育信息图 | Text |
-| M08 | Picture Book / Storybook Illustration | M · 日常工作与自媒体 · 绘本插图 | Text |
-| P01 | E-commerce Main Image | P · 专业设计 · 电商主图 | Product photo/text |
-| P02 | Sticker Set Design | P · 专业设计 · 贴纸集 | Photo |
-| P03 | Interior Design | P · 专业设计 · 室内设计 | Room photo |
-| P04 | Logo Design | P · 专业设计 · Logo | Text |
-| P05 | Merchandise / Keychain Design | P · 专业设计 · 周边/手办 | Photo/text |
-| P06 | Coloring Book Page | P · 专业设计 · 涂色线稿 | Text (+ photo) |
-| P07 | Game Asset / Character Design | P · 专业设计 · 游戏设定 | Text/photo |
-| P08 | Product Marketing Design | P · 专业设计 · 产品营销 | Product + text |
+| L01 | Chibi Cartoon | L · Life · Stylization | Photo |
+| L02 | 3D Pixar Animation | L · Life · Stylization | Photo |
+| L03 | Comic / Manga | L · Life · Stylization | Photo |
+| L04 | Sketch / Pencil Drawing | L · Life · Stylization | Photo |
+| L05 | Clay / Claymation | L · Life · Stylization | Photo |
+| L06 | 80s Retro Animation | L · Life · Stylization | Photo |
+| L07 | Retro-Futurism | L · Life · Stylization | Photo |
+| L08 | Ukiyo-e / Chinese Painting | L · Life · Stylization | Photo |
+| L09 | Watercolor Portrait | L · Life · Stylization | Photo |
+| L10 | K-Pop Star | L · Life · Stylization | Photo |
+| L11 | Imperial / Royal | L · Life · Stylization | Photo |
+| L12 | 90s Yearbook | L · Life · Stylization | Photo |
+| L13 | High Fashion | L · Life · Stylization | Photo |
+| L14 | Cyberpunk Portrait | L · Life · Stylization | Photo |
+| L15 | Oil Painting / Classical Art | L · Life · Stylization | Photo |
+| L16 | Pixel Art | L · Life · Stylization | Photo |
+| L17 | Flat / Vector Illustration | L · Life · Stylization | Photo |
+| L18 | Anime | L · Life · Stylization | Photo |
+| L19 | Wool Felt / Needle Felt | L · Life · Stylization | Photo |
+| L20 | Colored Pencil Drawing | L · Life · Stylization | Photo |
+| L21 | Pop Art | L · Life · Stylization | Photo |
+| L22 | Miniature / Diorama | L · Life · Stylization | Photo |
+| L23 | Children's Drawing | L · Life · Stylization | Photo |
+| L24 | Game CG / Thick Paint | L · Life · Stylization | Photo |
+| L25 | Vaporwave | L · Life · Stylization | Photo |
+| L26 | Printmaking / Woodblock | L · Life · Stylization | Photo |
+| L27 | Fine Brush / Gongbi (contemporary gongbi) | L · Life · Stylization | Photo |
+| L28 | Pen Sketch / Simple Line | L · Life · Stylization | Photo |
+| L29 | Dark Fairy Tale | L · Life · Stylization | Photo |
+| L30 | Studio Photoshoot | L · Life · Portrait | Photo |
+| L31 | ID Photo | L · Life · Portrait | Photo |
+| L32 | Emoji / Sticker Pack | L · Life · Portrait | Photo |
+| L33 | Avatar / Profile Picture | L · Life · Portrait | Photo |
+| L34 | Film / Cinematic Portrait | L · Life · Portrait | Photo |
+| L35 | Dreamy / Hazy Portrait | L · Life · Portrait | Photo |
+| L36 | Indoor Scene Portrait | L · Life · Portrait | Photo |
+| L37 | Dark Mood Portrait | L · Life · Portrait | Photo |
+| L38 | Iconic Location Shot | L · Life · Portrait | Photo |
+| L39 | Spring Floral Portrait | L · Life · Portrait | Photo |
+| L40 | Natural Light & Shadow | L · Life · Portrait | Photo |
+| L41 | Sunset / Golden Hour | L · Life · Portrait | Photo |
+| L42 | Retro Film & Polaroid | L · Life · Portrait | Photo |
+| L43 | Winter Snow Portrait | L · Life · Portrait | Photo |
+| L44 | Beach & Underwater | L · Life · Portrait | Photo |
+| L45 | Fantasy / Magical Scene | L · Life · Portrait | Photo |
+| L46 | Social Media / Street Style | L · Life · Portrait | Photo |
+| L48 | Photo Grid Layout | L · Life · Portrait | Photo |
+| L50 | Pet Stylization | L · Life · Pets | Pet photo |
+| L51 | Baby Comic Grid | L · Life · Pets | Baby photo |
+| L52 | Pet VOGUE Magazine Cover | L · Life · Pets | Pet photo |
+| L53 | Pet Costume Play / Mugshot | L · Life · Pets | Pet photo |
+| L54 | Pet Humanization | L · Life · Pets | Pet photo |
+| L60 | Outfit Change | L · Life · Editing | Photo + text |
+| L61 | Hairstyle Change | L · Life · Editing | Photo + text |
+| L62 | Background Change | L · Life · Editing | Photo + text |
+| L63 | Image Outpainting (outpaint) | L · Life · Editing | Photo + direction |
+| L64 | Object Removal (erase) | L · Life · Editing | Photo + object to remove |
+| L65 | Image Enhancement (enhance) | L · Life · Editing | Photo |
+| M01 | Social Media Post | M · Media · Social Media | Text (+ photo) |
+| M02 | Poster Design | M · Media · Poster | Text |
+| M03 | Storyboard / Comic Strip | M · Media · Storyboard | Text (+ photo) |
+| M04 | Handwritten Poster | M · Media · Bulletin | Text |
+| M05 | Illustration | M · Media · Illustration | Text |
+| M06 | YouTube Thumbnail | M · Media · YouTube Thumbnail | Text (+ photo) |
+| M07 | Educational Visual / Infographic | M · Media · Educational | Text |
+| M08 | Picture Book / Storybook Illustration | M · Media · Picture Book | Text |
+| P01 | E-commerce Main Image | P · Design · E-commerce | Product photo/text |
+| P02 | Sticker Set Design | P · Design · Sticker Set | Photo |
+| P03 | Interior Design | P · Design · Interior Design | Room photo |
+| P04 | Logo Design | P · Design · Logo | Text |
+| P05 | Merchandise / Keychain Design | P · Design · Merchandise | Photo/text |
+| P06 | Coloring Book Page | P · Design · Coloring | Text (+ photo) |
+| P07 | Game Asset / Character Design | P · Design · Game Design | Text/photo |
+| P08 | Product Marketing Design | P · Design · product marketing | Product + text |

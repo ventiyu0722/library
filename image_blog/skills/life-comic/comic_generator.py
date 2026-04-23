@@ -32,9 +32,17 @@ def _load_config() -> dict:
 
 def _get_client(cfg: dict):
     api_cfg = cfg.get("compass_api", {})
-    token = os.environ.get("COMPASS_CLIENT_TOKEN", api_cfg.get("client_token", ""))
-    base_url = api_cfg.get("base_url", "")
-    return genai.Client(api_key=token, http_options=types.HttpOptions(base_url=base_url))
+    token = (os.environ.get("COMPASS_CLIENT_TOKEN")
+             or os.environ.get("COMPASS_API_KEY")
+             or os.environ.get("ANTHROPIC_API_KEY")
+             or os.environ.get("GOOGLE_API_KEY")
+             or os.environ.get("GEMINI_API_KEY")
+             or api_cfg.get("client_token", ""))
+    base_url = (os.environ.get("COMPASS_BASE_URL")
+                or os.environ.get("ANTHROPIC_BASE_URL")
+                or api_cfg.get("base_url", ""))
+    http_opts = types.HttpOptions(base_url=base_url) if base_url else None
+    return genai.Client(api_key=token, http_options=http_opts)
 
 
 def _load_image_bytes(path: str, max_pixels: int = 800 * 800) -> Tuple[bytes, str]:
@@ -94,16 +102,22 @@ STORYBOARD_PROMPT = """You are a warm, heartfelt comic scriptwriter. Based on th
   ],
   "narrative": {{
     "title": "Title (matching the theme)",
-    "body": "A 100-200 word emotional narrative. Correspond to each panel, giving each scene emotional value. End with an uplifting reflection that resonates. Write as cohesive prose, not a labeled list."
+    "body": "A poetic narrative under 250 characters (roughly 30-40 words). Capture the emotional essence in one flowing impression — NOT a panel-by-panel recap."
   }},
   "footer_date": "YYYY-MM-DD",
   "suggested_themes": ["theme1", "theme2", "theme3"]
 }}
 ```
 
+**HARD LENGTH CONSTRAINTS (non-negotiable)**:
+- narrative.body: MUST be under 250 characters. Count carefully — 250 characters is about 2 short sentences.
+- emotional_arc: MUST be under 100 characters.
+- If in doubt, write SHORTER. A haiku-length impression beats an essay every time.
+
 **Notes**:
+- **CRITICAL**: The panels array MUST contain exactly {panel_count} items — one panel for each input moment. Do NOT skip, merge, or omit any.
 - panels array source_photo_index corresponds to the input material index
-- scene_description is a detailed instruction for the comic artist — include sufficient visual detail
+- scene_description is a detailed instruction for the comic artist — include sufficient visual detail (this is NOT shown to users)
 - narrative.body should have literary quality — avoid list-style writing
 - **suggested_themes**: Always provide 3 alternative theme suggestions based on actual photo content"""
 
@@ -116,15 +130,17 @@ def _detect_lang(text: str) -> str:
     return "zh" if cjk / max(len(text.replace(" ", "")), 1) > 0.15 else "en"
 
 
-def generate_storyboard(panel_moments: List[dict], date_str: Optional[str] = None, user_theme: Optional[str] = None, lang: Optional[str] = None) -> dict:
+def generate_storyboard(panel_moments: List[dict], date_str: Optional[str] = None, user_theme: Optional[str] = None, lang: Optional[str] = None, target_panel_count: Optional[int] = None) -> dict:
     """Generate storyboard script and narrative text."""
     from datetime import date
     if not date_str:
         date_str = date.today().strftime("%Y-%m-%d")
 
+    panel_count = target_panel_count if target_panel_count is not None else len(panel_moments)
+
     cfg = _load_config()
     client = _get_client(cfg)
-    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-image-preview")
+    model = cfg.get("compass_api", {}).get("understanding_model", "gemini-3-pro-preview")
 
     panels_detail = []
     for i, m in enumerate(panel_moments):
@@ -161,6 +177,7 @@ def generate_storyboard(panel_moments: List[dict], date_str: Optional[str] = Non
         panels_json=json.dumps(panels_detail, ensure_ascii=False, indent=2),
         theme_instruction=theme_instruction,
         lang_instruction=lang_instruction,
+        panel_count=panel_count,
     )
 
     try:
@@ -200,30 +217,69 @@ def generate_storyboard(panel_moments: List[dict], date_str: Optional[str] = Non
 
     sb["footer_date"] = date_str
     sb["_lang"] = lang
+
+    _enforce_narrative_limits(sb)
     return sb
+
+
+def _truncate_at_sentence(text: str, limit: int) -> str:
+    """Truncate text at the last complete sentence within the limit."""
+    if len(text) <= limit:
+        return text
+    candidate = text[:limit]
+    for sep in [". ", "。", "! ", "? ", "！", "？"]:
+        pos = candidate.rfind(sep)
+        if pos > 0:
+            return candidate[:pos + len(sep)].rstrip()
+    return candidate.rsplit(" ", 1)[0] + "…"
+
+
+def _enforce_narrative_limits(sb: dict):
+    """Truncate narrative fields at sentence boundaries if they exceed limits."""
+    narr = sb.get("narrative", {})
+    body = narr.get("body", "")
+    if len(body) > 250:
+        narr["body"] = _truncate_at_sentence(body, 250)
+    arc = sb.get("emotional_arc", "")
+    if len(arc) > 100:
+        sb["emotional_arc"] = _truncate_at_sentence(arc, 100)
 
 
 # ── Step 2: Generate comic-style multi-panel image ──
 
-COMIC_IMAGE_PROMPT_TEMPLATE = """Generate a warm, hand-drawn illustration style comic strip with {panel_count} panels arranged in a grid layout. The style should be gentle watercolor-meets-digital-illustration, with soft warm tones, slightly rounded character designs, and cozy atmosphere — similar to a "slice of life" manga or children's picture book.
+COMIC_IMAGE_PROMPT_TEMPLATE = """Generate a warm, hand-drawn illustration style comic page with {panel_count} panels in a DYNAMIC MANGA LAYOUT. The style should be gentle watercolor-meets-digital-illustration, with soft warm tones, slightly rounded character designs, and cozy atmosphere — similar to a "slice of life" manga or children's picture book.
 
 Overall theme: "{theme}"
 Emotional arc: "{emotional_arc}"
 
-Panel descriptions (in order, left-to-right, top-to-bottom):
+Panel descriptions (arrange according to emotional weight, NOT in a uniform grid):
 {panel_descriptions}
 
+MANGA PANEL LAYOUT (Japanese comic composition — CRITICAL):
+- VARY panel sizes dramatically — the emotional climax panel should be 2-3x LARGER than other panels
+- Use IRREGULAR, asymmetric arrangements — absolutely NO uniform grids or equal-sized panels
+- Include at least one of: diagonal panel borders, L-shaped panels, or a panel that breaks/overlaps conventional borders
+- Panel borders: thin black lines, but vary their angles — not all perpendicular
+- Leave white gutter space between panels (manga tradition)
+- Mix wide HORIZONTAL panels (landscapes, establishing shots) with tall VERTICAL panels (close-ups, character focus)
+
+EMOTIONAL PANEL SIZING:
+- Quiet/transitional moments → smaller, compact panels
+- Dramatic/emotional peaks → the LARGEST panel, possibly breaking conventional borders
+- Opening → a wider establishing shot panel
+- Climax → hero panel, at least 30% of the page area
+- Create visual rhythm through dramatic size contrast between adjacent panels
+
 CRITICAL REQUIREMENTS:
-- All {panel_count} panels must be in a SINGLE image, arranged as a {grid_layout} grid
-- Each panel should have a thin white border/frame separating it
+- All {panel_count} panels must be in a SINGLE image with dynamic manga-style layout
 - Consistent character appearance across panels (same clothing, hair, build)
 - Warm color palette: golden yellows, soft oranges, gentle greens, twilight purples
 - Hand-drawn line quality with subtle texture
 - No text or speech bubbles in the panels
-- Aspect ratio: 3:4 portrait (for the overall grid image)
+- Aspect ratio: 3:4 portrait (for the overall page)
 - The overall mood should be warm, nostalgic, and life-affirming
 
-Style anchor: A warm slice-of-life comic strip with gentle watercolor illustration style, evoking the feeling of a cherished photo album rendered as art."""
+Style anchor: A warm slice-of-life manga page with dynamic irregular paneling and gentle watercolor illustration style, evoking the feeling of a cherished photo album rendered as art."""
 
 
 def generate_comic_image(
@@ -244,9 +300,6 @@ def generate_comic_image(
     theme = storyboard.get("theme", "Life Comic")
     emotional_arc = storyboard.get("emotional_arc", "")
 
-    grid_map = {1: "1x1", 2: "1x2", 3: "1x3", 4: "2x2", 5: "2x3", 6: "2x3", 7: "2x4", 8: "2x4", 9: "3x3"}
-    grid_layout = grid_map.get(panel_count, "2x3")
-
     panel_descs = ""
     for i, p in enumerate(panels):
         desc = p.get("scene_description", "")
@@ -259,12 +312,11 @@ def generate_comic_image(
         theme=theme,
         emotional_arc=emotional_arc,
         panel_descriptions=panel_descs,
-        grid_layout=grid_layout,
     )
 
     parts: list[types.Part] = []
 
-    ref_count = min(len(reference_photos), 9)
+    ref_count = min(len(reference_photos), 10)
     for rp in reference_photos[:ref_count]:
         try:
             img_data, mime = _load_image_bytes(rp)
@@ -310,7 +362,7 @@ def generate_comic_image(
 def _fallback_storyboard(panels: List[dict], date_str: str, lang: str = "en") -> dict:
     """Minimal fallback storyboard."""
     panel_list = []
-    for i, p in enumerate(panels[:9]):
+    for i, p in enumerate(panels[:10]):
         panel_list.append({
             "panel_index": i,
             "source_photo_index": i,
