@@ -26,29 +26,20 @@ TEMPLATE_INFO = {
     "L02": {"name": "3D Pixar Animation", "cat": "L·Stylization", "pri": "P0", "kw": "3D, Pixar, Disney"},
     "L03": {"name": "Comic / Manga", "cat": "L·Stylization", "pri": "P0", "kw": "comic, manga, graphic novel"},
     "L04": {"name": "Sketch / Pencil", "cat": "L·Stylization", "pri": "P0", "kw": "sketch, pencil drawing"},
-    "L05": {"name": "Clay / Claymation", "cat": "L·Stylization", "pri": "P0", "kw": "clay, claymation, stop-motion"},
     "L06": {"name": "80s Retro Animation", "cat": "L·Stylization", "pri": "P0", "kw": "80s, retro, synthwave"},
     "L07": {"name": "Retro-Futurism", "cat": "L·Stylization", "pri": "P0", "kw": "retro-future, space age"},
-    "L08": {"name": "Ukiyo-e / Chinese Painting", "cat": "L·Stylization", "pri": "P0", "kw": "ukiyo-e, Chinese painting, classical oriental"},
     "L09": {"name": "Watercolor Portrait", "cat": "L·Stylization", "pri": "P0", "kw": "watercolor, aquarelle"},
     "L10": {"name": "K-Pop Star", "cat": "L·Stylization", "pri": "P0", "kw": "K-Pop, K-style, idol"},
-    "L11": {"name": "Imperial / Royal", "cat": "L·Stylization", "pri": "P0", "kw": "imperial, royal, regal"},
     "L12": {"name": "90s Yearbook", "cat": "L·Stylization", "pri": "P0", "kw": "90s, yearbook, school photo"},
-    "L13": {"name": "High Fashion", "cat": "L·Stylization", "pri": "P0", "kw": "fashion, vogue, editorial"},
     "L14": {"name": "Cyberpunk Portrait", "cat": "L·Stylization", "pri": "P0", "kw": "cyberpunk, neon, sci-fi"},
     "L15": {"name": "Oil Painting / Classical", "cat": "L·Stylization", "pri": "P0", "kw": "oil painting, classical, impressionist"},
     "L16": {"name": "Pixel Art", "cat": "L·Stylization", "pri": "P0", "kw": "pixel art, 8-bit, retro game"},
     "L17": {"name": "Flat / Vector Illustration", "cat": "L·Stylization", "pri": "P0", "kw": "flat, vector, graphic illustration"},
-    "L18": {"name": "Anime", "cat": "L·Stylization", "pri": "P0", "kw": "anime, animation, Japanese cartoon"},
-    "L19": {"name": "Wool Felt / Needle Felt", "cat": "L·Stylization", "pri": "P0", "kw": "wool felt, needle felt, felted"},
     "L20": {"name": "Colored Pencil", "cat": "L·Stylization", "pri": "P0", "kw": "colored pencil, crayon"},
     "L21": {"name": "Pop Art", "cat": "L·Stylization", "pri": "P0", "kw": "pop art, Warhol, Lichtenstein"},
-    "L22": {"name": "Miniature / Diorama", "cat": "L·Stylization", "pri": "P0", "kw": "miniature, diorama, tilt-shift"},
     "L23": {"name": "Children's Drawing", "cat": "L·Stylization", "pri": "P0", "kw": "children drawing, kids art"},
     "L24": {"name": "Game CG / Thick Paint", "cat": "L·Stylization", "pri": "P0", "kw": "game CG, thick paint, digital painting"},
-    "L25": {"name": "Vaporwave", "cat": "L·Stylization", "pri": "P0", "kw": "vaporwave, aesthetic, retro digital"},
     "L26": {"name": "Printmaking / Woodblock", "cat": "L·Stylization", "pri": "P0", "kw": "printmaking, woodblock, linocut"},
-    "L27": {"name": "Fine Brush / Gongbi", "cat": "L·Stylization", "pri": "P0", "kw": "gongbi, fine brush, contemporary gongbi"},
     "L28": {"name": "Pen Sketch / Simple Line", "cat": "L·Stylization", "pri": "P0", "kw": "pen sketch, line drawing, simple line"},
     "L29": {"name": "Dark Fairy Tale", "cat": "L·Stylization", "pri": "P0", "kw": "dark fairy tale, gothic, Tim Burton"},
     # L: Life & Entertainment — Portrait
@@ -62,11 +53,8 @@ TEMPLATE_INFO = {
     "L37": {"name": "Dark Mood Portrait", "cat": "L·Portrait", "pri": "P0", "kw": "dark mood, low-key, moody"},
     "L38": {"name": "Iconic Location Shot", "cat": "L·Portrait", "pri": "P0", "kw": "red wall, landmark, iconic location"},
     "L39": {"name": "Spring Floral Portrait", "cat": "L·Portrait", "pri": "P0", "kw": "spring, cherry blossom, floral portrait"},
-    "L40": {"name": "Natural Light & Shadow", "cat": "L·Portrait", "pri": "P0", "kw": "dappled shadow, sunlight, tree shadow"},
-    "L41": {"name": "Sunset / Golden Hour", "cat": "L·Portrait", "pri": "P0", "kw": "sunset, golden hour, dusk"},
     "L42": {"name": "Retro Film & Polaroid", "cat": "L·Portrait", "pri": "P0", "kw": "polaroid, instant film, retro film"},
     "L43": {"name": "Winter Snow Portrait", "cat": "L·Portrait", "pri": "P0", "kw": "snow, winter portrait, cold scene"},
-    "L44": {"name": "Beach & Underwater", "cat": "L·Portrait", "pri": "P0", "kw": "beach, underwater, coastal"},
     "L45": {"name": "Fantasy / Magical Scene", "cat": "L·Portrait", "pri": "P0", "kw": "magic, wizard academy, fantasy"},
     "L46": {"name": "Social Media / Street Style", "cat": "L·Portrait", "pri": "P0", "kw": "OOTD, Plog, street style"},
     "L48": {"name": "Photo Grid Layout", "cat": "L·Portrait", "pri": "P0", "kw": "triptych, grid layout, photo grid"},
@@ -254,7 +242,7 @@ tr:hover {{ background: #1a1a1a; }}
 </head>
 <body>
 <h1>Image Generation — High-Heat Template Report</h1>
-<p class="subtitle">74 curated templates for Gemini 3.1 Flash Image (Nano Banana 2) — Generated {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+<p class="subtitle">{len(TEMPLATE_INFO)} curated templates for Gemini 3.1 Flash Image (Nano Banana 2) — Generated {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
 
 <div class="stats">
   <div class="stat-card">

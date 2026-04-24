@@ -60,21 +60,6 @@
     "has_sample": true
   },
   {
-    "id": "L05",
-    "name": "Clay / Claymation",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "clay, claymation, stop-motion",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 4.9
-    },
-    "has_sample": true
-  },
-  {
     "id": "L06",
     "name": "80s Retro Animation",
     "category": "L·Stylization",
@@ -101,21 +86,6 @@
       "visual_quality": 4.5,
       "style_accuracy": 4.5,
       "overall": 4.4
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L08",
-    "name": "Ukiyo-e / Chinese Painting",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "ukiyo-e, Chinese painting, classical oriental",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 4.9
     },
     "has_sample": true
   },
@@ -150,21 +120,6 @@
     "has_sample": true
   },
   {
-    "id": "L11",
-    "name": "Imperial / Royal",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "imperial, royal, regal",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 4.9
-    },
-    "has_sample": true
-  },
-  {
     "id": "L12",
     "name": "90s Yearbook",
     "category": "L·Stylization",
@@ -176,21 +131,6 @@
       "visual_quality": 5.0,
       "style_accuracy": 5.0,
       "overall": 5.0
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L13",
-    "name": "High Fashion",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "fashion, vogue, editorial",
-    "scores": {
-      "prompt_adherence": 4.5,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 4.5,
-      "overall": 4.6
     },
     "has_sample": true
   },
@@ -255,36 +195,6 @@
     "has_sample": true
   },
   {
-    "id": "L18",
-    "name": "Anime",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "anime, animation, Japanese cartoon",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 5.0
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L19",
-    "name": "Wool Felt / Needle Felt",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "wool felt, needle felt, felted",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 5.0
-    },
-    "has_sample": true
-  },
-  {
     "id": "L20",
     "name": "Colored Pencil",
     "category": "L·Stylization",
@@ -305,21 +215,6 @@
     "category": "L·Stylization",
     "priority": "P0",
     "keywords": "pop art, Warhol, Lichtenstein",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 5.0,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 5.0
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L22",
-    "name": "Miniature / Diorama",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "miniature, diorama, tilt-shift",
     "scores": {
       "prompt_adherence": 5.0,
       "identity_preservation": 5.0,
@@ -360,41 +255,11 @@
     "has_sample": true
   },
   {
-    "id": "L25",
-    "name": "Vaporwave",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "vaporwave, aesthetic, retro digital",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "has_sample": true
-  },
-  {
     "id": "L26",
     "name": "Printmaking / Woodblock",
     "category": "L·Stylization",
     "priority": "P0",
     "keywords": "printmaking, woodblock, linocut",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L27",
-    "name": "Fine Brush / Gongbi",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "gongbi, fine brush, contemporary gongbi",
     "scores": {
       "prompt_adherence": 4.7,
       "identity_preservation": 4.5,
@@ -585,36 +450,6 @@
     "has_sample": true
   },
   {
-    "id": "L40",
-    "name": "Natural Light & Shadow",
-    "category": "L·Portrait",
-    "priority": "P0",
-    "keywords": "dappled shadow, sunlight, tree shadow",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L41",
-    "name": "Sunset / Golden Hour",
-    "category": "L·Portrait",
-    "priority": "P0",
-    "keywords": "sunset, golden hour, dusk",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "has_sample": true
-  },
-  {
     "id": "L42",
     "name": "Retro Film & Polaroid",
     "category": "L·Portrait",
@@ -635,21 +470,6 @@
     "category": "L·Portrait",
     "priority": "P0",
     "keywords": "snow, winter portrait, cold scene",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "has_sample": true
-  },
-  {
-    "id": "L44",
-    "name": "Beach & Underwater",
-    "category": "L·Portrait",
-    "priority": "P0",
-    "keywords": "beach, underwater, coastal",
     "scores": {
       "prompt_adherence": 4.7,
       "identity_preservation": 4.5,

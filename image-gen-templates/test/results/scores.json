@@ -47,18 +47,6 @@
     },
     "notes": "Museum-quality graphite portrait with visible pencil technique and paper texture"
   },
-  "L05": {
-    "template_name": "Clay / Claymation",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 4.9
-    },
-    "notes": "Excellent clay texture with visible sculpting details, sweater texture outstanding"
-  },
   "L06": {
     "template_name": "80s Retro Animation",
     "category": "L",
@@ -82,18 +70,6 @@
       "overall": 4.4
     },
     "notes": "Painted illustration quality achieved, retro-futuristic elements present"
-  },
-  "L08": {
-    "template_name": "Ukiyo-e / Chinese Painting",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 4.9
-    },
-    "notes": "Outstanding woodblock print authenticity — bold ink outlines, Prussian blue palette, Mt. Fuji, cherry blossoms, red seal stamp. Paper texture visible."
   },
   "L09": {
     "template_name": "Watercolor Portrait",
@@ -119,18 +95,6 @@
     },
     "notes": "K-Pop beauty standards well applied, good studio lighting and color grading"
   },
-  "L11": {
-    "template_name": "Imperial / Royal",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 4.9
-    },
-    "notes": "Magnificent royal portrait with oil painting technique, dramatic chiaroscuro"
-  },
   "L12": {
     "template_name": "90s Yearbook",
     "category": "L",
@@ -142,18 +106,6 @@
       "overall": 5.0
     },
     "notes": "Perfect 90s yearbook aesthetic — laser beam background, period outfit, film grain, Kodak Gold warmth. Previously validated."
-  },
-  "L13": {
-    "template_name": "High Fashion",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.5,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 4.5,
-      "overall": 4.6
-    },
-    "notes": "Strong editorial lighting and fashion styling, magazine-grade quality"
   },
   "L14": {
     "template_name": "Cyberpunk Portrait",
@@ -467,30 +419,6 @@
     },
     "notes": "Perfect flat design execution — zero gradients, crisp geometric shapes, harmonious 6-color palette, identity clearly recognizable through simplified forms"
   },
-  "L18": {
-    "template_name": "Anime",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 5.0
-    },
-    "notes": "Breathtaking Shinkai-level anime — multi-layer eye reflections with star catch-lights, cherry blossom atmosphere, golden backlighting creating hair halo, identity preserved through glasses and face shape"
-  },
-  "L19": {
-    "template_name": "Wool Felt / Needle Felt",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 5.0
-    },
-    "notes": "Incredible needle-felt authenticity — visible wool fiber wisps, tiny felted flowers, bead eyes, rosy cheeks, knitted sweater detail, macro photography depth of field. Identity preserved through glasses and hairstyle"
-  },
   "L20": {
     "template_name": "Colored Pencil Drawing",
     "category": "L",
@@ -514,18 +442,6 @@
       "overall": 5.0
     },
     "notes": "Perfect Warhol execution — 2x2 grid with four distinct color schemes, halftone dot pattern visible, bold black outlines, consistent identity across all quadrants, slight registration offset for authenticity"
-  },
-  "L22": {
-    "template_name": "Miniature / Diorama",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 5.0,
-      "identity_preservation": 5.0,
-      "visual_quality": 5.0,
-      "style_accuracy": 5.0,
-      "overall": 5.0
-    },
-    "notes": "Stunning miniature world — coffee shop with checkered tile, Edison bulbs, tiny plants, balsa wood furniture. Macro depth of field perfectly sells the miniature scale. Identity preserved in figurine"
   },
   "L23": {
     "template_name": "Children's Drawing",
@@ -660,19 +576,6 @@
     "notes": "Auto-scored. Image: 896x1200, 1559KB. Awaiting manual review.",
     "timestamp": "2026-04-08T19:45:15.680005"
   },
-  "L25": {
-    "template_name": "Vaporwave",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "notes": "Auto-scored. Image: 1024x1024, 1531KB. Awaiting manual review.",
-    "timestamp": "2026-04-08T19:45:15.680436"
-  },
   "L26": {
     "template_name": "Printmaking / Woodblock",
     "category": "L",
@@ -685,19 +588,6 @@
     },
     "notes": "Auto-scored. Image: 896x1200, 1970KB. Awaiting manual review.",
     "timestamp": "2026-04-08T19:45:15.680762"
-  },
-  "L27": {
-    "template_name": "Fine Brush / Gongbi",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "notes": "Auto-scored. Image: 896x1200, 1818KB. Awaiting manual review.",
-    "timestamp": "2026-04-08T19:45:15.681071"
   },
   "L28": {
     "template_name": "Pen Sketch / Simple Line",
@@ -777,32 +667,6 @@
     "notes": "Auto-scored. Image: 896x1200, 1454KB. Awaiting manual review.",
     "timestamp": "2026-04-08T19:45:15.682733"
   },
-  "L40": {
-    "template_name": "Natural Light & Shadow",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "notes": "Auto-scored. Image: 896x1200, 1691KB. Awaiting manual review.",
-    "timestamp": "2026-04-08T19:45:15.683014"
-  },
-  "L41": {
-    "template_name": "Sunset / Golden Hour",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "notes": "Auto-scored. Image: 896x1195, 1466KB. Awaiting manual review.",
-    "timestamp": "2026-04-08T19:45:15.683307"
-  },
   "L42": {
     "template_name": "Retro Film & Polaroid",
     "category": "L",
@@ -828,19 +692,6 @@
     },
     "notes": "Auto-scored. Image: 896x1195, 1648KB. Awaiting manual review.",
     "timestamp": "2026-04-08T19:45:15.683839"
-  },
-  "L44": {
-    "template_name": "Beach & Underwater",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.7,
-      "identity_preservation": 4.5,
-      "visual_quality": 4.6,
-      "style_accuracy": 4.8,
-      "overall": 4.7
-    },
-    "notes": "Auto-scored. Image: 896x1200, 1568KB. Awaiting manual review.",
-    "timestamp": "2026-04-08T19:45:15.684127"
   },
   "L45": {
     "template_name": "Fantasy / Magical Scene",

@@ -1,7 +1,7 @@
 ---
 name: image-gen-templates
 description: >-
-  High-heat template-based image generation skill with 74 curated templates covering
+  High-heat template-based image generation skill with 62 curated templates covering
   stylization, photo scenes, portraits, pets, editing tools, social media, and professional
   design across 3 categories (Life & Entertainment / Media & Work / Professional Design).
   Matches user intent to specific templates for one-click, high-quality generation
@@ -11,7 +11,7 @@ description: >-
 
 # Image Generation — High-Heat Template Skill
 
-74 curated high-quality templates for one-click image generation via Gemini 3.1 Flash Image.
+62 curated high-quality templates for one-click image generation via Gemini 3.1 Flash Image.
 
 ## When to Use
 
@@ -146,12 +146,12 @@ END
 
 ## Section 1: Template Registry
 
-74 templates organized in 3 categories. Read `TEMPLATES.md` in the same skill directory
+62 templates organized in 3 categories. Read `TEMPLATES.md` in the same skill directory
 for the full prompt patterns.
 
 ### L: Life & Entertainment (58 templates)
 
-#### Stylization (29 templates)
+#### Stylization (20 templates)
 
 | ID | Template | Keywords (EN) | Input |
 |----|----------|---------------|-------|
@@ -159,33 +159,24 @@ for the full prompt patterns.
 | L02 | 3D Pixar Animation | 3D, Pixar, Disney, animated | Photo |
 | L03 | Comic / Manga | comic, manga, graphic novel | Photo |
 | L04 | Sketch / Pencil | sketch, pencil, drawing, graphite | Photo |
-| L05 | Clay / Claymation | clay, claymation, plasticine, stop-motion | Photo |
 | L06 | 80s Retro Animation | 80s, retro, synthwave, vintage cartoon | Photo |
 | L07 | Retro-Futurism | retro-future, space age, vintage sci-fi | Photo |
-| L08 | Ukiyo-e / Chinese Painting | ukiyo-e, Chinese painting, ink wash | Photo |
 | L09 | Watercolor Portrait | watercolor, aquarelle, painting | Photo |
 | L10 | K-Pop Star | K-Pop, Korean idol, idol photo | Photo |
-| L11 | Imperial / Royal | imperial, royal, king, queen, emperor | Photo |
 | L12 | 90s Yearbook | 90s, yearbook, high school, retro photo | Photo |
-| L13 | High Fashion | high fashion, vogue, editorial, couture | Photo |
 | L14 | Cyberpunk Portrait | cyberpunk, neon, cyber, futuristic | Photo |
 | L15 | Oil Painting / Classical | oil painting, classical, renaissance | Photo |
 | L16 | Pixel Art | pixel art, 8-bit, retro game, 16-bit | Photo |
 | L17 | Flat / Vector Illustration | flat, vector, minimalist illustration | Photo |
-| L18 | Anime | anime, Japanese animation, cartoon | Photo |
-| L19 | Wool Felt / Needle Felt | wool felt, needle felt, felted | Photo |
 | L20 | Colored Pencil | colored pencil, Prismacolor, crayon | Photo |
 | L21 | Pop Art | pop art, Warhol, Lichtenstein | Photo |
-| L22 | Miniature / Diorama | miniature, diorama, tilt-shift | Photo |
 | L23 | Children's Drawing | children drawing, kid art, crayon | Photo |
 | L24 | Game CG / Thick Paint | game CG, digital painting, thick paint | Photo |
-| L25 | Vaporwave | vaporwave, aesthetic, retrowave, glitch | Photo |
 | L26 | Printmaking / Woodblock | printmaking, woodblock, linocut | Photo |
-| L27 | Fine Brush / Gongbi | gongbi, fine brush, meticulous | Photo |
 | L28 | Pen Sketch / Simple Line | pen sketch, line drawing, ink pen | Photo |
 | L29 | Dark Fairy Tale | dark fairy tale, gothic, Tim Burton | Photo |
 
-#### Portrait & Photo Scenes (18 templates)
+#### Portrait & Photo Scenes (15 templates)
 
 | ID | Template | Keywords (EN) | Input |
 |----|----------|---------------|-------|
@@ -199,11 +190,8 @@ for the full prompt patterns.
 | L37 | Dark Mood Portrait | dark mood, low-key, moody | Photo |
 | L38 | Iconic Location Shot | red wall, landmark, Forbidden City | Photo |
 | L39 | Spring Floral Portrait | spring, cherry blossom, pear blossom | Photo |
-| L40 | Natural Light & Shadow | dappled light, tree shadow, sunlight | Photo |
-| L41 | Sunset / Golden Hour | sunset, golden hour, silhouette | Photo |
 | L42 | Retro Film & Polaroid | polaroid, film, vintage camera | Photo |
 | L43 | Winter Snow Portrait | winter, snow, frosty, cold | Photo |
-| L44 | Beach & Underwater | beach, underwater, ocean, diving | Photo |
 | L45 | Fantasy / Magical Scene | magic, wizard, fantasy, spell | Photo |
 | L46 | Social Media / Street Style | OOTD, Plog, street style | Photo |
 | L48 | Photo Grid Layout | grid, triptych, photo grid | Photo |
@@ -263,30 +251,26 @@ When the skill is activated and the user has NO specific image request, present 
 template menu to inspire exploration. Use this EXACT format:
 
 ```
-I can help you create amazing images with 74 high-quality templates! Here are the
+I can help you create amazing images with 62 high-quality templates! Here are the
 most popular ones to try:
 
-🎨 **STYLIZATION** (29 styles to transform your photo)
+🎨 **STYLIZATION** (20 styles to transform your photo)
   • Chibi Cartoon — Turn yourself into an adorable Q-version character
   • 3D Pixar Animation — Become a Disney/Pixar movie character
-  • Anime — Beautiful Japanese animation style portrait
   • Oil Painting — Classical masterpiece portrait
   • Game CG / Thick Paint — AAA game cutscene illustration
-  • Vaporwave — 90s aesthetic with glitch effects
   • Dark Fairy Tale — Tim Burton-esque gothic whimsy
-  • Gongbi / Fine Brush — Traditional Chinese meticulous painting
-  • Pixel Art, Wool Felt, Pop Art, Miniature, and 18 more...
+  • Pixel Art, Pop Art, Sketch, Watercolor, and 10 more...
 
-📸 **PORTRAITS & PHOTO SCENES** (18 templates)
+📸 **PORTRAITS & PHOTO SCENES** (15 templates)
   • K-Pop Star — Get the idol concept photo treatment
   • Film / Cinematic — Moody arthouse movie still portrait
   • Indoor Scene — Cozy café or studio apartment vibes
   • Spring Floral — Cherry blossom dreamy portrait
   • Dark Mood — Low-key dramatic emotional portrait
-  • Sunset / Golden Hour — Warm backlit silhouette
   • Retro Film & Polaroid — Vintage instant camera look
   • Winter Snow — Snowflake falling ethereal portrait
-  • Beach, Fantasy, Street Style, Beauty Close-up, Photo Grid...
+  • Fantasy, Street Style, Photo Grid, and more...
 
 🐾 **PETS & BABIES**
   • Pet Humanization — Your pet in a business suit
@@ -333,22 +317,15 @@ Template Registry above. If a keyword matches, select that template.
 | photo + "cartoon" / "anime" | L01 (Chibi) or L03 (Comic) |
 | photo + "3D" / "Pixar" | L02 |
 | photo + "sketch" / "draw" | L04 |
-| photo + "clay" / "claymation" | L05 |
-| photo + "Chinese style" / "ink wash" | L08 |
 | photo + "watercolor" / "aquarelle" | L09 |
 | photo + "oil painting" / "classical" | L15 |
 | photo + "pixel" / "8-bit" / "retro game" | L16 |
 | photo + "flat" / "vector" / "illustration" | L17 |
-| photo + "anime" / "Japanese animation" | L18 |
-| photo + "wool felt" / "needle felt" | L19 |
 | photo + "colored pencil" / "crayon" | L20 |
 | photo + "pop art" / "Warhol" | L21 |
-| photo + "miniature" / "diorama" | L22 |
 | photo + "children drawing" / "kid art" | L23 |
 | photo + "game CG" / "thick paint" / "digital painting" | L24 |
-| photo + "vaporwave" / "aesthetic" / "retrowave" | L25 |
 | photo + "printmaking" / "woodblock" | L26 |
-| photo + "gongbi" / "fine brush" | L27 |
 | photo + "pen sketch" / "line drawing" | L28 |
 | photo + "dark fairy tale" / "gothic" / "Tim Burton" | L29 |
 | photo + "portrait" / "photoshoot" | L30 |
@@ -361,11 +338,8 @@ Template Registry above. If a keyword matches, select that template.
 | photo + "dark mood" / "low-key" / "moody" | L37 |
 | photo + "red wall" / "landmark" / "ancient architecture" | L38 |
 | photo + "spring" / "cherry blossom" / "floral" | L39 |
-| photo + "dappled light" / "tree shadow" / "sunlight" | L40 |
-| photo + "sunset" / "golden hour" | L41 |
 | photo + "polaroid" / "instant film" / "retro" | L42 |
 | photo + "snow" / "winter" | L43 |
-| photo + "beach" / "underwater" / "ocean" | L44 |
 | photo + "magic" / "fantasy" / "wizard" | L45 |
 | photo + "OOTD" / "Plog" / "street style" | L46 |
 | photo + "grid" / "triptych" | L48 |
@@ -440,7 +414,7 @@ using the user's original query as the prompt basis, without any template.
 ### When to Fallback
 
 - User's request is a valid image generation/editing task, BUT does not match any
-  of the 74 templates in Section 1
+  of the 62 templates in Section 1
 - User explicitly asks for something outside the template categories (e.g., food
   photography, landscape, architecture, abstract art, custom character design)
 - User's intent is ambiguous after Step 3 (Section 3) and none of the top candidates

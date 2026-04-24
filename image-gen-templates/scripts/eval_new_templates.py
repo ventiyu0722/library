@@ -37,23 +37,6 @@ NEW_TEMPLATES = {
         ),
         "ref": SELFIE,
     },
-    "L25": {
-        "name": "Vaporwave",
-        "prompt": (
-            "Transform the uploaded photo into a striking vaporwave aesthetic portrait. "
-            "Preserve the subject's facial identity while fully embracing retro-digital surrealism. "
-            "Scene: marble Roman bust fragments, Greek columns, and palm silhouettes drifting in soft haze. "
-            "Color: dominant gradients of electric purple, teal, and hot pink with smooth diagonal blends. "
-            "VHS artifacts: subtle horizontal scanlines, slight chromatic aberration, mild tracking jitter, "
-            "and soft phosphor glow. Glitch accents: small RGB channel splits on outer contours, "
-            "occasional scan-line breaks across non-facial areas, tiny datamoshing hints in background only. "
-            "Lighting: flat-to-soft frontal fill with neon edge lights — cyan from one side, magenta from the other. "
-            "Background: infinite perspective grid or sun-disk over hazy horizon with floating geometric shards. "
-            "Composition: centered bust, square 1:1. No readable text, no watermark. "
-            "The overall style is refined vaporwave artwork: nostalgic, slightly uncanny."
-        ),
-        "ref": SELFIE,
-    },
     "L26": {
         "name": "Printmaking / Woodblock",
         "prompt": (
@@ -68,25 +51,6 @@ NEW_TEMPLATES = {
             "Composition: portrait 3:4, figure prominent, generous margin suggesting paper edge. "
             "No text, no watermark. The overall style is gallery-quality woodcut / linocut interpretation: "
             "graphic, tactile, and unmistakably printmaking."
-        ),
-        "ref": SELFIE,
-    },
-    "L27": {
-        "name": "Fine Brush / Gongbi",
-        "prompt": (
-            "Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary gongbi sensibility — "
-            "while preserving the subject's facial identity and calm, dignified presence. "
-            "Support: fine silk with subtle fiber texture and mineral glow of traditional pigments. "
-            "Technique: extremely fine controlled brush lines for hair strands, eyelashes, and fabric weave; "
-            "smooth even color fills in skin with delicate rose-tinged undertones and soft cool shadows. "
-            "Layered transparent washes build depth without losing clarity. "
-            "Palette: classical mineral colors — malachite green, azurite blue, cinnabar red accents, "
-            "ivory and ochre skin tones, touches of delicate gold leaf on hair ornaments. "
-            "Attire: elegant updated hanfu with fine pattern work, subtle botanical embroidery. "
-            "Background: sparse branches, orchids, distant misty mountains. "
-            "Lighting: soft even illumination, modeling through color temperature and fine edge lines. "
-            "Composition: vertical portrait 3:4, optional small red seal mark in corner. "
-            "No modern objects, no watermark. The overall style is museum-quality contemporary gongbi portrait."
         ),
         "ref": SELFIE,
     },
@@ -195,40 +159,6 @@ NEW_TEMPLATES = {
         ),
         "ref": SELFIE,
     },
-    "L40": {
-        "name": "Natural Light & Shadow",
-        "prompt": (
-            "Transform the uploaded photo into a sun-drenched outdoor portrait celebrating natural light patterns. "
-            "Preserve the subject's identity while emphasizing interplay between light and shadow. "
-            "Key effect: dappled tree shadow patterns — broken leaf-shaped highlights and soft organic shadows "
-            "projected across the face, neck, and shoulders, moving with the contours of the features. "
-            "Hair: strong rim and backlight so individual strands glow — golden halo, subtle flyaways catching specular highlights. "
-            "Environment: park or garden path — green foliage soft in background, sun filtering through canopy. "
-            "Time: late morning or golden hour — warm sun, high dynamic range handled naturally. "
-            "Skin: retain texture; dappled patches should feel photographic, not painted-on. "
-            "Camera: 85mm, wide aperture, slight flare acceptable. "
-            "Composition: 3:4 vertical, intimate framing, eyes sharp. "
-            "No text, no watermark. The overall style is a fine-art natural-light portrait — organic, fresh, and technically sophisticated."
-        ),
-        "ref": SELFIE,
-    },
-    "L41": {
-        "name": "Sunset / Golden Hour",
-        "prompt": (
-            "Transform the uploaded photo into a wide cinematic sunset portrait. "
-            "Preserve the subject's identity — strong rim-lit profile with balanced exposure against glowing sky. "
-            "Sky: layered sunset — deep amber near horizon, rose and coral mid-band, cooling violet higher up — "
-            "optional thin cloud streaks catching fire. "
-            "Subject: strong warm edge light outlining hair and shoulders, face partially in soft fill from sky bounce — "
-            "still identifiable. Gentle sun bloom and optional anamorphic flare streak. "
-            "Environment: open horizon — sea, lake, or field — horizon low in frame for maximum sky drama. "
-            "Camera: wide to normal focal length for landscape orientation, deep depth of field. "
-            "Composition: 16:9 horizontal, epic negative space, emotional scale. "
-            "No text, no watermark. The overall style is a cinematic golden-hour environmental portrait — "
-            "warm, vast, and emotionally open."
-        ),
-        "ref": SELFIE,
-    },
     "L42": {
         "name": "Retro Film & Polaroid",
         "prompt": (
@@ -261,22 +191,6 @@ NEW_TEMPLATES = {
             "Camera: 85mm f/2, slight shutter speed sense of falling snow motion. "
             "Composition: vertical 3:4, subject clear against snowy depth. "
             "No text, no watermark. The overall style is a premium winter editorial — crisp, serene, and tactilely cold."
-        ),
-        "ref": SELFIE,
-    },
-    "L44": {
-        "name": "Beach & Underwater",
-        "prompt": (
-            "Transform the uploaded photo into a sun-drenched beach portrait. "
-            "Preserve the subject's identity while committing fully to the coastal environment. "
-            "Setting: bright golden hour shore — sparkling wet sand, gentle surf foam, sea sparkle bokeh, "
-            "wind in hair, sun cream natural highlights on skin, polarized sky gradient. "
-            "Wardrobe: light summer dress or casual beach clothing — fabric behavior matches wind and moisture. "
-            "Light: warm golden hour backlight with sun flare, subject lit by warm ambient bounce. "
-            "Camera: 35mm or 50mm with sun flare control, shallow depth of field on crashing waves. "
-            "Composition: 3:4 vertical, dynamic but readable. "
-            "No text, no watermark. The overall style is a high-end travel or swim editorial — "
-            "luminous, aquatic, and escapist."
         ),
         "ref": SELFIE,
     },

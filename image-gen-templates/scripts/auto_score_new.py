@@ -11,28 +11,23 @@ RESULTS_DIR = PROJECT_DIR / "test" / "results"
 SCORES_PATH = RESULTS_DIR / "scores.json"
 
 NEW_IDS = [
-    "L24", "L25", "L26", "L27", "L28", "L29",
-    "L36", "L37", "L38", "L39", "L40", "L41", "L42", "L43",
-    "L44", "L45", "L46", "L47", "L48",
+    "L24", "L26", "L28", "L29",
+    "L36", "L37", "L38", "L39", "L42", "L43",
+    "L45", "L46", "L47", "L48",
     "L63", "L64", "L65",
 ]
 
 TEMPLATE_NAMES = {
     "L24": "Game CG / Thick Paint",
-    "L25": "Vaporwave",
     "L26": "Printmaking / Woodblock",
-    "L27": "Fine Brush / Gongbi",
     "L28": "Pen Sketch / Simple Line",
     "L29": "Dark Fairy Tale",
     "L36": "Indoor Scene Portrait",
     "L37": "Dark Mood Portrait",
     "L38": "Iconic Location Shot",
     "L39": "Spring Floral Portrait",
-    "L40": "Natural Light & Shadow",
-    "L41": "Sunset / Golden Hour",
     "L42": "Retro Film & Polaroid",
     "L43": "Winter Snow Portrait",
-    "L44": "Beach & Underwater",
     "L45": "Fantasy / Magical Scene",
     "L46": "Social Media / Street Style",
     "L47": "Beauty & Close-up",
@@ -43,9 +38,9 @@ TEMPLATE_NAMES = {
 }
 
 CATEGORY_MAP = {
-    "L24": "L", "L25": "L", "L26": "L", "L27": "L", "L28": "L", "L29": "L",
-    "L36": "L", "L37": "L", "L38": "L", "L39": "L", "L40": "L", "L41": "L",
-    "L42": "L", "L43": "L", "L44": "L", "L45": "L", "L46": "L", "L47": "L",
+    "L24": "L", "L26": "L", "L28": "L", "L29": "L",
+    "L36": "L", "L37": "L", "L38": "L", "L39": "L", "L42": "L",
+    "L43": "L", "L45": "L", "L46": "L", "L47": "L",
     "L48": "L", "L63": "L", "L64": "L", "L65": "L",
 }
 

@@ -1,6 +1,6 @@
 # High-Heat Template Prompt Library
 
-74 curated prompt templates for Gemini 3.1 Flash Image (Nano Banana 2).
+62 curated prompt templates for Gemini 3.1 Flash Image (Nano Banana 2).
 Each template provides a ready-to-use prompt pattern with `{placeholder}` slots for user customization.
 
 ---
@@ -125,36 +125,6 @@ The overall style is a museum-quality graphite portrait combining photorealistic
 
 ---
 
-### L05 — Clay / Claymation
-
-**Keywords:** clay, claymation, stop-motion, plasticine
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 1:1
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a charming claymation-style character. Preserve key facial features and identity while rendering the entire subject as if hand-sculpted from colorful modeling clay.
-
-The character has smooth, rounded clay surfaces with visible hand-molded textures — subtle fingerprint impressions, gentle surface undulations, and soft edges where clay pieces join. Skin is warm-toned clay with slight color variations. Eyes are large, expressive spheres with glossy black pupils. Hair is sculpted from {hair_color, default: "matching-color"} clay in thick, stylized strands.
-
-Outfit: {outfit, default: "a miniaturized version of the original clothing"}, crafted from clay with simplified details — tiny buttons formed from clay balls, fabric folds rendered as smooth clay ridges.
-
-Pose: {pose, default: "standing with a friendly wave and tilted head"}.
-
-Background: a simple {bg, default: "pastel-colored"} clay backdrop with soft, even studio lighting typical of professional stop-motion animation sets. Two-point lighting: warm key light from left, soft fill from right creating gentle shadows that reveal clay surface texture.
-
-The overall style is a premium Aardman/Laika-quality claymation character with heartwarming tactile appeal. Aspect ratio 1:1. No text, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Recognizable identity preserved
-- [ ] Authentic clay/plasticine texture (fingerprints, imperfections)
-- [ ] Warm, appealing lighting
-- [ ] Professional stop-motion aesthetic
-
----
-
 ### L06 — 80s Retro Animation
 
 **Keywords:** 80s, retro, retro animation, vintage cartoon, synthwave
@@ -217,38 +187,6 @@ The overall style is a premium retro-futuristic painted illustration evoking the
 
 ---
 
-### L08 — Ukiyo-e / Chinese Painting
-
-**Keywords:** ukiyo-e, Chinese painting, Chinese style, classical Chinese, Japanese woodblock, ink wash
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into an exquisite East Asian traditional art portrait. Preserve the subject's facial identity and features while rendering them in {style, default: "Japanese Ukiyo-e woodblock print"} style.
-
-The subject is depicted wearing {outfit, default: "an elegant traditional kimono with intricate floral patterns in indigo blue and vermilion red"}. Expression is serene and dignified, maintaining the original person's likeness.
-
-Technique: {technique, default: "Ukiyo-e woodblock print — bold hand-carved ink outlines of varying thickness, flat areas of color from traditional mineral pigments (Prussian blue, vermilion, yellow ochre, soft green), visible wood-grain texture throughout"}. Skin is rendered with smooth, flat warm tones. Hair is depicted as flowing black ink strokes with fine individual strand details.
-
-Background: {background, default: "stylized clouds in the upper portion, a distant mountainscape with Mt. Fuji silhouette, cherry blossom branches framing one side"}. The composition uses traditional flattened perspective with no vanishing point.
-
-Include: subtle paper fiber texture, slight pigment bleeding at color boundaries for authenticity, and a small red artist seal stamp in one corner.
-
-Composition: portrait from chest up. Aspect ratio 3:4.
-
-The overall style is a museum-quality traditional East Asian art portrait with authentic period craftsmanship. No modern elements, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Facial identity recognizable
-- [ ] Authentic traditional art technique (not digital filter)
-- [ ] Correct use of traditional color palette
-- [ ] Paper/woodblock texture present
-
----
-
 ### L09 — Watercolor Portrait
 
 **Keywords:** watercolor, aquarelle, painting
@@ -288,21 +226,7 @@ The overall style is a gallery-quality watercolor portrait with the luminous tra
 **Prompt Pattern:**
 
 ```
-Transform the uploaded photo into a stunning K-Pop idol concept photo. Preserve 100% facial identity — exact facial structure, eye shape, nose, and lips — while elevating the styling to top-tier K-Pop visual standards.
-
-Styling: {styling, default: "flawless, dewy glass skin with subtle highlight on cheekbones and nose bridge. Soft gradient lip tint in rose pink. Eyes enhanced with subtle smoky liner and natural lashes. Brows groomed to a clean, natural arch"}.
-
-Hair: {hair, default: "styled in the latest K-Pop trend — fluffy, textured layers with a center part, in a trendy ash brown tone with subtle highlights"}.
-
-Outfit: {outfit, default: "designer oversized blazer in cream white over a thin chain necklace and minimal black turtleneck"}.
-
-Background: {background, default: "clean studio setting with soft, dreamy haze and lens flares in pastel tones — reminiscent of a high-budget music video concept photo"}. Lighting: beauty-focused setup — large softbox from front-left for flawless skin rendering, subtle rim light in cool blue from behind for ethereal glow, and butterfly lighting for defined cheekbone shadows.
-
-Camera: 85mm portrait lens, f/2.0, shallow depth of field. Color grading: slightly desaturated with lifted blacks and a cool-toned shadow shift, characteristic of modern K-Pop photography.
-
-Aspect ratio 3:4. Head-to-waist framing.
-
-The overall style is an official K-Pop idol concept photo worthy of a debut album photobook. No text, no watermark.
+Using the provided image of the subject as reference, transform them into a K-pop idol–style version of themselves, fully preserving their natural facial features, skin tone, ethnicity, and identity. Style the subject with a polished, high-fashion idol aesthetic inspired by contemporary K-pop concept photoshoots, featuring editorial studio lighting with soft glow and clean highlights, a flawless but natural dewy skin finish, and subtle enhancement of the eyes, lips, and hair for a camera-ready look. The subject poses confidently with expressive yet controlled body language, styled in fashion-forward outfits influenced by modern K-pop trends such as elevated streetwear, Y2K accents, chic tailoring, glam punk, or soft ethereal looks, adapted to complement their original clothing style. The atmosphere resembles a professional idol photoshoot, using bold colored backdrops or moody dramatic environments, studio or concert-style lighting, cinematic shadows, and refined color grading, with optional tasteful details like layered jewelry, belts, or statement accessories kept cohesive and restrained. The final image should feel like an authentic K-pop concept photo—crisp, stylish, and aspirational—projecting polished charisma and star presence while clearly remaining the same person.
 ```
 
 **Quality Checklist:**
@@ -310,38 +234,6 @@ The overall style is an official K-Pop idol concept photo worthy of a debut albu
 - [ ] Polished K-Pop beauty standard (skin, hair, styling)
 - [ ] Professional studio lighting
 - [ ] Album-quality color grading
-
----
-
-### L11 — Imperial / Royal
-
-**Keywords:** imperial, royal, emperor, king, queen, regal aura
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a grand royal portrait in the style of {era, default: "European Renaissance oil painting, reminiscent of Hans Holbein or Hyacinthe Rigaud"}.
-
-Preserve the subject's complete facial identity — exact bone structure, features, and expression — while draping them in magnificent {royal_attire, default: "crimson velvet royal robes with ermine fur trim, intricate gold embroidery featuring heraldic motifs, and a jewel-encrusted crown resting slightly askew"}.
-
-The subject sits or stands in a {pose, default: "regal three-quarter pose on an ornate gilded throne, one hand resting on the armrest, the other holding a golden scepter"}.
-
-Background: a palatial interior — {bg, default: "deep burgundy drapes with gold tassels frame the composition, a marble column is partially visible, and warm candlelight illuminates a tapestry depicting a coat of arms"}.
-
-Painting technique: rich oil paint with visible impasto brushwork on highlights, smooth glazing layers for skin, and meticulous detail on fabrics and jewelry. Lighting: dramatic chiaroscuro — warm golden key light from upper left, deep shadows on the opposite side, candlelight reflections on metallic elements.
-
-Composition: formal royal portrait, three-quarter body. Aspect ratio 3:4.
-
-The overall style is a museum-worthy classical royal portrait with the gravitas and grandeur of old-master painting. No modern elements, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Facial identity clearly preserved
-- [ ] Authentic historical royal aesthetic
-- [ ] Rich oil painting technique visible
-- [ ] Dramatic, regal atmosphere
 
 ---
 
@@ -372,40 +264,6 @@ The overall style is an authentic 1990s American high school yearbook page photo
 - [ ] Period-accurate backdrop (laser beams or mottled gradient)
 - [ ] Era-appropriate outfit and styling
 - [ ] Authentic film grain and color grading
-
----
-
-### L13 — High Fashion
-
-**Keywords:** high fashion, vogue, editorial, fashion photography, fashion editorial
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a high-fashion editorial portrait. Preserve the subject's facial identity with 100% accuracy while elevating the visual presentation to top-tier fashion magazine standards.
-
-Styling: {styling, default: "dramatic, editorial makeup — bold sculpted cheekbones, smoky eye with metallic copper accents, perfectly defined brows, matte nude lip. Skin: luminous, dewy, with strategic highlighter on high points"}.
-
-Hair: {hair, default: "sleek, sculptural updo with a few loose face-framing tendrils, polished to a high-gloss finish"}.
-
-Outfit: {outfit, default: "an avant-garde structured shoulder piece in black with metallic thread detailing, paired with a sheer high-neck underlayer"}.
-
-Lighting: dramatic Vogue-style setup — hard key light from 45° upper-left creating strong shadow geometry on the face, large reflector fill from below for jaw definition, subtle color-gelled hair light in {accent_color, default: "deep amber"}. The interplay creates sharp, architectural shadows.
-
-Background: {background, default: "seamless gradient from charcoal to black"}. Camera: 100mm telephoto, f/2.8, razor-thin depth of field isolating the subject. Color grading: rich contrast, deep blacks, skin tones slightly warm.
-
-Composition: tight portrait from chest up, subject looking {direction, default: "directly into camera with an intense, captivating gaze"}. Aspect ratio 3:4.
-
-The overall style is a cover-worthy high-fashion editorial portrait with dramatic lighting and commanding presence. No text, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Facial identity preserved
-- [ ] Fashion-editorial quality lighting
-- [ ] Professional styling and makeup render
-- [ ] Magazine-grade color and contrast
 
 ---
 
@@ -547,76 +405,6 @@ The overall style is a premium flat vector illustration portrait suitable for a 
 
 ---
 
-### L18 — Anime
-
-**Keywords:** anime, animation, Japanese animation, light novel, アニメ, otaku
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a beautiful anime character portrait in the style of {style, default: "a modern high-budget anime series like Violet Evergarden or Makoto Shinkai's films"}. Preserve the subject's facial identity — face shape, eye characteristics, hairstyle, and distinguishing features — while applying authentic Japanese animation aesthetics.
-
-Character rendering: large, detailed anime eyes with {eye_detail, default: "multiple layers of color, light reflections, and subtle gradient irises — deep, expressive, with small star-shaped catch-lights"}. Skin: smooth, luminous, with anime-style shading — hard shadow edges on the neck and under the hair, soft blush on cheeks. Hair: {hair, default: "flowing, dynamic strands with rich color depth, individual highlight streaks in a lighter tone, and wispy flyaway hairs at the edges"}.
-
-Expression: {expression, default: "gentle smile with warm, inviting eyes — the kind of expression that makes viewers feel connected to the character"}.
-
-Outfit: {outfit, default: "stylish modern Japanese fashion — a cozy oversized knit sweater in soft pastel colors, or a fashionable school uniform blazer"}.
-
-Background: {background, default: "a dreamy golden hour scene — cherry blossom petals drifting lazily through warm sunlight, with a soft bokeh of city lights or a scenic sky in the distance"}. Lens flares and floating light particles add magical atmosphere.
-
-Lighting: {lighting, default: "warm golden back-lighting creating a glowing halo around the hair, soft fill light on the face, dramatic rim light separating subject from background — classic anime 'magic hour' look"}.
-
-Composition: three-quarter portrait, slightly upward angle. Aspect ratio 3:4.
-
-The overall style is a breathtaking anime character portrait worthy of a light novel cover illustration or key visual. No text, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Facial identity recognizable from original
-- [ ] Authentic high-quality anime aesthetic
-- [ ] Beautiful, detailed eyes with reflections
-- [ ] Atmospheric lighting and background
-
----
-
-### L19 — Wool Felt / Needle Felt
-
-**Keywords:** wool felt, needle felt, felt craft, felted, plush, handmade
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 1:1
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into an adorable needle-felted wool character. Preserve the subject's key facial features, hairstyle, and identity while rendering them as if hand-crafted from soft wool roving using the needle-felting technique.
-
-Material: the entire character is made from {wool_type, default: "premium merino wool roving — soft, fluffy fibers with visible fine wisps and fuzzy edges"}. Surface shows the characteristic slightly fuzzy, uneven texture of hand-poked needle felting — tiny fiber ends poking out, gentle dimples from repeated needle pokes, and a soft matte finish.
-
-Face: round and simplified, with {face_details, default: "tiny black bead eyes with a sparkle reflection, a small pink needle-felted nose, and rosy felt circles for cheeks. Despite simplification, the overall face shape and expression match the original"}.
-
-Hair: sculpted from {hair_color, default: "matching-color"} wool in soft, thick tufts — not individual strands but gentle wool formations that capture the original hairstyle's silhouette and character.
-
-Outfit: {outfit, default: "a miniature version of the original clothing, crafted from tiny felt pieces with visible hand-stitching details — a small knitted scarf or wool sweater"}.
-
-Scene: {scene, default: "placed on a rustic wooden surface with a few tiny felted flowers and miniature props around it, warm natural daylight from a window"}.
-
-Photography: macro product photography style — sharp focus on the felt character, shallow depth of field for a dreamy background, warm natural lighting emphasizing the wool texture.
-
-Composition: centered character. Aspect ratio 1:1.
-
-The overall style is a premium handmade needle-felted wool art portrait with heartwarming craft authenticity and tiny, adorable charm. No text, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Identity recognizable in simplified form
-- [ ] Authentic wool felt texture (fuzzy fibers, dimples)
-- [ ] Warm, handcrafted aesthetic
-- [ ] Adorable and appealing
-
----
-
 ### L20 — Colored Pencil Drawing
 
 **Keywords:** colored pencil, crayon, Prismacolor, colored drawing
@@ -689,40 +477,6 @@ The overall style is an authentic Warhol-inspired Pop Art silkscreen that transf
 - [ ] Authentic Pop Art / Warhol aesthetic
 - [ ] Bold, contrasting color schemes
 - [ ] Screen-print texture (halftone, registration offset)
-
----
-
-### L22 — Miniature / Diorama
-
-**Keywords:** miniature, diorama, tilt-shift, small world, tiny world, miniature
-**Input:** User photo (portrait or scene)
-**Aspect Ratio:** 1:1
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a hyper-detailed miniature diorama scene. The subject from the photo becomes a {scale, default: "1/6 scale collectible figurine"} placed inside a meticulously crafted tabletop miniature world.
-
-Figurine: the subject is rendered as a highly detailed miniature figure — {figure_style, default: "realistic hand-painted figure with visible brushstroke texture on clothing, glossy eye details, and a stable base"}. Preserve the subject's facial features, hairstyle, and outfit at miniature scale.
-
-Diorama environment: {environment, default: "a cozy miniature coffee shop interior — tiny tables with real-looking wooden grain, miniature coffee cups with glossy liquid surface, tiny potted plants with individually sculpted leaves, warm Edison bulb string lights (actual tiny LEDs), checkered tile floor"}.
-
-Craft materials visible: {materials, default: "balsa wood structures, hand-painted plaster walls, real moss for miniature greenery, tiny paper posters on walls, sculpted polymer clay accessories"}.
-
-Photography: extreme macro photography style — {camera, default: "shot with a macro lens at f/4, creating natural miniature depth of field where the foreground and background blur beautifully while the subject stays sharp. Warm, directional lighting from a small LED panel simulating golden hour sunlight through a tiny window"}.
-
-Scale indicators: include elements that sell the miniature scale — {scale_cues, default: "a real coin or pencil tip visible at the edge of frame for scale reference, slightly visible table surface the diorama sits on"}.
-
-Composition: eye-level view into the diorama. Aspect ratio 1:1.
-
-The overall style is a professionally photographed miniature diorama that sparks wonder at its incredible tiny-world detail. No text, no watermark.
-```
-
-**Quality Checklist:**
-- [ ] Subject recognizable as miniature figurine
-- [ ] Convincing miniature scale and materials
-- [ ] Beautiful macro-style depth of field
-- [ ] Detailed, charming diorama environment
 
 ---
 
@@ -803,40 +557,6 @@ The overall style is a collector-worthy game CG portrait that balances thick-pai
 
 ---
 
-### L25 — Vaporwave
-
-**Keywords:** vaporwave, aesthetic, retrowave, glitch, 80s-90s nostalgia
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 1:1
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a striking vaporwave aesthetic portrait. Preserve the subject's facial identity, bone structure, and hairstyle while fully embracing retro-digital surrealism.
-
-The scene opens as a dreamlike fusion of classical statuary kitsch and late-night mall nostalgia: the subject is integrated into a world of {scene_motif, default: "marble Roman bust fragments, Greek columns, and palm silhouettes"} drifting in soft haze.
-
-Color and atmosphere: dominant gradients of electric purple, teal, and hot pink — smooth vertical and diagonal blends, with occasional sunset orange bleeding through. Add authentic-feeling VHS artifacts: subtle horizontal scanlines, slight chromatic aberration at high-contrast edges, mild tracking jitter, and soft phosphor glow.
-
-Glitch accents: {glitch_level, default: "tasteful — small RGB channel splits on the outer contours, occasional scan-line breaks across non-facial areas, tiny datamoshing hints in the background only — never obscuring eyes or mouth"}.
-
-Lighting: flat-to-soft frontal fill with neon edge lights — cyan from one side, magenta from the other — so the face remains readable and iconic.
-
-Background: {background, default: "infinite perspective grid or sun-disk over hazy horizon, floating geometric shards, subtle lens flares, and faint noise grain"}.
-
-Composition: centered bust or head-and-shoulders, square 1:1. No readable text, no watermark.
-
-The overall style is a refined vaporwave artwork: nostalgic, slightly uncanny, and instantly recognizable as the aesthetic movement — without breaking the subject's identity.
-```
-
-**Quality Checklist:**
-- [ ] Identity clear despite heavy stylization
-- [ ] Purple / teal / pink gradient language reads as vaporwave
-- [ ] VHS + glitch feel authentic, not random noise
-- [ ] Square 1:1 composition balanced
-
----
-
 ### L26 — Printmaking / Woodblock
 
 **Keywords:** printmaking, woodblock, linocut, woodcut, relief print
@@ -866,40 +586,6 @@ The overall style is a gallery-quality woodcut / linocut interpretation: graphic
 - [ ] Limited color layers, bold carved lines
 - [ ] Print texture (grain / ink variation) believable
 - [ ] No photographic skin — true relief-print logic
-
----
-
-### L27 — Fine Brush / Gongbi (contemporary gongbi)
-
-**Keywords:** gongbi, contemporary gongbi, fine brush, meticulous Chinese painting, mineral pigment
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary gongbi sensibility — while preserving the subject's facial identity and calm, dignified presence.
-
-Support: imagine the work painted on {support, default: "fine silk or aged paper with subtle fiber texture"}, with the slight absorbency and mineral glow of traditional pigments.
-
-Technique: extremely fine, controlled brush lines for hair strands, eyelashes, and fabric weave; smooth, even color fills in skin with delicate rose-tinged undertones and soft cool shadows at the eye sockets and under the lip. Layered transparent washes build depth without losing clarity — the hallmark of meticulous brush painting.
-
-Palette: classical mineral colors — malachite green, azurite blue, cinnabar red accents, ivory and ochre skin tones, touches of {gold, default: "delicate gold leaf or gold pigment"} on hair ornaments, embroidery, or background motifs.
-
-Attire and setting: {outfit, default: "elegant updated hanfu or minimalist neo-gongbi costume — flowing sleeves with fine pattern work, subtle botanical embroidery"}; background with {motifs, default: "sparse branches, orchids, distant misty mountains, or abstract ink-wash void — breathing space around the figure"}.
-
-Lighting: soft, even "studio of the scroll" illumination — no harsh Western chiaroscuro; modeling through color temperature and fine edge lines.
-
-Composition: vertical portrait 3:4, restrained elegance. Optional small red seal mark in corner. No modern objects, no watermark text.
-
-The overall style is a museum-quality contemporary gongbi portrait: precise, serene, and luminous — unmistakably Chinese meticulous painting with a fresh, current sensibility.
-```
-
-**Quality Checklist:**
-- [ ] Fine-line detail and even mineral color fills
-- [ ] Likeness preserved in traditional stylization
-- [ ] Silk/paper texture and gold accents feel authentic
-- [ ] Calm, balanced neo-gongbi composition
 
 ---
 
@@ -1324,76 +1010,6 @@ The overall style is a seasonal editorial portrait — fresh, romantic, and unmi
 
 ---
 
-### L40 — Natural Light & Shadow
-
-**Keywords:** dappled tree shadow, dappled light, sunlight close-up, glowing hair, sunlight, nature portrait
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a sun-drenched outdoor portrait celebrating natural light patterns. Preserve the subject's identity while emphasizing interplay between light and shadow.
-
-Key effect: {dappled, default: "dappled tree shadow patterns — broken leaf-shaped highlights and soft organic shadows — projected across the face, neck, and shoulders, moving with the contours of the features"}.
-
-Hair: {hair_light, default: "strong rim and backlight so individual strands glow — golden halo, subtle flyaways catching specular highlights"}.
-
-Environment: {environment, default: "park, garden path, or forest edge — green foliage soft in background, sun filtering through canopy"}.
-
-Time of day: {time, default: "late morning or golden hour — warm sun, high dynamic range handled naturally — highlights roll off smoothly, shadows hold leafy green bounce"}.
-
-Skin: retain texture; dappled patches should feel photographic, not painted-on.
-
-Camera: {camera, default: "50mm or 85mm, wide aperture, slight flare acceptable for sun authenticity"}.
-
-Composition: 3:4 vertical, intimate framing, eyes sharp. No text, no watermark.
-
-The overall style is a fine-art natural-light portrait — organic, fresh, and technically sophisticated.
-```
-
-**Quality Checklist:**
-- [ ] Dappled shadows follow facial topology
-- [ ] Hair backlight reads as real sun
-- [ ] Background foliage softly integrated
-- [ ] No muddy HDR halos
-
----
-
-### L41 — Sunset / Golden Hour
-
-**Keywords:** sunset, sunset overlay, golden hour, silhouette, rim light
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 16:9
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a wide cinematic sunset portrait. Preserve the subject's identity — whether rendered as silhouette, strong rim-lit profile, or balanced exposure with glowing sky.
-
-Sky: {sky, default: "layered sunset — deep amber near horizon, rose and coral mid-band, cooling violet higher up — optional thin cloud streaks catching fire"}.
-
-Subject treatment (pick emphasis): {treatment, default: "rim-lit: strong warm edge light outlining hair and shoulders, face partially in soft fill from sky bounce — still identifiable. Alternative: full silhouette with clear profile/readable pose against the brightest part of the sky"}.
-
-Lens effects: {lens, default: "gentle sun bloom, optional anamorphic flare streak if cinematic mood desired — keep face readable if not full silhouette"}.
-
-Environment: {environment, default: "open horizon — sea, lake, rooftop, or field — horizon low in frame for maximum sky drama"}.
-
-Camera: {camera, default: "wide to normal focal length for landscape orientation, deep depth of field on sky, subject placement in lower or side third"}.
-
-Composition: 16:9 horizontal, epic negative space, emotional scale. No text, no watermark.
-
-The overall style is a cinematic golden-hour environmental portrait — warm, vast, and emotionally open.
-```
-
-**Quality Checklist:**
-- [ ] Sunset gradient rich and natural
-- [ ] Silhouette or rim-light choice coherent
-- [ ] Wide 16:9 used with purpose
-- [ ] Subject identity or silhouette reads clearly
-
----
-
 ### L42 — Retro Film & Polaroid
 
 **Keywords:** in-car film, polaroid, vintage selfie, film, retro camera
@@ -1463,40 +1079,6 @@ The overall style is a premium winter editorial — crisp, serene, and tactilely
 - [ ] Cold palette balanced with warm accents
 - [ ] Winter clothing and setting coherent
 - [ ] Likeness preserved in cool light
-
----
-
-### L44 — Beach & Underwater
-
-**Keywords:** beach, underwater, in water, ocean portrait
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Transform the uploaded photo into a sun-drenched beach or dreamy underwater portrait. Preserve the subject's identity while committing fully to the chosen environment.
-
-Beach variant: {beach, default: "bright midday or golden hour shore — sparkling wet sand, gentle surf foam, sea sparkle bokeh, wind in hair, sun cream natural highlights on skin, polarized sky gradient"}.
-
-Underwater variant: {underwater, default: "subject submerged in clear turquoise water — caustic light ripples dancing across face and body, soft volumetric light rays from surface, hair floating weightlessly, tiny suspended bubbles, slight color cast toward cyan with warm skin preservation"}.
-
-Pick one primary environment unless {combo, default: "split concept — waist-deep at shoreline with water splash and underwater refraction on lower frame"} is requested.
-
-Wardrobe: {outfit, default: "swimwear, light summer dress wet at hem, or simple trunks — fabric behavior matches water state"}.
-
-Camera: {camera, default: "underwater — wide lens with soft diffusion; beach — 35mm or 50mm with sun flare control"}.
-
-Composition: 3:4 vertical, dynamic but readable. No text, no watermark.
-
-The overall style is a high-end travel or swim editorial — luminous, aquatic, and escapist.
-```
-
-**Quality Checklist:**
-- [ ] Water physics (caustics / foam) believable
-- [ ] Skin underwater still identifiable
-- [ ] Beach vs underwater logic not mixed randomly
-- [ ] Strong summer / ocean mood
 
 ---
 
@@ -2691,29 +2273,20 @@ The overall style is a premium brand campaign visual worthy of an Apple or Sony 
 | L02 | 3D Pixar Animation | L · Life · Stylization | Photo |
 | L03 | Comic / Manga | L · Life · Stylization | Photo |
 | L04 | Sketch / Pencil Drawing | L · Life · Stylization | Photo |
-| L05 | Clay / Claymation | L · Life · Stylization | Photo |
 | L06 | 80s Retro Animation | L · Life · Stylization | Photo |
 | L07 | Retro-Futurism | L · Life · Stylization | Photo |
-| L08 | Ukiyo-e / Chinese Painting | L · Life · Stylization | Photo |
 | L09 | Watercolor Portrait | L · Life · Stylization | Photo |
 | L10 | K-Pop Star | L · Life · Stylization | Photo |
-| L11 | Imperial / Royal | L · Life · Stylization | Photo |
 | L12 | 90s Yearbook | L · Life · Stylization | Photo |
-| L13 | High Fashion | L · Life · Stylization | Photo |
 | L14 | Cyberpunk Portrait | L · Life · Stylization | Photo |
 | L15 | Oil Painting / Classical Art | L · Life · Stylization | Photo |
 | L16 | Pixel Art | L · Life · Stylization | Photo |
 | L17 | Flat / Vector Illustration | L · Life · Stylization | Photo |
-| L18 | Anime | L · Life · Stylization | Photo |
-| L19 | Wool Felt / Needle Felt | L · Life · Stylization | Photo |
 | L20 | Colored Pencil Drawing | L · Life · Stylization | Photo |
 | L21 | Pop Art | L · Life · Stylization | Photo |
-| L22 | Miniature / Diorama | L · Life · Stylization | Photo |
 | L23 | Children's Drawing | L · Life · Stylization | Photo |
 | L24 | Game CG / Thick Paint | L · Life · Stylization | Photo |
-| L25 | Vaporwave | L · Life · Stylization | Photo |
 | L26 | Printmaking / Woodblock | L · Life · Stylization | Photo |
-| L27 | Fine Brush / Gongbi (contemporary gongbi) | L · Life · Stylization | Photo |
 | L28 | Pen Sketch / Simple Line | L · Life · Stylization | Photo |
 | L29 | Dark Fairy Tale | L · Life · Stylization | Photo |
 | L30 | Studio Photoshoot | L · Life · Portrait | Photo |
@@ -2726,11 +2299,8 @@ The overall style is a premium brand campaign visual worthy of an Apple or Sony 
 | L37 | Dark Mood Portrait | L · Life · Portrait | Photo |
 | L38 | Iconic Location Shot | L · Life · Portrait | Photo |
 | L39 | Spring Floral Portrait | L · Life · Portrait | Photo |
-| L40 | Natural Light & Shadow | L · Life · Portrait | Photo |
-| L41 | Sunset / Golden Hour | L · Life · Portrait | Photo |
 | L42 | Retro Film & Polaroid | L · Life · Portrait | Photo |
 | L43 | Winter Snow Portrait | L · Life · Portrait | Photo |
-| L44 | Beach & Underwater | L · Life · Portrait | Photo |
 | L45 | Fantasy / Magical Scene | L · Life · Portrait | Photo |
 | L46 | Social Media / Street Style | L · Life · Portrait | Photo |
 | L48 | Photo Grid Layout | L · Life · Portrait | Photo |

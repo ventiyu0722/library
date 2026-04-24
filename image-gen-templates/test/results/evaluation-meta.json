@@ -35,15 +35,6 @@
       "timestamp": "2026-04-08T12:04:52.057318"
     }
   ],
-  "L05": [
-    {
-      "template_id": "L05",
-      "run_index": 1,
-      "output": "test/results/L05/run_1.png",
-      "success": true,
-      "timestamp": "2026-04-08T12:05:32.445378"
-    }
-  ],
   "L06": [
     {
       "template_id": "L06",
@@ -60,15 +51,6 @@
       "output": "test/results/L07/run_1.png",
       "success": true,
       "timestamp": "2026-04-08T12:06:52.999044"
-    }
-  ],
-  "L08": [
-    {
-      "template_id": "L08",
-      "run_index": 1,
-      "output": "test/results/L08/run_1.png",
-      "success": true,
-      "timestamp": "2026-04-08T12:07:31.855006"
     }
   ],
   "L09": [
@@ -89,15 +71,6 @@
       "timestamp": "2026-04-08T12:08:36.000609"
     }
   ],
-  "L11": [
-    {
-      "template_id": "L11",
-      "run_index": 1,
-      "output": "test/results/L11/run_1.png",
-      "success": true,
-      "timestamp": "2026-04-08T12:09:06.050125"
-    }
-  ],
   "L12": [
     {
       "template_id": "L12",
@@ -105,15 +78,6 @@
       "output": "test/results/L12/run_1.png",
       "success": true,
       "timestamp": "2026-04-08T12:09:32.201033"
-    }
-  ],
-  "L13": [
-    {
-      "template_id": "L13",
-      "run_index": 1,
-      "output": "test/results/L13/run_1.png",
-      "success": true,
-      "timestamp": "2026-04-08T12:10:15.937962"
     }
   ],
   "L14": [
@@ -353,26 +317,6 @@
     "error": null,
     "timestamp": "2026-04-08T17:47:16.832079"
   },
-  "L18": {
-    "template_id": "L18",
-    "template_name": "Anime",
-    "prompt": "Transform the uploaded photo into a beautiful anime character portrait in the style of a modern high-budget anime series like Violet Evergarden or Makoto Shinkai's films. Preserve the subject's facial identity — face shape, eye characteristics, hairstyle. Large, detailed anime eyes with multiple layers of color, light reflections, and subtle gradient irises with star-shaped catch-lights. Smooth, luminous skin with anime-style shading. Hair: flowing, dynamic strands with rich color depth and individual highlight streaks. Expression: gentle smile with warm eyes. Background: dreamy golden hour scene with cherry blossom petals drifting through warm sunlight, soft bokeh of city lights. Warm golden back-lighting creating a glowing halo around the hair. Composition: three-quarter portrait. Aspect ratio 3:4. The overall style is a breathtaking anime character portrait worthy of a light novel cover. No text, no watermark.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L18/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T17:47:47.309569"
-  },
-  "L19": {
-    "template_id": "L19",
-    "template_name": "Wool Felt / Needle Felt",
-    "prompt": "Transform the uploaded photo into an adorable needle-felted wool character. Preserve key facial features and hairstyle while rendering as if hand-crafted from soft merino wool roving. Surface shows the characteristic fuzzy texture of hand-poked needle felting — tiny fiber ends poking out, gentle dimples, soft matte finish. Round simplified face with tiny black bead eyes with sparkle reflection, small pink needle-felted nose, rosy felt circles for cheeks. Hair sculpted from matching-color wool in soft thick tufts. Outfit: miniature knitted scarf and wool sweater. Scene: placed on a rustic wooden surface with tiny felted flowers, warm natural daylight. Macro product photography style, shallow depth of field. Composition: centered character. Aspect ratio 1:1. The overall style is a premium handmade needle-felted wool art portrait with heartwarming craft authenticity. No text, no watermark.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L19/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T17:48:33.750547"
-  },
   "L20": {
     "template_id": "L20",
     "template_name": "Colored Pencil Drawing",
@@ -392,16 +336,6 @@
     "success": true,
     "error": null,
     "timestamp": "2026-04-08T17:50:23.953345"
-  },
-  "L22": {
-    "template_id": "L22",
-    "template_name": "Miniature / Diorama",
-    "prompt": "Transform the uploaded photo subject into a hyper-detailed miniature diorama scene. The subject becomes a 1/6 scale collectible figurine placed inside a meticulously crafted tabletop miniature world. Figurine: realistic hand-painted figure preserving facial features and outfit. Diorama: a cozy miniature coffee shop interior — tiny tables with real-looking wooden grain, miniature coffee cups, tiny potted plants with individually sculpted leaves, warm Edison bulb string lights, checkered tile floor. Craft materials visible: balsa wood structures, hand-painted plaster walls, real moss for greenery. Photography: extreme macro lens at f/4, natural miniature depth of field, warm directional lighting simulating golden hour through a tiny window. Composition: eye-level view into the diorama. Aspect ratio 1:1. The overall style is a professionally photographed miniature diorama sparking wonder at tiny-world detail. No text, no watermark.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L22/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T17:50:51.627751"
   },
   "L23": {
     "template_id": "L23",
@@ -503,16 +437,6 @@
     "error": null,
     "timestamp": "2026-04-08T19:27:28.075974"
   },
-  "L25": {
-    "template_id": "L25",
-    "template_name": "Vaporwave",
-    "prompt": "Transform the uploaded photo into a striking vaporwave aesthetic portrait. Preserve the subject's facial identity while fully embracing retro-digital surrealism. Scene: marble Roman bust fragments, Greek columns, and palm silhouettes drifting in soft haze. Color: dominant gradients of electric purple, teal, and hot pink with smooth diagonal blends. VHS artifacts: subtle horizontal scanlines, slight chromatic aberration, mild tracking jitter, and soft phosphor glow. Glitch accents: small RGB channel splits on outer contours, occasional scan-line breaks across non-facial areas, tiny datamoshing hints in background only. Lighting: flat-to-soft frontal fill with neon edge lights — cyan from one side, magenta from the other. Background: infinite perspective grid or sun-disk over hazy horizon with floating geometric shards. Composition: centered bust, square 1:1. No readable text, no watermark. The overall style is refined vaporwave artwork: nostalgic, slightly uncanny.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L25/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T19:27:59.132366"
-  },
   "L26": {
     "template_id": "L26",
     "template_name": "Printmaking / Woodblock",
@@ -522,16 +446,6 @@
     "success": true,
     "error": null,
     "timestamp": "2026-04-08T19:28:58.901287"
-  },
-  "L27": {
-    "template_id": "L27",
-    "template_name": "Fine Brush / Gongbi",
-    "prompt": "Transform the uploaded photo into a refined gongbi-style Chinese painting — contemporary gongbi sensibility — while preserving the subject's facial identity and calm, dignified presence. Support: fine silk with subtle fiber texture and mineral glow of traditional pigments. Technique: extremely fine controlled brush lines for hair strands, eyelashes, and fabric weave; smooth even color fills in skin with delicate rose-tinged undertones and soft cool shadows. Layered transparent washes build depth without losing clarity. Palette: classical mineral colors — malachite green, azurite blue, cinnabar red accents, ivory and ochre skin tones, touches of delicate gold leaf on hair ornaments. Attire: elegant updated hanfu with fine pattern work, subtle botanical embroidery. Background: sparse branches, orchids, distant misty mountains. Lighting: soft even illumination, modeling through color temperature and fine edge lines. Composition: vertical portrait 3:4, optional small red seal mark in corner. No modern objects, no watermark. The overall style is museum-quality contemporary gongbi portrait.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L27/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T19:29:29.949467"
   },
   "L28": {
     "template_id": "L28",
@@ -593,26 +507,6 @@
     "error": null,
     "timestamp": "2026-04-08T19:35:24.553597"
   },
-  "L40": {
-    "template_id": "L40",
-    "template_name": "Natural Light & Shadow",
-    "prompt": "Transform the uploaded photo into a sun-drenched outdoor portrait celebrating natural light patterns. Preserve the subject's identity while emphasizing interplay between light and shadow. Key effect: dappled tree shadow patterns — broken leaf-shaped highlights and soft organic shadows projected across the face, neck, and shoulders, moving with the contours of the features. Hair: strong rim and backlight so individual strands glow — golden halo, subtle flyaways catching specular highlights. Environment: park or garden path — green foliage soft in background, sun filtering through canopy. Time: late morning or golden hour — warm sun, high dynamic range handled naturally. Skin: retain texture; dappled patches should feel photographic, not painted-on. Camera: 85mm, wide aperture, slight flare acceptable. Composition: 3:4 vertical, intimate framing, eyes sharp. No text, no watermark. The overall style is a fine-art natural-light portrait — organic, fresh, and technically sophisticated.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L40/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T19:35:51.814346"
-  },
-  "L41": {
-    "template_id": "L41",
-    "template_name": "Sunset / Golden Hour",
-    "prompt": "Transform the uploaded photo into a wide cinematic sunset portrait. Preserve the subject's identity — strong rim-lit profile with balanced exposure against glowing sky. Sky: layered sunset — deep amber near horizon, rose and coral mid-band, cooling violet higher up — optional thin cloud streaks catching fire. Subject: strong warm edge light outlining hair and shoulders, face partially in soft fill from sky bounce — still identifiable. Gentle sun bloom and optional anamorphic flare streak. Environment: open horizon — sea, lake, or field — horizon low in frame for maximum sky drama. Camera: wide to normal focal length for landscape orientation, deep depth of field. Composition: 16:9 horizontal, epic negative space, emotional scale. No text, no watermark. The overall style is a cinematic golden-hour environmental portrait — warm, vast, and emotionally open.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L41/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T19:36:27.691224"
-  },
   "L42": {
     "template_id": "L42",
     "template_name": "Retro Film & Polaroid",
@@ -632,16 +526,6 @@
     "success": true,
     "error": null,
     "timestamp": "2026-04-08T19:38:01.626425"
-  },
-  "L44": {
-    "template_id": "L44",
-    "template_name": "Beach & Underwater",
-    "prompt": "Transform the uploaded photo into a sun-drenched beach portrait. Preserve the subject's identity while committing fully to the coastal environment. Setting: bright golden hour shore — sparkling wet sand, gentle surf foam, sea sparkle bokeh, wind in hair, sun cream natural highlights on skin, polarized sky gradient. Wardrobe: light summer dress or casual beach clothing — fabric behavior matches wind and moisture. Light: warm golden hour backlight with sun flare, subject lit by warm ambient bounce. Camera: 35mm or 50mm with sun flare control, shallow depth of field on crashing waves. Composition: 3:4 vertical, dynamic but readable. No text, no watermark. The overall style is a high-end travel or swim editorial — luminous, aquatic, and escapist.",
-    "reference_image": "/Users/yufei/Cursor/image-gen-templates/test/samples/selfie.jpg",
-    "output": "/Users/yufei/Cursor/image-gen-templates/test/results/L44/run_1.png",
-    "success": true,
-    "error": null,
-    "timestamp": "2026-04-08T19:39:08.763000"
   },
   "L45": {
     "template_id": "L45",
