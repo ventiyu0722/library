@@ -22,7 +22,6 @@ ROWS = [
     (5, "1.Life-Stylization", "80s Retro", "L06", "Turn me into 80s retro animation style", "selfie"),
     (6, "1.Life-Stylization", "Retro-Futurism", "L07", "Turn me into retro-futurism style", "selfie"),
     (7, "1.Life-Stylization", "Watercolor", "L09", "Draw a watercolor portrait of me", "selfie"),
-    (8, "1.Life-Stylization", "K-Pop", "L10", "Turn me into K-Pop idol style", "selfie"),
     (9, "1.Life-Stylization", "90s Yearbook", "L12", "Turn me into 90s yearbook style", "selfie"),
     (10, "1.Life-Stylization", "Cyberpunk", "L14", "Turn me into cyberpunk style", "selfie"),
     (11, "1.Life-Stylization", "Oil Painting", "L15", "Turn me into classical oil painting style", "selfie"),

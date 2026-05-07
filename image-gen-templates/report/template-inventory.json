@@ -2,7 +2,7 @@
   {
     "id": "L01",
     "name": "Chibi Cartoon",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "chibi, cartoon, cute mini",
     "scores": {
@@ -17,7 +17,7 @@
   {
     "id": "L02",
     "name": "3D Pixar Animation",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "3D, Pixar, Disney",
     "scores": {
@@ -32,7 +32,7 @@
   {
     "id": "L03",
     "name": "Comic / Manga",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "comic, manga, graphic novel",
     "scores": {
@@ -47,7 +47,7 @@
   {
     "id": "L04",
     "name": "Sketch / Pencil",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "sketch, pencil drawing",
     "scores": {
@@ -62,7 +62,7 @@
   {
     "id": "L06",
     "name": "80s Retro Animation",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "80s, retro, synthwave",
     "scores": {
@@ -77,7 +77,7 @@
   {
     "id": "L07",
     "name": "Retro-Futurism",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "retro-future, space age",
     "scores": {
@@ -92,7 +92,7 @@
   {
     "id": "L09",
     "name": "Watercolor Portrait",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "watercolor, aquarelle",
     "scores": {
@@ -105,24 +105,9 @@
     "has_sample": true
   },
   {
-    "id": "L10",
-    "name": "K-Pop Star",
-    "category": "L·Stylization",
-    "priority": "P0",
-    "keywords": "K-Pop, K-style, idol",
-    "scores": {
-      "prompt_adherence": 4.5,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 4.5,
-      "overall": 4.6
-    },
-    "has_sample": true
-  },
-  {
     "id": "L12",
     "name": "90s Yearbook",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "90s, yearbook, school photo",
     "scores": {
@@ -137,7 +122,7 @@
   {
     "id": "L14",
     "name": "Cyberpunk Portrait",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "cyberpunk, neon, sci-fi",
     "scores": {
@@ -152,7 +137,7 @@
   {
     "id": "L15",
     "name": "Oil Painting / Classical",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "oil painting, classical, impressionist",
     "scores": {
@@ -167,7 +152,7 @@
   {
     "id": "L16",
     "name": "Pixel Art",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "pixel art, 8-bit, retro game",
     "scores": {
@@ -182,7 +167,7 @@
   {
     "id": "L17",
     "name": "Flat / Vector Illustration",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "flat, vector, graphic illustration",
     "scores": {
@@ -197,7 +182,7 @@
   {
     "id": "L20",
     "name": "Colored Pencil",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "colored pencil, crayon",
     "scores": {
@@ -212,7 +197,7 @@
   {
     "id": "L21",
     "name": "Pop Art",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "pop art, Warhol, Lichtenstein",
     "scores": {
@@ -227,7 +212,7 @@
   {
     "id": "L23",
     "name": "Children's Drawing",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "children drawing, kids art",
     "scores": {
@@ -242,7 +227,7 @@
   {
     "id": "L24",
     "name": "Game CG / Thick Paint",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "game CG, thick paint, digital painting",
     "scores": {
@@ -257,7 +242,7 @@
   {
     "id": "L26",
     "name": "Printmaking / Woodblock",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "printmaking, woodblock, linocut",
     "scores": {
@@ -272,7 +257,7 @@
   {
     "id": "L28",
     "name": "Pen Sketch / Simple Line",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "pen sketch, line drawing, simple line",
     "scores": {
@@ -287,7 +272,7 @@
   {
     "id": "L29",
     "name": "Dark Fairy Tale",
-    "category": "L·Stylization",
+    "category": "L\u00b7Stylization",
     "priority": "P0",
     "keywords": "dark fairy tale, gothic, Tim Burton",
     "scores": {
@@ -302,7 +287,7 @@
   {
     "id": "L30",
     "name": "Studio Photoshoot",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "photoshoot, studio, portrait",
     "scores": {
@@ -317,7 +302,7 @@
   {
     "id": "L31",
     "name": "ID Photo",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "ID photo, passport photo, headshot",
     "scores": {
@@ -332,7 +317,7 @@
   {
     "id": "L32",
     "name": "Emoji / Sticker Pack",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "emoji, sticker, expression pack",
     "scores": {
@@ -347,7 +332,7 @@
   {
     "id": "L33",
     "name": "Avatar / Profile Picture",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "avatar, profile picture, PFP",
     "scores": {
@@ -362,7 +347,7 @@
   {
     "id": "L34",
     "name": "Film / Cinematic Portrait",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "film, cinematic, movie still",
     "scores": {
@@ -377,7 +362,7 @@
   {
     "id": "L35",
     "name": "Dreamy / Hazy Portrait",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "dreamy, hazy, soft focus",
     "scores": {
@@ -392,7 +377,7 @@
   {
     "id": "L36",
     "name": "Indoor Scene Portrait",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "indoor, side shot, cafe retro",
     "scores": {
@@ -407,7 +392,7 @@
   {
     "id": "L37",
     "name": "Dark Mood Portrait",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "dark mood, low-key, moody",
     "scores": {
@@ -422,7 +407,7 @@
   {
     "id": "L38",
     "name": "Iconic Location Shot",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "red wall, landmark, iconic location",
     "scores": {
@@ -437,7 +422,7 @@
   {
     "id": "L39",
     "name": "Spring Floral Portrait",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "spring, cherry blossom, floral portrait",
     "scores": {
@@ -452,7 +437,7 @@
   {
     "id": "L42",
     "name": "Retro Film & Polaroid",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "polaroid, instant film, retro film",
     "scores": {
@@ -467,7 +452,7 @@
   {
     "id": "L43",
     "name": "Winter Snow Portrait",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "snow, winter portrait, cold scene",
     "scores": {
@@ -482,7 +467,7 @@
   {
     "id": "L45",
     "name": "Fantasy / Magical Scene",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "magic, wizard academy, fantasy",
     "scores": {
@@ -497,7 +482,7 @@
   {
     "id": "L46",
     "name": "Social Media / Street Style",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "OOTD, Plog, street style",
     "scores": {
@@ -512,7 +497,7 @@
   {
     "id": "L48",
     "name": "Photo Grid Layout",
-    "category": "L·Portrait",
+    "category": "L\u00b7Portrait",
     "priority": "P0",
     "keywords": "triptych, grid layout, photo grid",
     "scores": {
@@ -527,7 +512,7 @@
   {
     "id": "L50",
     "name": "Pet Stylization",
-    "category": "L·Pets",
+    "category": "L\u00b7Pets",
     "priority": "P0",
     "keywords": "pet, cute pet, kawaii",
     "scores": {
@@ -542,7 +527,7 @@
   {
     "id": "L51",
     "name": "Baby Comic Grid",
-    "category": "L·Pets",
+    "category": "L\u00b7Pets",
     "priority": "P0",
     "keywords": "baby, comic grid, toddler",
     "scores": {
@@ -557,7 +542,7 @@
   {
     "id": "L52",
     "name": "Pet VOGUE Magazine",
-    "category": "L·Pets",
+    "category": "L\u00b7Pets",
     "priority": "P0",
     "keywords": "pet magazine, VOGUE",
     "scores": {
@@ -572,7 +557,7 @@
   {
     "id": "L53",
     "name": "Pet Costume Play",
-    "category": "L·Pets",
+    "category": "L\u00b7Pets",
     "priority": "P0",
     "keywords": "pet costume, pet mugshot, dress-up",
     "scores": {
@@ -587,7 +572,7 @@
   {
     "id": "L54",
     "name": "Pet Humanization",
-    "category": "L·Pets",
+    "category": "L\u00b7Pets",
     "priority": "P0",
     "keywords": "pet human, pet portrait, anthropomorphic",
     "scores": {
@@ -602,7 +587,7 @@
   {
     "id": "L60",
     "name": "Outfit Change",
-    "category": "L·Editing",
+    "category": "L\u00b7Editing",
     "priority": "P1",
     "keywords": "outfit, try-on, wardrobe change",
     "scores": {
@@ -617,7 +602,7 @@
   {
     "id": "L61",
     "name": "Hairstyle Change",
-    "category": "L·Editing",
+    "category": "L\u00b7Editing",
     "priority": "P1",
     "keywords": "hairstyle, haircut, hair makeover",
     "scores": {
@@ -632,7 +617,7 @@
   {
     "id": "L62",
     "name": "Background Change",
-    "category": "L·Editing",
+    "category": "L\u00b7Editing",
     "priority": "P1",
     "keywords": "background, scene swap, backdrop",
     "scores": {
@@ -647,7 +632,7 @@
   {
     "id": "L63",
     "name": "Image Outpainting",
-    "category": "L·Editing",
+    "category": "L\u00b7Editing",
     "priority": "P1",
     "keywords": "outpaint, expand, extend canvas",
     "scores": {
@@ -662,7 +647,7 @@
   {
     "id": "L64",
     "name": "Object Removal",
-    "category": "L·Editing",
+    "category": "L\u00b7Editing",
     "priority": "P1",
     "keywords": "remove, erase, clean up",
     "scores": {
@@ -677,7 +662,7 @@
   {
     "id": "L65",
     "name": "Image Enhancement",
-    "category": "L·Editing",
+    "category": "L\u00b7Editing",
     "priority": "P1",
     "keywords": "enhance, sharpen, upscale",
     "scores": {
@@ -692,7 +677,7 @@
   {
     "id": "M01",
     "name": "Social Media Post",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P1",
     "keywords": "social media, quote card, post image",
     "scores": {
@@ -707,7 +692,7 @@
   {
     "id": "M02",
     "name": "Poster Design",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P1",
     "keywords": "poster, flyer, banner",
     "scores": {
@@ -722,7 +707,7 @@
   {
     "id": "M03",
     "name": "Storyboard",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P1",
     "keywords": "storyboard, comic strip, sequence",
     "scores": {
@@ -737,7 +722,7 @@
   {
     "id": "M04",
     "name": "Handwritten Poster",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P1",
     "keywords": "bulletin board, hand-drawn poster",
     "scores": {
@@ -752,7 +737,7 @@
   {
     "id": "M05",
     "name": "Illustration",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P1",
     "keywords": "illustration, artwork, drawing",
     "scores": {
@@ -767,7 +752,7 @@
   {
     "id": "M06",
     "name": "YouTube Thumbnail",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P2",
     "keywords": "YouTube, thumbnail, cover image",
     "scores": {
@@ -782,7 +767,7 @@
   {
     "id": "M07",
     "name": "Educational Visual",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P2",
     "keywords": "educational, infographic, diagram",
     "scores": {
@@ -797,7 +782,7 @@
   {
     "id": "M08",
     "name": "Picture Book Illustration",
-    "category": "M·Media",
+    "category": "M\u00b7Media",
     "priority": "P1",
     "keywords": "picture book, storybook, fairy tale",
     "scores": {
@@ -812,7 +797,7 @@
   {
     "id": "P01",
     "name": "E-commerce Main Image",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P1",
     "keywords": "e-commerce, product, hero image",
     "scores": {
@@ -827,7 +812,7 @@
   {
     "id": "P02",
     "name": "Sticker Set Design",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P1",
     "keywords": "sticker set, decal, art design",
     "scores": {
@@ -842,7 +827,7 @@
   {
     "id": "P03",
     "name": "Interior Design",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P1",
     "keywords": "interior, home decor, room design",
     "scores": {
@@ -857,7 +842,7 @@
   {
     "id": "P04",
     "name": "Logo Design",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P1",
     "keywords": "logo, brand, emblem",
     "scores": {
@@ -872,7 +857,7 @@
   {
     "id": "P05",
     "name": "Merchandise Design",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P1",
     "keywords": "merchandise, figurine, collectible",
     "scores": {
@@ -887,7 +872,7 @@
   {
     "id": "P06",
     "name": "Coloring Book Page",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P1",
     "keywords": "coloring, line art, coloring book",
     "scores": {
@@ -902,7 +887,7 @@
   {
     "id": "P07",
     "name": "Game Asset Design",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P2",
     "keywords": "game, character design, game asset",
     "scores": {
@@ -917,7 +902,7 @@
   {
     "id": "P08",
     "name": "Product Marketing Design",
-    "category": "P·Design",
+    "category": "P\u00b7Design",
     "priority": "P2",
     "keywords": "marketing, ad campaign, promotion",
     "scores": {

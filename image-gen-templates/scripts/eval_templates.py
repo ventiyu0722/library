@@ -186,25 +186,6 @@ TEMPLATES = {
             "The overall style is a gallery-quality watercolor portrait with luminous transparency and spontaneous beauty."
         ),
     },
-    "A10": {
-        "name": "K-Pop Star",
-        "category": "A",
-        "needs_photo": True,
-        "photo_type": "selfie",
-        "prompt": (
-            "Transform the uploaded photo into a stunning K-Pop idol concept photo. "
-            "Preserve 100% facial identity while elevating to top-tier K-Pop visual standards. "
-            "Flawless dewy glass skin with subtle highlight on cheekbones, soft gradient lip tint in rose pink, "
-            "subtle smoky liner and natural lashes. Brows groomed to a clean natural arch. "
-            "Hair: styled in fluffy textured layers with center part, in trendy ash brown with subtle highlights. "
-            "Outfit: designer oversized blazer in cream white over thin chain necklace and black turtleneck. "
-            "Background: clean studio with soft dreamy haze and pastel lens flares. "
-            "Lighting: large softbox for flawless skin, subtle cool blue rim light from behind. "
-            "Camera: 85mm, f/2.0, slightly desaturated color grading with lifted blacks. "
-            "Aspect ratio 3:4. Head-to-waist framing. No text, no watermark. "
-            "The overall style is an official K-Pop idol concept photo worthy of a debut album photobook."
-        ),
-    },
     "A11": {
         "name": "Imperial / Royal",
         "category": "A",

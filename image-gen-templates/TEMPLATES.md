@@ -217,26 +217,6 @@ The overall style is a gallery-quality watercolor portrait with the luminous tra
 
 ---
 
-### L10 — K-Pop Star
-
-**Keywords:** K-Pop, kpop, K-style, Korean idol, celebrity, idol photo
-**Input:** User photo (selfie / portrait)
-**Aspect Ratio:** 3:4
-
-**Prompt Pattern:**
-
-```
-Using the provided image of the subject as reference, transform them into a K-pop idol–style version of themselves, fully preserving their natural facial features, skin tone, ethnicity, and identity. Style the subject with a polished, high-fashion idol aesthetic inspired by contemporary K-pop concept photoshoots, featuring editorial studio lighting with soft glow and clean highlights, a flawless but natural dewy skin finish, and subtle enhancement of the eyes, lips, and hair for a camera-ready look. The subject poses confidently with expressive yet controlled body language, styled in fashion-forward outfits influenced by modern K-pop trends such as elevated streetwear, Y2K accents, chic tailoring, glam punk, or soft ethereal looks, adapted to complement their original clothing style. The atmosphere resembles a professional idol photoshoot, using bold colored backdrops or moody dramatic environments, studio or concert-style lighting, cinematic shadows, and refined color grading, with optional tasteful details like layered jewelry, belts, or statement accessories kept cohesive and restrained. The final image should feel like an authentic K-pop concept photo—crisp, stylish, and aspirational—projecting polished charisma and star presence while clearly remaining the same person.
-```
-
-**Quality Checklist:**
-- [ ] Strong facial identity match
-- [ ] Polished K-Pop beauty standard (skin, hair, styling)
-- [ ] Professional studio lighting
-- [ ] Album-quality color grading
-
----
-
 ### L12 — 90s Yearbook
 
 **Keywords:** 90s, yearbook, high school, retro photo
@@ -2218,7 +2198,6 @@ The overall style is a premium brand campaign visual worthy of an Apple or Sony 
 | A07 | Retro-Futurism | Stylization | Photo | P0 |
 | A08 | Ukiyo-e / Chinese Painting | Stylization | Photo | P0 |
 | A09 | Watercolor Portrait | Stylization | Photo | P0 |
-| A10 | K-Pop Star | Stylization | Photo | P0 |
 | A11 | Imperial / Royal | Stylization | Photo | P0 |
 | A12 | 90s Yearbook | Stylization | Photo | P0 |
 | A13 | High Fashion | Stylization | Photo | P0 |
@@ -2276,7 +2255,6 @@ The overall style is a premium brand campaign visual worthy of an Apple or Sony 
 | L06 | 80s Retro Animation | L · Life · Stylization | Photo |
 | L07 | Retro-Futurism | L · Life · Stylization | Photo |
 | L09 | Watercolor Portrait | L · Life · Stylization | Photo |
-| L10 | K-Pop Star | L · Life · Stylization | Photo |
 | L12 | 90s Yearbook | L · Life · Stylization | Photo |
 | L14 | Cyberpunk Portrait | L · Life · Stylization | Photo |
 | L15 | Oil Painting / Classical Art | L · Life · Stylization | Photo |

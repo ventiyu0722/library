@@ -15,7 +15,7 @@ RESULTS_DIR = PROJECT_DIR / "test" / "results"
 ID_MAP = {
     # L: Life & Entertainment — Stylization
     "A01": "L01", "A02": "L02", "A03": "L03", "A04": "L04",
-    "A06": "L06", "A07": "L07", "A09": "L09", "A10": "L10",
+    "A06": "L06", "A07": "L07", "A09": "L09",
     "A12": "L12", "A14": "L14", "A15": "L15",
     "A16": "L16", "A17": "L17",
     "A20": "L20",

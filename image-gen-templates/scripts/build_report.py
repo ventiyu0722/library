@@ -29,7 +29,6 @@ TEMPLATE_INFO = {
     "L06": {"name": "80s Retro Animation", "cat": "L·Stylization", "pri": "P0", "kw": "80s, retro, synthwave"},
     "L07": {"name": "Retro-Futurism", "cat": "L·Stylization", "pri": "P0", "kw": "retro-future, space age"},
     "L09": {"name": "Watercolor Portrait", "cat": "L·Stylization", "pri": "P0", "kw": "watercolor, aquarelle"},
-    "L10": {"name": "K-Pop Star", "cat": "L·Stylization", "pri": "P0", "kw": "K-Pop, K-style, idol"},
     "L12": {"name": "90s Yearbook", "cat": "L·Stylization", "pri": "P0", "kw": "90s, yearbook, school photo"},
     "L14": {"name": "Cyberpunk Portrait", "cat": "L·Stylization", "pri": "P0", "kw": "cyberpunk, neon, sci-fi"},
     "L15": {"name": "Oil Painting / Classical", "cat": "L·Stylization", "pri": "P0", "kw": "oil painting, classical, impressionist"},

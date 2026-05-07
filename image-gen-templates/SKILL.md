@@ -162,7 +162,6 @@ for the full prompt patterns.
 | L06 | 80s Retro Animation | 80s, retro, synthwave, vintage cartoon | Photo |
 | L07 | Retro-Futurism | retro-future, space age, vintage sci-fi | Photo |
 | L09 | Watercolor Portrait | watercolor, aquarelle, painting | Photo |
-| L10 | K-Pop Star | K-Pop, Korean idol, idol photo | Photo |
 | L12 | 90s Yearbook | 90s, yearbook, high school, retro photo | Photo |
 | L14 | Cyberpunk Portrait | cyberpunk, neon, cyber, futuristic | Photo |
 | L15 | Oil Painting / Classical | oil painting, classical, renaissance | Photo |
@@ -263,7 +262,6 @@ most popular ones to try:
   • Pixel Art, Pop Art, Sketch, Watercolor, and 10 more...
 
 📸 **PORTRAITS & PHOTO SCENES** (15 templates)
-  • K-Pop Star — Get the idol concept photo treatment
   • Film / Cinematic — Moody arthouse movie still portrait
   • Indoor Scene — Cozy café or studio apartment vibes
   • Spring Floral — Cherry blossom dreamy portrait

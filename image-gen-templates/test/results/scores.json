@@ -83,18 +83,6 @@
     },
     "notes": "Luminous watercolor quality with visible paper grain and color bleeds"
   },
-  "L10": {
-    "template_name": "K-Pop Star",
-    "category": "L",
-    "scores": {
-      "prompt_adherence": 4.5,
-      "identity_preservation": 4.5,
-      "visual_quality": 5.0,
-      "style_accuracy": 4.5,
-      "overall": 4.6
-    },
-    "notes": "K-Pop beauty standards well applied, good studio lighting and color grading"
-  },
   "L12": {
     "template_name": "90s Yearbook",
     "category": "L",
@@ -105,7 +93,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Perfect 90s yearbook aesthetic — laser beam background, period outfit, film grain, Kodak Gold warmth. Previously validated."
+    "notes": "Perfect 90s yearbook aesthetic \u2014 laser beam background, period outfit, film grain, Kodak Gold warmth. Previously validated."
   },
   "L14": {
     "template_name": "Cyberpunk Portrait",
@@ -117,7 +105,7 @@
       "style_accuracy": 5.0,
       "overall": 4.9
     },
-    "notes": "Stunning neon aesthetic — cybernetic augmentations, rain-slicked environment, magenta/cyan lighting, identity clearly preserved"
+    "notes": "Stunning neon aesthetic \u2014 cybernetic augmentations, rain-slicked environment, magenta/cyan lighting, identity clearly preserved"
   },
   "L30": {
     "template_name": "Studio Photoshoot",
@@ -153,7 +141,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Outstanding — golden retriever in tailored suit with study background, dignified expression, realistic fur-to-fabric transition"
+    "notes": "Outstanding \u2014 golden retriever in tailored suit with study background, dignified expression, realistic fur-to-fabric transition"
   },
   "L32": {
     "template_name": "Emoji / Sticker Pack",
@@ -273,7 +261,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "ALL text correct — 'SPRING AUDITIONS', 'UC Berkeley Music Society', date/location/time. Bold geometric design, clear hierarchy."
+    "notes": "ALL text correct \u2014 'SPRING AUDITIONS', 'UC Berkeley Music Society', date/location/time. Bold geometric design, clear hierarchy."
   },
   "M03": {
     "template_name": "Storyboard / Comic Strip",
@@ -309,7 +297,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Breathtaking Ghibli-style watercolor — floating islands, sky whales, golden hour lighting, perfect composition. Gallery-worthy."
+    "notes": "Breathtaking Ghibli-style watercolor \u2014 floating islands, sky whales, golden hour lighting, perfect composition. Gallery-worthy."
   },
   "P01": {
     "template_name": "E-commerce Main Image",
@@ -357,7 +345,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Perfect flat vector logo — mountain+sun icon, 'ALPINE' correctly spelled, navy+gold palette, minimal and scalable"
+    "notes": "Perfect flat vector logo \u2014 mountain+sun icon, 'ALPINE' correctly spelled, navy+gold palette, minimal and scalable"
   },
   "P05": {
     "template_name": "Merchandise / Keychain Design",
@@ -381,7 +369,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Perfect coloring book page — clean black lines on white, enclosed areas, intricate details, fairy/mushroom/cottage scene exactly as described"
+    "notes": "Perfect coloring book page \u2014 clean black lines on white, enclosed areas, intricate details, fairy/mushroom/cottage scene exactly as described"
   },
   "L15": {
     "template_name": "Oil Painting / Classical",
@@ -393,7 +381,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Stunning Rembrandt-quality portrait — visible impasto brushwork, dramatic chiaroscuro lighting, canvas weave texture, velvet garment with rich fabric folds, identity perfectly preserved"
+    "notes": "Stunning Rembrandt-quality portrait \u2014 visible impasto brushwork, dramatic chiaroscuro lighting, canvas weave texture, velvet garment with rich fabric folds, identity perfectly preserved"
   },
   "L16": {
     "template_name": "Pixel Art",
@@ -417,7 +405,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Perfect flat design execution — zero gradients, crisp geometric shapes, harmonious 6-color palette, identity clearly recognizable through simplified forms"
+    "notes": "Perfect flat design execution \u2014 zero gradients, crisp geometric shapes, harmonious 6-color palette, identity clearly recognizable through simplified forms"
   },
   "L20": {
     "template_name": "Colored Pencil Drawing",
@@ -429,7 +417,7 @@
       "style_accuracy": 4.5,
       "overall": 4.9
     },
-    "notes": "Gallery-quality colored pencil — visible directional strokes, layered warm skin tones, paper texture showing through, precise eye detail with catch-lights"
+    "notes": "Gallery-quality colored pencil \u2014 visible directional strokes, layered warm skin tones, paper texture showing through, precise eye detail with catch-lights"
   },
   "L21": {
     "template_name": "Pop Art",
@@ -441,7 +429,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Perfect Warhol execution — 2x2 grid with four distinct color schemes, halftone dot pattern visible, bold black outlines, consistent identity across all quadrants, slight registration offset for authenticity"
+    "notes": "Perfect Warhol execution \u2014 2x2 grid with four distinct color schemes, halftone dot pattern visible, bold black outlines, consistent identity across all quadrants, slight registration offset for authenticity"
   },
   "L23": {
     "template_name": "Children's Drawing",
@@ -453,7 +441,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Perfectly captures genuine child art — wobbly lines, crayon pressed hard, simple house and sun, V-shaped birds. Glasses and sweater from original photo referenced. Paper texture visible."
+    "notes": "Perfectly captures genuine child art \u2014 wobbly lines, crayon pressed hard, simple house and sun, V-shaped birds. Glasses and sweater from original photo referenced. Paper texture visible."
   },
   "L34": {
     "template_name": "Film / Cinematic Portrait",
@@ -465,7 +453,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Gorgeous Wong Kar-wai aesthetic — neon red-orange glow, rain-wet surfaces, cool blue ambient, window reflection, film grain, anamorphic bokeh, contemplative mood. Identity strong."
+    "notes": "Gorgeous Wong Kar-wai aesthetic \u2014 neon red-orange glow, rain-wet surfaces, cool blue ambient, window reflection, film grain, anamorphic bokeh, contemplative mood. Identity strong."
   },
   "L35": {
     "template_name": "Dreamy / Hazy Portrait",
@@ -489,7 +477,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Hilarious and perfectly executed — height measurement chart, 'THE SUSPECT' nameplate, orange PRISONER collar, guilty expression, harsh fluorescent lighting. Pet identity perfectly preserved. Viral-worthy."
+    "notes": "Hilarious and perfectly executed \u2014 height measurement chart, 'THE SUSPECT' nameplate, orange PRISONER collar, guilty expression, harsh fluorescent lighting. Pet identity perfectly preserved. Viral-worthy."
   },
   "M06": {
     "template_name": "YouTube Thumbnail",
@@ -501,7 +489,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Professional high-CTR thumbnail — 'TOP 10 AI TOOLS' perfectly rendered in bold Impact font, exaggerated surprised expression, AI robot hologram, vibrant blue-purple gradient, text readable at small sizes"
+    "notes": "Professional high-CTR thumbnail \u2014 'TOP 10 AI TOOLS' perfectly rendered in bold Impact font, exaggerated surprised expression, AI robot hologram, vibrant blue-purple gradient, text readable at small sizes"
   },
   "M07": {
     "template_name": "Educational Visual / Infographic",
@@ -513,7 +501,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Outstanding educational infographic — detailed leaf cross-section diagram, labeled parts (Epidermis, Palisade Mesophyll, Vascular Bundle, Stoma), color-coded arrows, fact boxes. All text legible and scientifically accurate."
+    "notes": "Outstanding educational infographic \u2014 detailed leaf cross-section diagram, labeled parts (Epidermis, Palisade Mesophyll, Vascular Bundle, Stoma), color-coded arrows, fact boxes. All text legible and scientifically accurate."
   },
   "M08": {
     "template_name": "Picture Book / Storybook",
@@ -525,7 +513,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Magical picture book spread — fox with red scarf, glowing oak tree door, fireflies, enchanted forest with mushrooms and moonlight. Watercolor-gouache texture on paper. Beatrix Potter × Ghibli aesthetic achieved."
+    "notes": "Magical picture book spread \u2014 fox with red scarf, glowing oak tree door, fireflies, enchanted forest with mushrooms and moonlight. Watercolor-gouache texture on paper. Beatrix Potter \u00d7 Ghibli aesthetic achieved."
   },
   "P07": {
     "template_name": "Game Asset / Character Design",
@@ -537,7 +525,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Professional AAA concept sheet — front/left/right/back views, glowing cyan runes, design notes with material callouts, color palette swatches, scale reference. Labeled views (LEFT/CENTER/RIGHT/CORNERS). Publication-ready."
+    "notes": "Professional AAA concept sheet \u2014 front/left/right/back views, glowing cyan runes, design notes with material callouts, color palette swatches, scale reference. Labeled views (LEFT/CENTER/RIGHT/CORNERS). Publication-ready."
   },
   "P08": {
     "template_name": "Product Marketing Design",
@@ -549,7 +537,7 @@
       "style_accuracy": 5.0,
       "overall": 5.0
     },
-    "notes": "Apple-level product ad — 'AURA Pro Max' perfectly rendered, 'Silence. Reimagined.' tagline in copper, 'Pre-order Now' CTA, floating headphone with copper accents, volumetric light beams, sound wave visualizations. Premium brand quality."
+    "notes": "Apple-level product ad \u2014 'AURA Pro Max' perfectly rendered, 'Silence. Reimagined.' tagline in copper, 'Pre-order Now' CTA, floating headphone with copper accents, volumetric light beams, sound wave visualizations. Premium brand quality."
   },
   "_meta": {
     "model": "gemini-3.1-flash-image-preview",
