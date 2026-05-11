@@ -1,7 +1,7 @@
 ---
 name: image-gen-templates
 description: >-
-  High-heat template-based image generation skill with 62 curated templates covering
+  High-heat template-based image generation skill with 61 curated templates covering
   stylization, photo scenes, portraits, pets, editing tools, social media, and professional
   design across 3 categories (Life & Entertainment / Media & Work / Professional Design).
   Matches user intent to specific templates for one-click, high-quality generation
@@ -11,7 +11,7 @@ description: >-
 
 # Image Generation — High-Heat Template Skill
 
-62 curated high-quality templates for one-click image generation via Gemini 3.1 Flash Image.
+61 curated high-quality templates for one-click image generation via Gemini 3.1 Flash Image.
 
 ## When to Use
 
@@ -146,12 +146,12 @@ END
 
 ## Section 1: Template Registry
 
-62 templates organized in 3 categories. Read `TEMPLATES.md` in the same skill directory
+61 templates organized in 3 categories. Read `TEMPLATES.md` in the same skill directory
 for the full prompt patterns.
 
 ### L: Life & Entertainment (58 templates)
 
-#### Stylization (20 templates)
+#### Stylization (19 templates)
 
 | ID | Template | Keywords (EN) | Input |
 |----|----------|---------------|-------|
@@ -250,7 +250,7 @@ When the skill is activated and the user has NO specific image request, present 
 template menu to inspire exploration. Use this EXACT format:
 
 ```
-I can help you create amazing images with 62 high-quality templates! Here are the
+I can help you create amazing images with 61 high-quality templates! Here are the
 most popular ones to try:
 
 🎨 **STYLIZATION** (20 styles to transform your photo)
@@ -412,7 +412,7 @@ using the user's original query as the prompt basis, without any template.
 ### When to Fallback
 
 - User's request is a valid image generation/editing task, BUT does not match any
-  of the 62 templates in Section 1
+  of the 61 templates in Section 1
 - User explicitly asks for something outside the template categories (e.g., food
   photography, landscape, architecture, abstract art, custom character design)
 - User's intent is ambiguous after Step 3 (Section 3) and none of the top candidates
